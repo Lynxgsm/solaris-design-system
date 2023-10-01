@@ -1,0 +1,25 @@
+@import '../../Base_Themes/index.scss';
+
+.block{
+    @extend .d-block;
+
+    &.hide-on-xl{ @extend .d-none-xl, .d-block; }
+
+    &.hide-on-l{ @extend .d-none-l, .d-block; }
+
+    &.hide-on-m{ @extend .d-none-m, .d-block; }
+
+    &.hide-on-s{ @extend .d-none-s, .d-block; }
+
+    &.hide-on-xs{ @extend .d-none-xs, .d-block; }
+
+    &.show-on-xl{ @extend .d-block-xl, .d-none; }
+
+    &.show-on-l{ @extend .d-block-l, .d-none; }
+
+    &.show-on-m{ @extend .d-block-m, .d-none; }
+
+    &.show-on-s{ @extend .d-block-s, .d-none; }
+
+    &.show-on-xs{ @extend .d-block-xs, .d-none; }
+}

@@ -5,6 +5,14 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { Variant } from "./types/common/variants";
+import { ColorScheme } from "./types/common/color-scheme";
+import { UnitString } from "./types/common/unit-string";
+import { Size } from "./types/common/size";
+export { Variant } from "./types/common/variants";
+export { ColorScheme } from "./types/common/color-scheme";
+export { UnitString } from "./types/common/unit-string";
+export { Size } from "./types/common/size";
 export namespace Components {
     interface MyComponent {
         /**
@@ -20,6 +28,14 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface SolarisButton {
+        "colorScheme": ColorScheme;
+        "fullWidth"?: boolean;
+        "href": string;
+        "radius"?: UnitString;
+        "size"?: Size;
+        "variant": Variant;
+    }
 }
 declare global {
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
@@ -28,8 +44,15 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLSolarisButtonElement extends Components.SolarisButton, HTMLStencilElement {
+    }
+    var HTMLSolarisButtonElement: {
+        prototype: HTMLSolarisButtonElement;
+        new (): HTMLSolarisButtonElement;
+    };
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
+        "solaris-button": HTMLSolarisButtonElement;
     }
 }
 declare namespace LocalJSX {
@@ -47,8 +70,17 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface SolarisButton {
+        "colorScheme"?: ColorScheme;
+        "fullWidth"?: boolean;
+        "href"?: string;
+        "radius"?: UnitString;
+        "size"?: Size;
+        "variant"?: Variant;
+    }
     interface IntrinsicElements {
         "my-component": MyComponent;
+        "solaris-button": SolarisButton;
     }
 }
 export { LocalJSX as JSX };
@@ -56,6 +88,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "solaris-button": LocalJSX.SolarisButton & JSXBase.HTMLAttributes<HTMLSolarisButtonElement>;
         }
     }
 }
