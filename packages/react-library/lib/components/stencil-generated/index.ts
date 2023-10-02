@@ -7,5 +7,4 @@ import type { JSX } from 'stencil-library';
 
 
 
-export const MyComponent = /*@__PURE__*/createReactComponent<JSX.MyComponent, HTMLMyComponentElement>('my-component');
-export const SolarisButton = /*@__PURE__*/createReactComponent<JSX.SolarisButton, HTMLSolarisButtonElement>('solaris-button');
+export const SolarisColumn = /*@__PURE__*/createReactComponent<JSX.SolarisColumn, HTMLSolarisColumnElement>('solaris-column');

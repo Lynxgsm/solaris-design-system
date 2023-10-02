@@ -1,4 +1,7 @@
-import { ColorScheme, Size, UnitString, Variant } from '../../components';
+import { ColorScheme } from '../../types/common/color-scheme';
+import { Size } from '../../types/common/size';
+import { UnitString } from '../../types/common/unit-string';
+import { Variant } from '../../types/common/variants';
 import { IconParams } from '../../types/icons/icon';
 
 export type SolarisButtonProps = HTMLButtonElement & {

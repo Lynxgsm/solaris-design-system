@@ -1,7 +1,7 @@
 import { FunctionalComponent, h } from '@stencil/core';
 import './solaris-row.scss';
 import { useFormat } from '../../common/Base_Core/format';
-import { SolarisRowProps } from './solaris-row';
+import { SolarisRowProps } from './solaris-row.type';
 import { SolarisFlex } from '../solaris-flex/solaris-flex';
 
 export const SolarisRow: FunctionalComponent<SolarisRowProps> = (props, children) => {

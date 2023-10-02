@@ -1,5 +1,5 @@
-import { UnitString } from '../../components';
 import { ContainerProps } from '../../types/common/container.props';
+import { UnitString } from '../../types/common/unit-string';
 
 export type SolarisFlexProps = ContainerProps & {
   justifyContent?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
