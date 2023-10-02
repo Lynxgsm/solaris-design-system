@@ -1,26 +1,45 @@
 @import '../../Base_Themes/index.scss';
 
-.flex{
-    @extend .d-flex;
-    
-    &.hide-on-xl{ @extend .d-none-xl, .d-flex; }
+.flex {
+  @extend .d-flex;
 
-    &.hide-on-l{ @extend .d-none-l, .d-flex; }
+  &.hide-on-xl {
+    @extend .d-none-xl, .d-flex;
+  }
 
-    &.hide-on-m{ @extend .d-none-m, .d-flex; }
+  &.hide-on-l {
+    @extend .d-none-l, .d-flex;
+  }
 
-    &.hide-on-s{ @extend .d-none-s, .d-flex; }
+  &.hide-on-m {
+    @extend .d-none-m, .d-flex;
+  }
 
-    &.hide-on-xs{ @extend .d-none-xs, .d-flex; }
-    
+  &.hide-on-s {
+    @extend .d-none-s, .d-flex;
+  }
 
-    &.show-on-xl{ @extend .d-flex-xl, .d-none; }
+  &.hide-on-xs {
+    @extend .d-none-xs, .d-flex;
+  }
 
-    &.show-on-l{ @extend .d-flex-l, .d-none; }
+  &.show-on-xl {
+    @extend .d-flex-xl, .d-none;
+  }
 
-    &.show-on-m{ @extend .d-flex-m, .d-none; }
+  &.show-on-l {
+    @extend .d-flex-l, .d-none;
+  }
 
-    &.show-on-s{ @extend .d-flex-s, .d-none; }
+  &.show-on-m {
+    @extend .d-flex-m, .d-none;
+  }
 
-    &.show-on-xs{ @extend .d-flex-xs, .d-none; }
+  &.show-on-s {
+    @extend .d-flex-s, .d-none;
+  }
+
+  &.show-on-xs {
+    @extend .d-flex-xs, .d-none;
+  }
 }

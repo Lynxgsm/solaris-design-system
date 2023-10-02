@@ -1,14 +1,18 @@
-import { FunctionalComponent, h } from '@stencil/core';
-import './solaris-row.scss';
-import { useFormat } from '../../common/Base_Core/format';
-import { SolarisRowProps } from './solaris-row.type';
-import { SolarisFlex } from '../solaris-flex/solaris-flex';
+import { Component, Prop, h } from '@stencil/core';
+import { UnitString } from '../../components';
 
-export const SolarisRow: FunctionalComponent<SolarisRowProps> = (props, children) => {
-  const { classes } = useFormat();
-  return (
-    <SolarisFlex {...props} className={classes('row', props.classList)} flexWrap="wrap">
-      {children}
-    </SolarisFlex>
-  );
-};
+@Component({
+  tag: 'solaris-row',
+  styleUrl: 'solaris-row.scss',
+  shadow: true,
+})
+export class SolarisRow {
+  @Prop() gap: UnitString;
+  render() {
+    return (
+      <solaris-flex gap={this.gap}>
+        <slot />
+      </solaris-flex>
+    );
+  }
+}

@@ -5,33 +5,108 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { Variant } from "./types/common/variants";
+import { ColorScheme } from "./types/common/color-scheme";
+import { UnitString } from "./types/common/unit-string";
+import { Size } from "./types/common/size";
+import { UnitString as UnitString1 } from "./components";
+export { Variant } from "./types/common/variants";
+export { ColorScheme } from "./types/common/color-scheme";
+export { UnitString } from "./types/common/unit-string";
+export { Size } from "./types/common/size";
+export { UnitString as UnitString1 } from "./components";
 export namespace Components {
+    interface SolarisButton {
+        "colorScheme": ColorScheme;
+        "fullWidth"?: boolean;
+        "href": string;
+        "radius"?: UnitString;
+        "size"?: Size;
+        "variant": Variant;
+    }
     interface SolarisColumn {
+        "gap": UnitString1;
+    }
+    interface SolarisFlex {
+        "alignItems"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
+        "flexDirection"?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
+        "flexWrap"?: 'nowrap' | 'wrap' | 'wrap-reverse';
+        "gap": UnitString1;
+        "justifyContent"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
+    }
+    interface SolarisRow {
+        "gap": UnitString1;
     }
 }
 declare global {
+    interface HTMLSolarisButtonElement extends Components.SolarisButton, HTMLStencilElement {
+    }
+    var HTMLSolarisButtonElement: {
+        prototype: HTMLSolarisButtonElement;
+        new (): HTMLSolarisButtonElement;
+    };
     interface HTMLSolarisColumnElement extends Components.SolarisColumn, HTMLStencilElement {
     }
     var HTMLSolarisColumnElement: {
         prototype: HTMLSolarisColumnElement;
         new (): HTMLSolarisColumnElement;
     };
+    interface HTMLSolarisFlexElement extends Components.SolarisFlex, HTMLStencilElement {
+    }
+    var HTMLSolarisFlexElement: {
+        prototype: HTMLSolarisFlexElement;
+        new (): HTMLSolarisFlexElement;
+    };
+    interface HTMLSolarisRowElement extends Components.SolarisRow, HTMLStencilElement {
+    }
+    var HTMLSolarisRowElement: {
+        prototype: HTMLSolarisRowElement;
+        new (): HTMLSolarisRowElement;
+    };
     interface HTMLElementTagNameMap {
+        "solaris-button": HTMLSolarisButtonElement;
         "solaris-column": HTMLSolarisColumnElement;
+        "solaris-flex": HTMLSolarisFlexElement;
+        "solaris-row": HTMLSolarisRowElement;
     }
 }
 declare namespace LocalJSX {
+    interface SolarisButton {
+        "colorScheme"?: ColorScheme;
+        "fullWidth"?: boolean;
+        "href"?: string;
+        "radius"?: UnitString;
+        "size"?: Size;
+        "variant"?: Variant;
+    }
     interface SolarisColumn {
+        "gap"?: UnitString1;
+    }
+    interface SolarisFlex {
+        "alignItems"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
+        "flexDirection"?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
+        "flexWrap"?: 'nowrap' | 'wrap' | 'wrap-reverse';
+        "gap"?: UnitString1;
+        "justifyContent"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
+    }
+    interface SolarisRow {
+        "gap"?: UnitString1;
     }
     interface IntrinsicElements {
+        "solaris-button": SolarisButton;
         "solaris-column": SolarisColumn;
+        "solaris-flex": SolarisFlex;
+        "solaris-row": SolarisRow;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "solaris-button": LocalJSX.SolarisButton & JSXBase.HTMLAttributes<HTMLSolarisButtonElement>;
             "solaris-column": LocalJSX.SolarisColumn & JSXBase.HTMLAttributes<HTMLSolarisColumnElement>;
+            "solaris-flex": LocalJSX.SolarisFlex & JSXBase.HTMLAttributes<HTMLSolarisFlexElement>;
+            "solaris-row": LocalJSX.SolarisRow & JSXBase.HTMLAttributes<HTMLSolarisRowElement>;
         }
     }
 }

@@ -1,4 +1,5 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core';
+import { UnitString } from '../../components';
 
 @Component({
   tag: 'solaris-column',
@@ -6,11 +7,13 @@ import { Component, Host, h } from '@stencil/core';
   shadow: true,
 })
 export class SolarisColumn {
+  @Prop() gap: UnitString;
+
   render() {
     return (
-      <Host>
-        <slot></slot>
-      </Host>
+      <solaris-flex flexDirection="column" gap={this.gap}>
+        <slot />
+      </solaris-flex>
     );
   }
 }

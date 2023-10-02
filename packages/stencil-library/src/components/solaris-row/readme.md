@@ -1,4 +1,4 @@
-# solaris-column
+# solaris-row
 
 
 
@@ -21,8 +21,8 @@
 ### Graph
 ```mermaid
 graph TD;
-  solaris-column --> solaris-flex
-  style solaris-column fill:#f9f,stroke:#333,stroke-width:4px
+  solaris-row --> solaris-flex
+  style solaris-row fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

@@ -1,3 +1,6 @@
 /// <reference types="react" />
 import type { JSX } from 'stencil-library';
+export declare const SolarisButton: import("react").ForwardRefExoticComponent<JSX.SolarisButton & Omit<import("react").HTMLAttributes<HTMLSolarisButtonElement>, "style"> & import("./react-component-lib/interfaces").StyleReactProps & import("react").RefAttributes<HTMLSolarisButtonElement>>;
 export declare const SolarisColumn: import("react").ForwardRefExoticComponent<JSX.SolarisColumn & Omit<import("react").HTMLAttributes<HTMLSolarisColumnElement>, "style"> & import("./react-component-lib/interfaces").StyleReactProps & import("react").RefAttributes<HTMLSolarisColumnElement>>;
+export declare const SolarisFlex: import("react").ForwardRefExoticComponent<JSX.SolarisFlex & Omit<import("react").HTMLAttributes<HTMLSolarisFlexElement>, "style"> & import("./react-component-lib/interfaces").StyleReactProps & import("react").RefAttributes<HTMLSolarisFlexElement>>;
+export declare const SolarisRow: import("react").ForwardRefExoticComponent<JSX.SolarisRow & Omit<import("react").HTMLAttributes<HTMLSolarisRowElement>, "style"> & import("./react-component-lib/interfaces").StyleReactProps & import("react").RefAttributes<HTMLSolarisRowElement>>;
