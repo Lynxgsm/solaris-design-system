@@ -5,17 +5,35 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { Variant } from "./types/common/variants";
-import { ColorScheme } from "./types/common/color-scheme";
-import { UnitString } from "./types/common/unit-string";
+import { Color, ColorScheme } from "./types/common/color-scheme";
 import { Size } from "./types/common/size";
-import { UnitString as UnitString1 } from "./components";
-export { Variant } from "./types/common/variants";
-export { ColorScheme } from "./types/common/color-scheme";
-export { UnitString } from "./types/common/unit-string";
+import { Breakpoints } from "./types/common/breakpoints";
+import { Variant } from "./types/common/variants";
+import { UnitString } from "./types/common/unit-string";
+import { ColorScheme as ColorScheme1, Size as Size1, UnitString as UnitString1 } from "./components";
+import { FontFamily } from "./types/text/font-family";
+import { TitleType } from "./types/text/title";
+import { FontWeight } from "./types/text/weight";
+export { Color, ColorScheme } from "./types/common/color-scheme";
 export { Size } from "./types/common/size";
-export { UnitString as UnitString1 } from "./components";
+export { Breakpoints } from "./types/common/breakpoints";
+export { Variant } from "./types/common/variants";
+export { UnitString } from "./types/common/unit-string";
+export { ColorScheme as ColorScheme1, Size as Size1, UnitString as UnitString1 } from "./components";
+export { FontFamily } from "./types/text/font-family";
+export { TitleType } from "./types/text/title";
+export { FontWeight } from "./types/text/weight";
 export namespace Components {
+    interface SolarisAvatar {
+        "backgroundColor"?: ColorScheme;
+        "backgroundImage"?: string;
+        "content"?: string;
+        "size"?: Size;
+        "variant"?: 'rectangle' | 'circle' | 'square';
+    }
+    interface SolarisBlock {
+        "breakpoints": Breakpoints;
+    }
     interface SolarisButton {
         "colorScheme": ColorScheme;
         "fullWidth"?: boolean;
@@ -24,8 +42,22 @@ export namespace Components {
         "size"?: Size;
         "variant": Variant;
     }
+    interface SolarisCard {
+        "elevation": number;
+        "radius": Size1;
+    }
     interface SolarisColumn {
         "gap": UnitString1;
+    }
+    interface SolarisDropdown {
+        "arrowPosition"?: 'left' | 'right';
+        "backdrop"?: boolean;
+        "button": Element;
+        "colorScheme"?: ColorScheme1;
+        "decorated"?: boolean;
+        "left"?: UnitString1;
+        "onClick"?: (close: boolean) => void;
+        "top"?: UnitString1;
     }
     interface SolarisFlex {
         "alignItems"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
@@ -37,19 +69,52 @@ export namespace Components {
     interface SolarisRow {
         "gap": UnitString1;
     }
+    interface SolarisTypography {
+        "colorScheme"?: Color;
+        "fontFamily"?: FontFamily;
+        "truncated"?: boolean;
+        "underline"?: boolean;
+        "variant"?: 'body' | TitleType | 'link' | 'caption' | 'subtitle' | 'small';
+        "weight"?: FontWeight;
+        "width"?: UnitString;
+    }
 }
 declare global {
+    interface HTMLSolarisAvatarElement extends Components.SolarisAvatar, HTMLStencilElement {
+    }
+    var HTMLSolarisAvatarElement: {
+        prototype: HTMLSolarisAvatarElement;
+        new (): HTMLSolarisAvatarElement;
+    };
+    interface HTMLSolarisBlockElement extends Components.SolarisBlock, HTMLStencilElement {
+    }
+    var HTMLSolarisBlockElement: {
+        prototype: HTMLSolarisBlockElement;
+        new (): HTMLSolarisBlockElement;
+    };
     interface HTMLSolarisButtonElement extends Components.SolarisButton, HTMLStencilElement {
     }
     var HTMLSolarisButtonElement: {
         prototype: HTMLSolarisButtonElement;
         new (): HTMLSolarisButtonElement;
     };
+    interface HTMLSolarisCardElement extends Components.SolarisCard, HTMLStencilElement {
+    }
+    var HTMLSolarisCardElement: {
+        prototype: HTMLSolarisCardElement;
+        new (): HTMLSolarisCardElement;
+    };
     interface HTMLSolarisColumnElement extends Components.SolarisColumn, HTMLStencilElement {
     }
     var HTMLSolarisColumnElement: {
         prototype: HTMLSolarisColumnElement;
         new (): HTMLSolarisColumnElement;
+    };
+    interface HTMLSolarisDropdownElement extends Components.SolarisDropdown, HTMLStencilElement {
+    }
+    var HTMLSolarisDropdownElement: {
+        prototype: HTMLSolarisDropdownElement;
+        new (): HTMLSolarisDropdownElement;
     };
     interface HTMLSolarisFlexElement extends Components.SolarisFlex, HTMLStencilElement {
     }
@@ -63,14 +128,35 @@ declare global {
         prototype: HTMLSolarisRowElement;
         new (): HTMLSolarisRowElement;
     };
+    interface HTMLSolarisTypographyElement extends Components.SolarisTypography, HTMLStencilElement {
+    }
+    var HTMLSolarisTypographyElement: {
+        prototype: HTMLSolarisTypographyElement;
+        new (): HTMLSolarisTypographyElement;
+    };
     interface HTMLElementTagNameMap {
+        "solaris-avatar": HTMLSolarisAvatarElement;
+        "solaris-block": HTMLSolarisBlockElement;
         "solaris-button": HTMLSolarisButtonElement;
+        "solaris-card": HTMLSolarisCardElement;
         "solaris-column": HTMLSolarisColumnElement;
+        "solaris-dropdown": HTMLSolarisDropdownElement;
         "solaris-flex": HTMLSolarisFlexElement;
         "solaris-row": HTMLSolarisRowElement;
+        "solaris-typography": HTMLSolarisTypographyElement;
     }
 }
 declare namespace LocalJSX {
+    interface SolarisAvatar {
+        "backgroundColor"?: ColorScheme;
+        "backgroundImage"?: string;
+        "content"?: string;
+        "size"?: Size;
+        "variant"?: 'rectangle' | 'circle' | 'square';
+    }
+    interface SolarisBlock {
+        "breakpoints"?: Breakpoints;
+    }
     interface SolarisButton {
         "colorScheme"?: ColorScheme;
         "fullWidth"?: boolean;
@@ -79,8 +165,22 @@ declare namespace LocalJSX {
         "size"?: Size;
         "variant"?: Variant;
     }
+    interface SolarisCard {
+        "elevation"?: number;
+        "radius"?: Size1;
+    }
     interface SolarisColumn {
         "gap"?: UnitString1;
+    }
+    interface SolarisDropdown {
+        "arrowPosition"?: 'left' | 'right';
+        "backdrop"?: boolean;
+        "button"?: Element;
+        "colorScheme"?: ColorScheme1;
+        "decorated"?: boolean;
+        "left"?: UnitString1;
+        "onClick"?: (close: boolean) => void;
+        "top"?: UnitString1;
     }
     interface SolarisFlex {
         "alignItems"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
@@ -92,21 +192,40 @@ declare namespace LocalJSX {
     interface SolarisRow {
         "gap"?: UnitString1;
     }
+    interface SolarisTypography {
+        "colorScheme"?: Color;
+        "fontFamily"?: FontFamily;
+        "truncated"?: boolean;
+        "underline"?: boolean;
+        "variant"?: 'body' | TitleType | 'link' | 'caption' | 'subtitle' | 'small';
+        "weight"?: FontWeight;
+        "width"?: UnitString;
+    }
     interface IntrinsicElements {
+        "solaris-avatar": SolarisAvatar;
+        "solaris-block": SolarisBlock;
         "solaris-button": SolarisButton;
+        "solaris-card": SolarisCard;
         "solaris-column": SolarisColumn;
+        "solaris-dropdown": SolarisDropdown;
         "solaris-flex": SolarisFlex;
         "solaris-row": SolarisRow;
+        "solaris-typography": SolarisTypography;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "solaris-avatar": LocalJSX.SolarisAvatar & JSXBase.HTMLAttributes<HTMLSolarisAvatarElement>;
+            "solaris-block": LocalJSX.SolarisBlock & JSXBase.HTMLAttributes<HTMLSolarisBlockElement>;
             "solaris-button": LocalJSX.SolarisButton & JSXBase.HTMLAttributes<HTMLSolarisButtonElement>;
+            "solaris-card": LocalJSX.SolarisCard & JSXBase.HTMLAttributes<HTMLSolarisCardElement>;
             "solaris-column": LocalJSX.SolarisColumn & JSXBase.HTMLAttributes<HTMLSolarisColumnElement>;
+            "solaris-dropdown": LocalJSX.SolarisDropdown & JSXBase.HTMLAttributes<HTMLSolarisDropdownElement>;
             "solaris-flex": LocalJSX.SolarisFlex & JSXBase.HTMLAttributes<HTMLSolarisFlexElement>;
             "solaris-row": LocalJSX.SolarisRow & JSXBase.HTMLAttributes<HTMLSolarisRowElement>;
+            "solaris-typography": LocalJSX.SolarisTypography & JSXBase.HTMLAttributes<HTMLSolarisTypographyElement>;
         }
     }
 }
