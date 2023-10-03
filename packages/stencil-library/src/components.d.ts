@@ -107,6 +107,12 @@ export namespace Components {
     interface SolarisRow {
         "gap": UnitString1;
     }
+    interface SolarisSkeleton {
+        "animated": boolean;
+        "height"?: UnitString;
+        "radius"?: Size;
+        "width"?: UnitString;
+    }
     interface SolarisStepper {
         "colorScheme"?: ColorScheme;
         "currentIndex"?: number;
@@ -201,6 +207,12 @@ declare global {
         prototype: HTMLSolarisRowElement;
         new (): HTMLSolarisRowElement;
     };
+    interface HTMLSolarisSkeletonElement extends Components.SolarisSkeleton, HTMLStencilElement {
+    }
+    var HTMLSolarisSkeletonElement: {
+        prototype: HTMLSolarisSkeletonElement;
+        new (): HTMLSolarisSkeletonElement;
+    };
     interface HTMLSolarisStepperElement extends Components.SolarisStepper, HTMLStencilElement {
     }
     var HTMLSolarisStepperElement: {
@@ -227,6 +239,7 @@ declare global {
         "solaris-icon": HTMLSolarisIconElement;
         "solaris-navbar": HTMLSolarisNavbarElement;
         "solaris-row": HTMLSolarisRowElement;
+        "solaris-skeleton": HTMLSolarisSkeletonElement;
         "solaris-stepper": HTMLSolarisStepperElement;
         "solaris-typography": HTMLSolarisTypographyElement;
     }
@@ -311,6 +324,12 @@ declare namespace LocalJSX {
     interface SolarisRow {
         "gap"?: UnitString1;
     }
+    interface SolarisSkeleton {
+        "animated"?: boolean;
+        "height"?: UnitString;
+        "radius"?: Size;
+        "width"?: UnitString;
+    }
     interface SolarisStepper {
         "colorScheme"?: ColorScheme;
         "currentIndex"?: number;
@@ -339,6 +358,7 @@ declare namespace LocalJSX {
         "solaris-icon": SolarisIcon;
         "solaris-navbar": SolarisNavbar;
         "solaris-row": SolarisRow;
+        "solaris-skeleton": SolarisSkeleton;
         "solaris-stepper": SolarisStepper;
         "solaris-typography": SolarisTypography;
     }
@@ -360,6 +380,7 @@ declare module "@stencil/core" {
             "solaris-icon": LocalJSX.SolarisIcon & JSXBase.HTMLAttributes<HTMLSolarisIconElement>;
             "solaris-navbar": LocalJSX.SolarisNavbar & JSXBase.HTMLAttributes<HTMLSolarisNavbarElement>;
             "solaris-row": LocalJSX.SolarisRow & JSXBase.HTMLAttributes<HTMLSolarisRowElement>;
+            "solaris-skeleton": LocalJSX.SolarisSkeleton & JSXBase.HTMLAttributes<HTMLSolarisSkeletonElement>;
             "solaris-stepper": LocalJSX.SolarisStepper & JSXBase.HTMLAttributes<HTMLSolarisStepperElement>;
             "solaris-typography": LocalJSX.SolarisTypography & JSXBase.HTMLAttributes<HTMLSolarisTypographyElement>;
         }

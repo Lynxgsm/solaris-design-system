@@ -20,5 +20,6 @@ export const SolarisFlex = /*@__PURE__*/createReactComponent<JSX.SolarisFlex, HT
 export const SolarisIcon = /*@__PURE__*/createReactComponent<JSX.SolarisIcon, HTMLSolarisIconElement>('solaris-icon');
 export const SolarisNavbar = /*@__PURE__*/createReactComponent<JSX.SolarisNavbar, HTMLSolarisNavbarElement>('solaris-navbar');
 export const SolarisRow = /*@__PURE__*/createReactComponent<JSX.SolarisRow, HTMLSolarisRowElement>('solaris-row');
+export const SolarisSkeleton = /*@__PURE__*/createReactComponent<JSX.SolarisSkeleton, HTMLSolarisSkeletonElement>('solaris-skeleton');
 export const SolarisStepper = /*@__PURE__*/createReactComponent<JSX.SolarisStepper, HTMLSolarisStepperElement>('solaris-stepper');
 export const SolarisTypography = /*@__PURE__*/createReactComponent<JSX.SolarisTypography, HTMLSolarisTypographyElement>('solaris-typography');
