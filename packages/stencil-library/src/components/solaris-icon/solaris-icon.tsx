@@ -1,9 +1,18 @@
-import { FunctionalComponent, h } from '@stencil/core';
-import { useFormat } from '../../common/Base_Core/format';
-import './solaris-icon.scss';
-import { IconProps } from './solaris-icon.type';
+import { Component, Prop, h } from '@stencil/core';
+import { Size } from '../../types/common/size';
+import { IconName, IconVariant } from '../../types/icons/icon';
+import { classes } from '../../common/Base_Core/format/classes/classes';
 
-export const SolarisIcon: FunctionalComponent<IconProps> = ({ name, size, variant }) => {
-  const { classes } = useFormat();
-  return <i class={classes('icon', `icon-${name}-${variant || 'regular'}`, `text-${size}`)} />;
-};
+@Component({
+  tag: 'solaris-icon',
+  styleUrl: 'solaris-icon.scss',
+  shadow: true,
+})
+export class SolarisIcon {
+  @Prop() size?: Size;
+  @Prop() variant?: IconVariant = 'regular';
+  @Prop() name?: IconName;
+  render() {
+    return <i class={classes('icon', `icon-${this.name}-${this.variant}`, `text-${this.size}`)} />;
+  }
+}

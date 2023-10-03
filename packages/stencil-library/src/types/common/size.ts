@@ -1,1 +1,1 @@
-export type Size = 'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl' | 'default'
+export type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'default';

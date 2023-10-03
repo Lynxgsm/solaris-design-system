@@ -7,6 +7,14 @@
 
     <script type="module" src="/build/stencil-library.esm.js"></script>
     <script nomodule src="/build/stencil-library.js"></script>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
   </head>
   <body>
     <!-- <solaris-row gap="10px">
@@ -15,7 +23,10 @@
       <solaris-button color-scheme="supernova">Hello World</solaris-button>
     </solaris-row> -->
     <!-- <solaris-typography variant="h1" weight="bold" font-family="montserrat">Espace Client</solaris-typography> -->
-    <solaris-dropdown>
+
+    <solaris-alert icon="arrow-left" __title="This is title">Hello World</solaris-alert>
+
+    <!-- <solaris-dropdown>
       <solaris-flex slot="button" gap="10px" align-items="center">
         <solaris-avatar variant="circle" background-color="supernova">SS</solaris-avatar>
         <solaris-column>
@@ -30,6 +41,6 @@
           <solaris-typography variant="small">stephpro@yopmail.com</solaris-typography>
         </solaris-flex>
       </solaris-flex>
-    </solaris-dropdown>
+    </solaris-dropdown> -->
   </body>
 </html>

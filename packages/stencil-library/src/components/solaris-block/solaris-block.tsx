@@ -11,7 +11,7 @@ export class SolarisBlock {
 
   render() {
     return (
-      <div class={`block ${this.breakpoints}`}>
+      <div class={`block ${this.breakpoints || ''}`}>
         <slot />
       </div>
     );
