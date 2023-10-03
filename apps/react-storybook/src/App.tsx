@@ -1,18 +1,17 @@
 import {
   defineCustomElements,
-  SolarisButton,
-  SolarisRow,
+  SolarisListTile,
+  SolarisTypography,
 } from "../../../packages/react-library";
 
 defineCustomElements();
 
 const App = () => {
   return (
-    <SolarisRow gap={10}>
-      <SolarisButton colorScheme="comet">Hello World</SolarisButton>
-      <SolarisButton colorScheme="comet">Hello World</SolarisButton>
-      <SolarisButton colorScheme="comet">Hello World</SolarisButton>
-    </SolarisRow>
+    <SolarisListTile>
+      <SolarisTypography fontFamily="montserrat">Hello World</SolarisTypography>
+      <SolarisTypography slot="trailing">Font Family</SolarisTypography>
+    </SolarisListTile>
   );
 };
 

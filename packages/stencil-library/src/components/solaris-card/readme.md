@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property    | Attribute   | Description | Type                                                      | Default     |
-| ----------- | ----------- | ----------- | --------------------------------------------------------- | ----------- |
-| `elevation` | `elevation` |             | `number`                                                  | `undefined` |
-| `radius`    | `radius`    |             | `"default" \| "l" \| "m" \| "s" \| "xl" \| "xs" \| "xxl"` | `undefined` |
+| Property    | Attribute   | Description | Type                                                         | Default     |
+| ----------- | ----------- | ----------- | ------------------------------------------------------------ | ----------- |
+| `elevation` | `elevation` |             | `number`                                                     | `undefined` |
+| `radius`    | `radius`    |             | `"default" \| "lg" \| "md" \| "sm" \| "xl" \| "xs" \| "xxl"` | `undefined` |
 
 
 ## Dependencies

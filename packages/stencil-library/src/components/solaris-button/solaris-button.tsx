@@ -15,13 +15,13 @@ export class SolarisButton {
   @Prop() variant: Variant = 'default';
   @Prop() colorScheme: ColorScheme = 'supernova';
   @Prop() href: string;
-  @Prop() radius?: UnitString;
-  @Prop() size?: Size;
-  @Prop() fullWidth?: boolean;
+  @Prop() radius: UnitString;
+  @Prop() size: Size = 'md';
+  @Prop() fullWidth: boolean;
 
   generateStyle() {
-    const variant = `button-${this.variant || 'default'}`;
-    const size = `button-${this.size || 'm'}`;
+    const variant = `button-${this.variant}`;
+    const size = `button-${this.size}`;
     const colorScheme = `button-${this.colorScheme}`;
     return classes(variant, size, colorScheme);
   }

@@ -65,10 +65,10 @@ export namespace Components {
     }
     interface SolarisButton {
         "colorScheme": ColorScheme;
-        "fullWidth"?: boolean;
+        "fullWidth": boolean;
         "href": string;
-        "radius"?: UnitString;
-        "size"?: Size;
+        "radius": UnitString;
+        "size": Size;
         "variant": Variant;
     }
     interface SolarisCard {
@@ -99,6 +99,10 @@ export namespace Components {
         "size"?: Size;
         "variant"?: IconVariant;
     }
+    interface SolarisListTile {
+        "__title": string;
+        "width"?: UnitString;
+    }
     interface SolarisNavbar {
         "colorScheme": ColorScheme1;
         "decoration": 'top' | 'left' | 'right' | 'bottom' | 'none';
@@ -106,6 +110,17 @@ export namespace Components {
     }
     interface SolarisRow {
         "gap": UnitString1;
+    }
+    interface SolarisSkeleton {
+        "animated": boolean;
+        "height"?: UnitString;
+        "radius"?: Size;
+        "width"?: UnitString;
+    }
+    interface SolarisStepper {
+        "colorScheme"?: ColorScheme;
+        "currentIndex"?: number;
+        "steps": string[];
     }
     interface SolarisTypography {
         "colorScheme"?: Color;
@@ -184,6 +199,12 @@ declare global {
         prototype: HTMLSolarisIconElement;
         new (): HTMLSolarisIconElement;
     };
+    interface HTMLSolarisListTileElement extends Components.SolarisListTile, HTMLStencilElement {
+    }
+    var HTMLSolarisListTileElement: {
+        prototype: HTMLSolarisListTileElement;
+        new (): HTMLSolarisListTileElement;
+    };
     interface HTMLSolarisNavbarElement extends Components.SolarisNavbar, HTMLStencilElement {
     }
     var HTMLSolarisNavbarElement: {
@@ -195,6 +216,18 @@ declare global {
     var HTMLSolarisRowElement: {
         prototype: HTMLSolarisRowElement;
         new (): HTMLSolarisRowElement;
+    };
+    interface HTMLSolarisSkeletonElement extends Components.SolarisSkeleton, HTMLStencilElement {
+    }
+    var HTMLSolarisSkeletonElement: {
+        prototype: HTMLSolarisSkeletonElement;
+        new (): HTMLSolarisSkeletonElement;
+    };
+    interface HTMLSolarisStepperElement extends Components.SolarisStepper, HTMLStencilElement {
+    }
+    var HTMLSolarisStepperElement: {
+        prototype: HTMLSolarisStepperElement;
+        new (): HTMLSolarisStepperElement;
     };
     interface HTMLSolarisTypographyElement extends Components.SolarisTypography, HTMLStencilElement {
     }
@@ -214,8 +247,11 @@ declare global {
         "solaris-dropdown": HTMLSolarisDropdownElement;
         "solaris-flex": HTMLSolarisFlexElement;
         "solaris-icon": HTMLSolarisIconElement;
+        "solaris-list-tile": HTMLSolarisListTileElement;
         "solaris-navbar": HTMLSolarisNavbarElement;
         "solaris-row": HTMLSolarisRowElement;
+        "solaris-skeleton": HTMLSolarisSkeletonElement;
+        "solaris-stepper": HTMLSolarisStepperElement;
         "solaris-typography": HTMLSolarisTypographyElement;
     }
 }
@@ -291,6 +327,10 @@ declare namespace LocalJSX {
         "size"?: Size;
         "variant"?: IconVariant;
     }
+    interface SolarisListTile {
+        "__title"?: string;
+        "width"?: UnitString;
+    }
     interface SolarisNavbar {
         "colorScheme"?: ColorScheme1;
         "decoration"?: 'top' | 'left' | 'right' | 'bottom' | 'none';
@@ -298,6 +338,17 @@ declare namespace LocalJSX {
     }
     interface SolarisRow {
         "gap"?: UnitString1;
+    }
+    interface SolarisSkeleton {
+        "animated"?: boolean;
+        "height"?: UnitString;
+        "radius"?: Size;
+        "width"?: UnitString;
+    }
+    interface SolarisStepper {
+        "colorScheme"?: ColorScheme;
+        "currentIndex"?: number;
+        "steps"?: string[];
     }
     interface SolarisTypography {
         "colorScheme"?: Color;
@@ -320,8 +371,11 @@ declare namespace LocalJSX {
         "solaris-dropdown": SolarisDropdown;
         "solaris-flex": SolarisFlex;
         "solaris-icon": SolarisIcon;
+        "solaris-list-tile": SolarisListTile;
         "solaris-navbar": SolarisNavbar;
         "solaris-row": SolarisRow;
+        "solaris-skeleton": SolarisSkeleton;
+        "solaris-stepper": SolarisStepper;
         "solaris-typography": SolarisTypography;
     }
 }
@@ -340,8 +394,11 @@ declare module "@stencil/core" {
             "solaris-dropdown": LocalJSX.SolarisDropdown & JSXBase.HTMLAttributes<HTMLSolarisDropdownElement>;
             "solaris-flex": LocalJSX.SolarisFlex & JSXBase.HTMLAttributes<HTMLSolarisFlexElement>;
             "solaris-icon": LocalJSX.SolarisIcon & JSXBase.HTMLAttributes<HTMLSolarisIconElement>;
+            "solaris-list-tile": LocalJSX.SolarisListTile & JSXBase.HTMLAttributes<HTMLSolarisListTileElement>;
             "solaris-navbar": LocalJSX.SolarisNavbar & JSXBase.HTMLAttributes<HTMLSolarisNavbarElement>;
             "solaris-row": LocalJSX.SolarisRow & JSXBase.HTMLAttributes<HTMLSolarisRowElement>;
+            "solaris-skeleton": LocalJSX.SolarisSkeleton & JSXBase.HTMLAttributes<HTMLSolarisSkeletonElement>;
+            "solaris-stepper": LocalJSX.SolarisStepper & JSXBase.HTMLAttributes<HTMLSolarisStepperElement>;
             "solaris-typography": LocalJSX.SolarisTypography & JSXBase.HTMLAttributes<HTMLSolarisTypographyElement>;
         }
     }

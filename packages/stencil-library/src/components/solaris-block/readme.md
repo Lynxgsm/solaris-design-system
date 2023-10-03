@@ -16,14 +16,20 @@
 
 ### Used by
 
+ - [solaris-alert](../solaris-alert)
+ - [solaris-blockquote](../solaris-blockquote)
  - [solaris-card](../solaris-card)
  - [solaris-dropdown](../solaris-dropdown)
+ - [solaris-stepper](../solaris-stepper)
 
 ### Graph
 ```mermaid
 graph TD;
+  solaris-alert --> solaris-block
+  solaris-blockquote --> solaris-block
   solaris-card --> solaris-block
   solaris-dropdown --> solaris-block
+  solaris-stepper --> solaris-block
   style solaris-block fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
