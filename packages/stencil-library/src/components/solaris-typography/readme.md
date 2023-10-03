@@ -9,7 +9,7 @@
 
 | Property      | Attribute      | Description | Type                                                                                                                                                                                                                                                                                                                                                                                                                     | Default     |
 | ------------- | -------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
-| `colorScheme` | `color-scheme` |             | `"error" \| ColorScheme \| "supernova-dark" \| "nebula-blue-shades" \| "nebula-blue-dark" \| "cobalt-dark" \| "comet-dark" \| "additional-link" \| "success-dark" \| "success-light" \| "error-light" \| "error-dark" \| "alert-light" \| "alert-dark" \| "info-light" \| "info-dark" \| "darkest" \| "darker" \| "neutral" \| "disabled-light" \| "light" \| "lighter" \| "grey-1" \| "grey-2" \| "grey-3" \| "grey-4"` | `'black'`   |
+| `colorScheme` | `color-scheme` |             | `"error" \| "light" \| ColorScheme \| "supernova-dark" \| "nebula-blue-shades" \| "nebula-blue-dark" \| "cobalt-dark" \| "comet-dark" \| "additional-link" \| "success-dark" \| "success-light" \| "error-light" \| "error-dark" \| "alert-light" \| "alert-dark" \| "info-light" \| "info-dark" \| "darkest" \| "darker" \| "neutral" \| "disabled-light" \| "lighter" \| "grey-1" \| "grey-2" \| "grey-3" \| "grey-4"` | `'black'`   |
 | `fontFamily`  | `font-family`  |             | `"montserrat" \| "roboto"`                                                                                                                                                                                                                                                                                                                                                                                               | `'roboto'`  |
 | `truncated`   | `truncated`    |             | `boolean`                                                                                                                                                                                                                                                                                                                                                                                                                | `undefined` |
 | `underline`   | `underline`    |             | `boolean`                                                                                                                                                                                                                                                                                                                                                                                                                | `undefined` |
@@ -17,6 +17,23 @@
 | `weight`      | `weight`       |             | `"bold" \| "medium" \| "regular" \| "semi-bold"`                                                                                                                                                                                                                                                                                                                                                                         | `'regular'` |
 | `width`       | `width`        |             | `"auto" \| "fit-content" \| "max-content" \| `${number}%` \| `${number}em` \| `${number}px` \| `${number}rem` \| `${number}vh` \| `${number}vw` \| number`                                                                                                                                                                                                                                                               | `undefined` |
 
+
+## Dependencies
+
+### Used by
+
+ - [solaris-alert](../solaris-alert)
+ - [solaris-blockquote](../solaris-blockquote)
+ - [solaris-stepper](../solaris-stepper)
+
+### Graph
+```mermaid
+graph TD;
+  solaris-alert --> solaris-typography
+  solaris-blockquote --> solaris-typography
+  solaris-stepper --> solaris-typography
+  style solaris-typography fill:#f9f,stroke:#333,stroke-width:4px
+```
 
 ----------------------------------------------
 

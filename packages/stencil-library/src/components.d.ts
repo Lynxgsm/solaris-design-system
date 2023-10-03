@@ -65,10 +65,10 @@ export namespace Components {
     }
     interface SolarisButton {
         "colorScheme": ColorScheme;
-        "fullWidth"?: boolean;
+        "fullWidth": boolean;
         "href": string;
-        "radius"?: UnitString;
-        "size"?: Size;
+        "radius": UnitString;
+        "size": Size;
         "variant": Variant;
     }
     interface SolarisCard {
@@ -106,6 +106,11 @@ export namespace Components {
     }
     interface SolarisRow {
         "gap": UnitString1;
+    }
+    interface SolarisStepper {
+        "colorScheme"?: ColorScheme;
+        "currentIndex"?: number;
+        "steps": string[];
     }
     interface SolarisTypography {
         "colorScheme"?: Color;
@@ -196,6 +201,12 @@ declare global {
         prototype: HTMLSolarisRowElement;
         new (): HTMLSolarisRowElement;
     };
+    interface HTMLSolarisStepperElement extends Components.SolarisStepper, HTMLStencilElement {
+    }
+    var HTMLSolarisStepperElement: {
+        prototype: HTMLSolarisStepperElement;
+        new (): HTMLSolarisStepperElement;
+    };
     interface HTMLSolarisTypographyElement extends Components.SolarisTypography, HTMLStencilElement {
     }
     var HTMLSolarisTypographyElement: {
@@ -216,6 +227,7 @@ declare global {
         "solaris-icon": HTMLSolarisIconElement;
         "solaris-navbar": HTMLSolarisNavbarElement;
         "solaris-row": HTMLSolarisRowElement;
+        "solaris-stepper": HTMLSolarisStepperElement;
         "solaris-typography": HTMLSolarisTypographyElement;
     }
 }
@@ -299,6 +311,11 @@ declare namespace LocalJSX {
     interface SolarisRow {
         "gap"?: UnitString1;
     }
+    interface SolarisStepper {
+        "colorScheme"?: ColorScheme;
+        "currentIndex"?: number;
+        "steps"?: string[];
+    }
     interface SolarisTypography {
         "colorScheme"?: Color;
         "fontFamily"?: FontFamily;
@@ -322,6 +339,7 @@ declare namespace LocalJSX {
         "solaris-icon": SolarisIcon;
         "solaris-navbar": SolarisNavbar;
         "solaris-row": SolarisRow;
+        "solaris-stepper": SolarisStepper;
         "solaris-typography": SolarisTypography;
     }
 }
@@ -342,6 +360,7 @@ declare module "@stencil/core" {
             "solaris-icon": LocalJSX.SolarisIcon & JSXBase.HTMLAttributes<HTMLSolarisIconElement>;
             "solaris-navbar": LocalJSX.SolarisNavbar & JSXBase.HTMLAttributes<HTMLSolarisNavbarElement>;
             "solaris-row": LocalJSX.SolarisRow & JSXBase.HTMLAttributes<HTMLSolarisRowElement>;
+            "solaris-stepper": LocalJSX.SolarisStepper & JSXBase.HTMLAttributes<HTMLSolarisStepperElement>;
             "solaris-typography": LocalJSX.SolarisTypography & JSXBase.HTMLAttributes<HTMLSolarisTypographyElement>;
         }
     }

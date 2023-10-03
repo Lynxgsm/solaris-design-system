@@ -11,7 +11,7 @@
 | ----------------- | ------------------ | ----------- | --------------------------------------------------------------------------------------- | ----------- |
 | `backgroundColor` | `background-color` |             | `"black" \| "cobalt" \| "comet" \| "danger" \| "nebula-blue" \| "supernova" \| "white"` | `undefined` |
 | `backgroundImage` | `background-image` |             | `string`                                                                                | `undefined` |
-| `size`            | `size`             |             | `"default" \| "l" \| "m" \| "s" \| "xl" \| "xs" \| "xxl"`                               | `undefined` |
+| `size`            | `size`             |             | `"default" \| "lg" \| "md" \| "sm" \| "xl" \| "xs" \| "xxl"`                            | `undefined` |
 | `variant`         | `variant`          |             | `"circle" \| "rectangle" \| "square"`                                                   | `undefined` |
 
 
