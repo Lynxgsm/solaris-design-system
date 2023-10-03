@@ -24,6 +24,7 @@
 
  - [solaris-alert](../solaris-alert)
  - [solaris-blockquote](../solaris-blockquote)
+ - [solaris-list-tile](../solaris-list-tile)
  - [solaris-stepper](../solaris-stepper)
 
 ### Graph
@@ -31,6 +32,7 @@
 graph TD;
   solaris-alert --> solaris-typography
   solaris-blockquote --> solaris-typography
+  solaris-list-tile --> solaris-typography
   solaris-stepper --> solaris-typography
   style solaris-typography fill:#f9f,stroke:#333,stroke-width:4px
 ```

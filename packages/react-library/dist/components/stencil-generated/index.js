@@ -10,6 +10,7 @@ export const SolarisColumn = createReactComponent('solaris-column');
 export const SolarisDropdown = createReactComponent('solaris-dropdown');
 export const SolarisFlex = createReactComponent('solaris-flex');
 export const SolarisIcon = createReactComponent('solaris-icon');
+export const SolarisListTile = createReactComponent('solaris-list-tile');
 export const SolarisNavbar = createReactComponent('solaris-navbar');
 export const SolarisRow = createReactComponent('solaris-row');
 export const SolarisSkeleton = createReactComponent('solaris-skeleton');

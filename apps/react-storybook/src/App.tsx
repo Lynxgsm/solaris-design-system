@@ -1,18 +1,17 @@
 import {
   defineCustomElements,
-  SolarisRow,
-  SolarisButton,
+  SolarisListTile,
+  SolarisTypography,
 } from "../../../packages/react-library";
 
 defineCustomElements();
 
 const App = () => {
   return (
-    <SolarisRow>
-      <SolarisButton size="md" colorScheme="nebula-blue">
-        Hello World
-      </SolarisButton>
-    </SolarisRow>
+    <SolarisListTile>
+      <SolarisTypography fontFamily="montserrat">Hello World</SolarisTypography>
+      <SolarisTypography slot="trailing">Font Family</SolarisTypography>
+    </SolarisListTile>
   );
 };
 

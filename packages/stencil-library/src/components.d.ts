@@ -99,6 +99,10 @@ export namespace Components {
         "size"?: Size;
         "variant"?: IconVariant;
     }
+    interface SolarisListTile {
+        "__title": string;
+        "width"?: UnitString;
+    }
     interface SolarisNavbar {
         "colorScheme": ColorScheme1;
         "decoration": 'top' | 'left' | 'right' | 'bottom' | 'none';
@@ -195,6 +199,12 @@ declare global {
         prototype: HTMLSolarisIconElement;
         new (): HTMLSolarisIconElement;
     };
+    interface HTMLSolarisListTileElement extends Components.SolarisListTile, HTMLStencilElement {
+    }
+    var HTMLSolarisListTileElement: {
+        prototype: HTMLSolarisListTileElement;
+        new (): HTMLSolarisListTileElement;
+    };
     interface HTMLSolarisNavbarElement extends Components.SolarisNavbar, HTMLStencilElement {
     }
     var HTMLSolarisNavbarElement: {
@@ -237,6 +247,7 @@ declare global {
         "solaris-dropdown": HTMLSolarisDropdownElement;
         "solaris-flex": HTMLSolarisFlexElement;
         "solaris-icon": HTMLSolarisIconElement;
+        "solaris-list-tile": HTMLSolarisListTileElement;
         "solaris-navbar": HTMLSolarisNavbarElement;
         "solaris-row": HTMLSolarisRowElement;
         "solaris-skeleton": HTMLSolarisSkeletonElement;
@@ -316,6 +327,10 @@ declare namespace LocalJSX {
         "size"?: Size;
         "variant"?: IconVariant;
     }
+    interface SolarisListTile {
+        "__title"?: string;
+        "width"?: UnitString;
+    }
     interface SolarisNavbar {
         "colorScheme"?: ColorScheme1;
         "decoration"?: 'top' | 'left' | 'right' | 'bottom' | 'none';
@@ -356,6 +371,7 @@ declare namespace LocalJSX {
         "solaris-dropdown": SolarisDropdown;
         "solaris-flex": SolarisFlex;
         "solaris-icon": SolarisIcon;
+        "solaris-list-tile": SolarisListTile;
         "solaris-navbar": SolarisNavbar;
         "solaris-row": SolarisRow;
         "solaris-skeleton": SolarisSkeleton;
@@ -378,6 +394,7 @@ declare module "@stencil/core" {
             "solaris-dropdown": LocalJSX.SolarisDropdown & JSXBase.HTMLAttributes<HTMLSolarisDropdownElement>;
             "solaris-flex": LocalJSX.SolarisFlex & JSXBase.HTMLAttributes<HTMLSolarisFlexElement>;
             "solaris-icon": LocalJSX.SolarisIcon & JSXBase.HTMLAttributes<HTMLSolarisIconElement>;
+            "solaris-list-tile": LocalJSX.SolarisListTile & JSXBase.HTMLAttributes<HTMLSolarisListTileElement>;
             "solaris-navbar": LocalJSX.SolarisNavbar & JSXBase.HTMLAttributes<HTMLSolarisNavbarElement>;
             "solaris-row": LocalJSX.SolarisRow & JSXBase.HTMLAttributes<HTMLSolarisRowElement>;
             "solaris-skeleton": LocalJSX.SolarisSkeleton & JSXBase.HTMLAttributes<HTMLSolarisSkeletonElement>;

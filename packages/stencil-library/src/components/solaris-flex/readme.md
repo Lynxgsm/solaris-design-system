@@ -26,6 +26,7 @@
  - [solaris-blockquote](../solaris-blockquote)
  - [solaris-column](../solaris-column)
  - [solaris-dropdown](../solaris-dropdown)
+ - [solaris-list-tile](../solaris-list-tile)
  - [solaris-row](../solaris-row)
  - [solaris-stepper](../solaris-stepper)
 
@@ -38,6 +39,7 @@ graph TD;
   solaris-blockquote --> solaris-flex
   solaris-column --> solaris-flex
   solaris-dropdown --> solaris-flex
+  solaris-list-tile --> solaris-flex
   solaris-row --> solaris-flex
   solaris-stepper --> solaris-flex
   style solaris-flex fill:#f9f,stroke:#333,stroke-width:4px
