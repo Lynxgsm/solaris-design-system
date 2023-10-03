@@ -12,8 +12,8 @@ export class SolarisFlex {
   @Prop() gap: UnitString;
   @Prop() justifyContent?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
   @Prop() alignItems?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
-  @Prop() flexDirection?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
-  @Prop() flexWrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
+  @Prop() direction?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
+  @Prop() wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
 
   render() {
     return (
@@ -23,8 +23,8 @@ export class SolarisFlex {
           justifyContent: this.justifyContent,
           alignItems: this.alignItems,
           gap: this.gap && unitFormatter(this.gap),
-          flexWrap: this.flexWrap,
-          flexDirection: this.flexDirection,
+          flexWrap: this.wrap,
+          flexDirection: this.direction,
         }}
       >
         <slot />

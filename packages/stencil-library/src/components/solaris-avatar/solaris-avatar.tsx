@@ -11,7 +11,6 @@ import { Size } from '../../types/common/size';
 export class SolarisAvatar {
   @Prop() backgroundColor?: ColorScheme;
   @Prop() backgroundImage?: string;
-  @Prop() content?: string;
   @Prop() variant?: 'rectangle' | 'circle' | 'square';
   @Prop() size?: Size;
   render() {
@@ -27,7 +26,7 @@ export class SolarisAvatar {
             ['visibility-none']: this.backgroundImage,
           })}
         >
-          <div>{this.content}</div>
+          <slot />
         </strong>
       </solaris-flex>
     );

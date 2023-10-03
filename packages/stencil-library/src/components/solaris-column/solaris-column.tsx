@@ -11,7 +11,7 @@ export class SolarisColumn {
 
   render() {
     return (
-      <solaris-flex flexDirection="column" gap={this.gap}>
+      <solaris-flex direction="column" gap={this.gap}>
         <slot />
       </solaris-flex>
     );

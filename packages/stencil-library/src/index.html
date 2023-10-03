@@ -3,25 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Stencil Component Starter</title>
+    <title>Solaris Component Starter</title>
 
     <script type="module" src="/build/stencil-library.esm.js"></script>
     <script nomodule src="/build/stencil-library.js"></script>
   </head>
   <body>
-    <solaris-row gap="10px">
+    <!-- <solaris-row gap="10px">
       <solaris-button color-scheme="supernova">Hello World</solaris-button>
       <solaris-button color-scheme="supernova">Hello World</solaris-button>
       <solaris-button color-scheme="supernova">Hello World</solaris-button>
-    </solaris-row>
-    <solaris-typography variant="p" weight="bold">Espace Client</solaris-typography>
+    </solaris-row> -->
+    <!-- <solaris-typography variant="h1" weight="bold" font-family="montserrat">Espace Client</solaris-typography> -->
     <solaris-dropdown>
-      <h1 slot="button">Hello</h1>
-      <solaris-flex slot="content" gap="10px" align-items="center" style="cursor: pointer">
-        <solaris-avatar textContent="SS" variant="circle" backgroundColor="supernova" />
-        <solaris-flex flexDirection="column">
+      <solaris-flex slot="button" gap="10px" align-items="center">
+        <solaris-avatar variant="circle" background-color="supernova">SS</solaris-avatar>
+        <solaris-column>
           <solaris-typography weight="bold">Espace Client</solaris-typography>
           <solaris-typography variant="small">Stephanie</solaris-typography>
+        </solaris-column>
+      </solaris-flex>
+      <solaris-flex slot="content" gap="12px" style="text-align: center" direction="column" justifyContent="center" alignItems="center">
+        <Avatar textContent="SS" variant="circle" backgroundColor="supernova" />
+        <solaris-flex style="text-align: center" direction="column" alignItems="center">
+          <solaris-typography variant="h5">Stéphanie Simon Le Saulx</solaris-typography>
+          <solaris-typography variant="small">stephpro@yopmail.com</solaris-typography>
         </solaris-flex>
       </solaris-flex>
     </solaris-dropdown>

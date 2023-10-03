@@ -27,7 +27,6 @@ export namespace Components {
     interface SolarisAvatar {
         "backgroundColor"?: ColorScheme;
         "backgroundImage"?: string;
-        "content"?: string;
         "size"?: Size;
         "variant"?: 'rectangle' | 'circle' | 'square';
     }
@@ -56,15 +55,19 @@ export namespace Components {
         "colorScheme"?: ColorScheme1;
         "decorated"?: boolean;
         "left"?: UnitString1;
-        "onClick"?: (close: boolean) => void;
         "top"?: UnitString1;
     }
     interface SolarisFlex {
         "alignItems"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
-        "flexDirection"?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
-        "flexWrap"?: 'nowrap' | 'wrap' | 'wrap-reverse';
+        "direction"?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
         "gap": UnitString1;
         "justifyContent"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
+        "wrap"?: 'nowrap' | 'wrap' | 'wrap-reverse';
+    }
+    interface SolarisNavbar {
+        "colorScheme": ColorScheme1;
+        "decoration": 'top' | 'left' | 'right' | 'bottom' | 'none';
+        "position": 'fixed' | 'relative';
     }
     interface SolarisRow {
         "gap": UnitString1;
@@ -122,6 +125,12 @@ declare global {
         prototype: HTMLSolarisFlexElement;
         new (): HTMLSolarisFlexElement;
     };
+    interface HTMLSolarisNavbarElement extends Components.SolarisNavbar, HTMLStencilElement {
+    }
+    var HTMLSolarisNavbarElement: {
+        prototype: HTMLSolarisNavbarElement;
+        new (): HTMLSolarisNavbarElement;
+    };
     interface HTMLSolarisRowElement extends Components.SolarisRow, HTMLStencilElement {
     }
     var HTMLSolarisRowElement: {
@@ -142,6 +151,7 @@ declare global {
         "solaris-column": HTMLSolarisColumnElement;
         "solaris-dropdown": HTMLSolarisDropdownElement;
         "solaris-flex": HTMLSolarisFlexElement;
+        "solaris-navbar": HTMLSolarisNavbarElement;
         "solaris-row": HTMLSolarisRowElement;
         "solaris-typography": HTMLSolarisTypographyElement;
     }
@@ -150,7 +160,6 @@ declare namespace LocalJSX {
     interface SolarisAvatar {
         "backgroundColor"?: ColorScheme;
         "backgroundImage"?: string;
-        "content"?: string;
         "size"?: Size;
         "variant"?: 'rectangle' | 'circle' | 'square';
     }
@@ -179,15 +188,19 @@ declare namespace LocalJSX {
         "colorScheme"?: ColorScheme1;
         "decorated"?: boolean;
         "left"?: UnitString1;
-        "onClick"?: (close: boolean) => void;
         "top"?: UnitString1;
     }
     interface SolarisFlex {
         "alignItems"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
-        "flexDirection"?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
-        "flexWrap"?: 'nowrap' | 'wrap' | 'wrap-reverse';
+        "direction"?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
         "gap"?: UnitString1;
         "justifyContent"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
+        "wrap"?: 'nowrap' | 'wrap' | 'wrap-reverse';
+    }
+    interface SolarisNavbar {
+        "colorScheme"?: ColorScheme1;
+        "decoration"?: 'top' | 'left' | 'right' | 'bottom' | 'none';
+        "position"?: 'fixed' | 'relative';
     }
     interface SolarisRow {
         "gap"?: UnitString1;
@@ -209,6 +222,7 @@ declare namespace LocalJSX {
         "solaris-column": SolarisColumn;
         "solaris-dropdown": SolarisDropdown;
         "solaris-flex": SolarisFlex;
+        "solaris-navbar": SolarisNavbar;
         "solaris-row": SolarisRow;
         "solaris-typography": SolarisTypography;
     }
@@ -224,6 +238,7 @@ declare module "@stencil/core" {
             "solaris-column": LocalJSX.SolarisColumn & JSXBase.HTMLAttributes<HTMLSolarisColumnElement>;
             "solaris-dropdown": LocalJSX.SolarisDropdown & JSXBase.HTMLAttributes<HTMLSolarisDropdownElement>;
             "solaris-flex": LocalJSX.SolarisFlex & JSXBase.HTMLAttributes<HTMLSolarisFlexElement>;
+            "solaris-navbar": LocalJSX.SolarisNavbar & JSXBase.HTMLAttributes<HTMLSolarisNavbarElement>;
             "solaris-row": LocalJSX.SolarisRow & JSXBase.HTMLAttributes<HTMLSolarisRowElement>;
             "solaris-typography": LocalJSX.SolarisTypography & JSXBase.HTMLAttributes<HTMLSolarisTypographyElement>;
         }

@@ -1,4 +1,4 @@
-import { Component, Element, Prop, h } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core';
 import { Color } from '../../types/common/color-scheme';
 import { FontFamily } from '../../types/text/font-family';
 import { TitleType } from '../../types/text/title';
@@ -21,6 +21,7 @@ export class SolarisTypography {
   @Prop() weight?: FontWeight = 'regular';
 
   render() {
+    console.log(classes(this.colorScheme, this.fontFamily, this.underline && 'underline'));
     return (
       <this.variant class={classes(this.colorScheme, this.fontFamily, this.underline && 'underline')}>
         <slot />
