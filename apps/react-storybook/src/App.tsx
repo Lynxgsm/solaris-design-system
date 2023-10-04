@@ -1,18 +1,9 @@
-import {
-  defineCustomElements,
-  SolarisListTile,
-  SolarisTypography,
-} from "../../../packages/react-library";
+import { SolarisButton, defineCustomElements } from "solaris-react";
 
 defineCustomElements();
 
 const App = () => {
-  return (
-    <SolarisListTile>
-      <SolarisTypography fontFamily="montserrat">Hello World</SolarisTypography>
-      <SolarisTypography slot="trailing">Font Family</SolarisTypography>
-    </SolarisListTile>
-  );
+  return <SolarisButton>Hello World</SolarisButton>;
 };
 
 export default App;

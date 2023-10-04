@@ -1,12 +1,17 @@
 {
-  "name": "root",
   "private": true,
-  "devDependencies": {
-    "@types/node": "^20.8.0",
-    "lerna": "^7.3.0",
-    "typescript": "^5.2.2"
-  },
   "scripts": {
-    "build": "lerna run build"
-  }
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "prettier": "^3.0.3",
+    "tsconfig": "workspace:*",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.6.10",
+  "name": "design-system"
 }
