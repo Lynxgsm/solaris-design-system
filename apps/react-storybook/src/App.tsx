@@ -1,7 +1,7 @@
-import { defineCustomElements, SolarisAvatar } from "@solaris/react";
+import { defineCustomElements, SolarisButton } from "@solaris/react";
 
 defineCustomElements();
 
 export default function App() {
-  return <SolarisAvatar>Hello</SolarisAvatar>;
+  return <SolarisButton>Hello from button</SolarisButton>;
 }
