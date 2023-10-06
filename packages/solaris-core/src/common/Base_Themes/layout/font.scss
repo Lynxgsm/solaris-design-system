@@ -228,7 +228,7 @@
   }
 }
 
-.body {
+.p {
   &.roboto {
     @extend .roboto;
   }
@@ -329,7 +329,7 @@
 }
 
 .link {
-  @extend .body;
+  @extend .p;
   cursor: pointer;
   display: inline;
 }
