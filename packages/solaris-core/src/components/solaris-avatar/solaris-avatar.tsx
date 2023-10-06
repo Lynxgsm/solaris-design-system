@@ -17,7 +17,7 @@ export class SolarisAvatar {
     return (
       <solaris-flex
         class={classes('avatar', `avatar-${this.backgroundColor}`, `avatar-${this.variant}`)}
-        style={{ backgrou@ndImage: `url(${this.backgroundImage})` }}
+        style={{ backgroundImage: `url(${this.backgroundImage})` }}
         justifyContent="center"
         alignItems="center"
       >
