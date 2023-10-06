@@ -1,31 +1,39 @@
-name: Build TurboRepo Workspace
+name: Build on main push
 
 on:
   push:
-    branches:
-      - main # Replace with the branch you want to trigger the build
+    branches: ["main"]
+  pull_request:
+    types: [opened, synchronize]
 
 jobs:
   build:
+    name: Build and Test
+    timeout-minutes: 15
     runs-on: ubuntu-latest
+    # To use Remote Caching, uncomment the next lines and follow the steps below.
+    # env:
+    #  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+    #  TURBO_TEAM: ${{ vars.TURBO_TEAM }}
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Check out code
+        uses: actions/checkout@v3
         with:
-          node-version: "18" # Change to your desired Node.js version
+          fetch-depth: 2
 
-      - name: Install TurboCli
-        run: npm install -g @turbo/turbo-cli
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.32.2
 
-      - name: Build TurboRepo Workspace
-        run: |
-          # Navigate to the TurboRepo workspace directory
-          cd path/to/your/turborepo/workspace
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "pnpm"
 
-          # Install dependencies and build
-          turbo dev install
-          turbo build
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
+        run: pnpm build
