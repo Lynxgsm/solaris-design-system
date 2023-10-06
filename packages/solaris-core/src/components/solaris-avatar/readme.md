@@ -7,12 +7,12 @@
 
 ## Properties
 
-| Property          | Attribute          | Description | Type                                                                                    | Default     |
-| ----------------- | ------------------ | ----------- | --------------------------------------------------------------------------------------- | ----------- |
-| `backgroundColor` | `background-color` |             | `"black" \| "cobalt" \| "comet" \| "danger" \| "nebula-blue" \| "supernova" \| "white"` | `undefined` |
-| `backgroundImage` | `background-image` |             | `string`                                                                                | `undefined` |
-| `size`            | `size`             |             | `"default" \| "lg" \| "md" \| "sm" \| "xl" \| "xs" \| "xxl"`                            | `undefined` |
-| `variant`         | `variant`          |             | `"circle" \| "rectangle" \| "square"`                                                   | `undefined` |
+| Property          | Attribute          | Description | Type                                                                                    | Default       |
+| ----------------- | ------------------ | ----------- | --------------------------------------------------------------------------------------- | ------------- |
+| `backgroundColor` | `background-color` |             | `"black" \| "cobalt" \| "comet" \| "danger" \| "nebula-blue" \| "supernova" \| "white"` | `'supernova'` |
+| `backgroundImage` | `background-image` |             | `string`                                                                                | `undefined`   |
+| `size`            | `size`             |             | `"default" \| "lg" \| "md" \| "sm" \| "xl" \| "xs" \| "xxl"`                            | `'md'`        |
+| `variant`         | `variant`          |             | `"circle" \| "rectangle" \| "square"`                                                   | `'circle'`    |
 
 
 ## Dependencies

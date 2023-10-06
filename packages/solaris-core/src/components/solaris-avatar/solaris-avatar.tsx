@@ -9,25 +9,21 @@ import { Size } from '../../types/common/size';
   shadow: true,
 })
 export class SolarisAvatar {
-  @Prop() backgroundColor?: ColorScheme;
+  @Prop() backgroundColor?: ColorScheme = 'supernova';
   @Prop() backgroundImage?: string;
-  @Prop() variant?: 'rectangle' | 'circle' | 'square';
-  @Prop() size?: Size;
+  @Prop() variant?: 'rectangle' | 'circle' | 'square' = 'circle';
+  @Prop() size?: Size = 'md';
   render() {
     return (
       <solaris-flex
-        class={classes('avatar', `avatar-${this.backgroundColor || 'supernova'}`, `avatar-${this.variant}`)}
-        style={{ backgroundImage: `url(${this.backgroundImage})` }}
+        class={classes('avatar', `avatar-${this.backgroundColor}`, `avatar-${this.variant}`)}
+        style={{ backgrou@ndImage: `url(${this.backgroundImage})` }}
         justifyContent="center"
         alignItems="center"
       >
-        <strong
-          class={classes(`text-${this.size || 'm'}`, {
-            ['visibility-none']: this.backgroundImage,
-          })}
-        >
+        <solaris-typography variant="body" class={classes(`text-${this.size}`, `${this.backgroundImage ? 'visibility-none' : ''}`)}>
           <slot />
-        </strong>
+        </solaris-typography>
       </solaris-flex>
     );
   }
