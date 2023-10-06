@@ -7,15 +7,15 @@
 
 ## Properties
 
-| Property        | Attribute        | Description | Type                | Default       |
-| --------------- | ---------------- | ----------- | ------------------- | ------------- |
-| `arrowPosition` | `arrow-position` |             | `"left" \| "right"` | `'left'`      |
-| `backdrop`      | `backdrop`       |             | `boolean`           | `undefined`   |
-| `button`        | --               |             | `Element`           | `undefined`   |
-| `colorScheme`   | `color-scheme`   |             | `ColorScheme`       | `'supernova'` |
-| `decorated`     | `decorated`      |             | `boolean`           | `undefined`   |
-| `left`          | `left`           |             | `UnitString`        | `undefined`   |
-| `top`           | `top`            |             | `UnitString`        | `undefined`   |
+| Property        | Attribute        | Description | Type                                                                                                                                                       | Default       |
+| --------------- | ---------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| `arrowPosition` | `arrow-position` |             | `"left" \| "right"`                                                                                                                                        | `'left'`      |
+| `backdrop`      | `backdrop`       |             | `boolean`                                                                                                                                                  | `undefined`   |
+| `button`        | --               |             | `Element`                                                                                                                                                  | `undefined`   |
+| `colorScheme`   | `color-scheme`   |             | `"black" \| "cobalt" \| "comet" \| "danger" \| "nebula-blue" \| "supernova" \| "white"`                                                                    | `'supernova'` |
+| `decorated`     | `decorated`      |             | `boolean`                                                                                                                                                  | `undefined`   |
+| `left`          | `left`           |             | `"auto" \| "fit-content" \| "max-content" \| `${number}%` \| `${number}em` \| `${number}px` \| `${number}rem` \| `${number}vh` \| `${number}vw` \| number` | `undefined`   |
+| `top`           | `top`            |             | `"auto" \| "fit-content" \| "max-content" \| `${number}%` \| `${number}em` \| `${number}px` \| `${number}rem` \| `${number}vh` \| `${number}vw` \| number` | `undefined`   |
 
 
 ## Dependencies

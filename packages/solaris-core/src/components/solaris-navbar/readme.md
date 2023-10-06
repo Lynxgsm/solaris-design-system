@@ -7,11 +7,11 @@
 
 ## Properties
 
-| Property      | Attribute      | Description | Type                                               | Default       |
-| ------------- | -------------- | ----------- | -------------------------------------------------- | ------------- |
-| `colorScheme` | `color-scheme` |             | `ColorScheme`                                      | `'supernova'` |
-| `decoration`  | `decoration`   |             | `"bottom" \| "left" \| "none" \| "right" \| "top"` | `'none'`      |
-| `position`    | `position`     |             | `"fixed" \| "relative"`                            | `'relative'`  |
+| Property      | Attribute      | Description | Type                                                                                    | Default       |
+| ------------- | -------------- | ----------- | --------------------------------------------------------------------------------------- | ------------- |
+| `colorScheme` | `color-scheme` |             | `"black" \| "cobalt" \| "comet" \| "danger" \| "nebula-blue" \| "supernova" \| "white"` | `'supernova'` |
+| `decoration`  | `decoration`   |             | `"bottom" \| "left" \| "none" \| "right" \| "top"`                                      | `'none'`      |
+| `position`    | `position`     |             | `"fixed" \| "relative"`                                                                 | `'relative'`  |
 
 
 ----------------------------------------------
