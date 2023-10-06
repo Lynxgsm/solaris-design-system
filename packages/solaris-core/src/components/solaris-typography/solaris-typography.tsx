@@ -14,16 +14,15 @@ import { classes } from '../../common/Base_Core/format/classes/classes';
 export class SolarisTypography {
   @Prop() colorScheme?: Color = 'black';
   @Prop() fontFamily?: FontFamily = 'roboto';
-  @Prop() variant?: 'body' | TitleType | 'link' | 'caption' | 'subtitle' | 'small' = 'body';
+  @Prop() variant?: 'p' | TitleType | 'link' | 'caption' | 'subtitle' | 'small' = 'p';
   @Prop() underline?: boolean;
   @Prop() width?: UnitString;
   @Prop() truncated?: boolean;
   @Prop() weight?: FontWeight = 'regular';
 
   render() {
-    console.log(classes(this.colorScheme, this.fontFamily, this.underline && 'underline'));
     return (
-      <this.variant class={classes(this.colorScheme, this.fontFamily, this.underline && 'underline')}>
+      <this.variant class={classes(this.colorScheme, this.fontFamily, this.underline ? 'underline' : '')}>
         <slot />
       </this.variant>
     );

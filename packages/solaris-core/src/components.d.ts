@@ -127,7 +127,7 @@ export namespace Components {
         "fontFamily"?: FontFamily;
         "truncated"?: boolean;
         "underline"?: boolean;
-        "variant"?: 'body' | TitleType | 'link' | 'caption' | 'subtitle' | 'small';
+        "variant"?: 'p' | TitleType | 'link' | 'caption' | 'subtitle' | 'small';
         "weight"?: FontWeight;
         "width"?: UnitString;
     }
@@ -355,7 +355,7 @@ declare namespace LocalJSX {
         "fontFamily"?: FontFamily;
         "truncated"?: boolean;
         "underline"?: boolean;
-        "variant"?: 'body' | TitleType | 'link' | 'caption' | 'subtitle' | 'small';
+        "variant"?: 'p' | TitleType | 'link' | 'caption' | 'subtitle' | 'small';
         "weight"?: FontWeight;
         "width"?: UnitString;
     }

@@ -21,7 +21,7 @@ export class SolarisAvatar {
         justifyContent="center"
         alignItems="center"
       >
-        <solaris-typography variant="body" class={classes(`text-${this.size}`, `${this.backgroundImage ? 'visibility-none' : ''}`)}>
+        <solaris-typography class={classes(`text-${this.size}`, `${this.backgroundImage ? 'visibility-none' : ''}`)}>
           <slot />
         </solaris-typography>
       </solaris-flex>
