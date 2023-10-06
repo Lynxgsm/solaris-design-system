@@ -20,11 +20,13 @@
 ### Depends on
 
 - [solaris-flex](../solaris-flex)
+- [solaris-typography](../solaris-typography)
 
 ### Graph
 ```mermaid
 graph TD;
   solaris-avatar --> solaris-flex
+  solaris-avatar --> solaris-typography
   style solaris-avatar fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

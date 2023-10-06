@@ -23,6 +23,7 @@
 ### Used by
 
  - [solaris-alert](../solaris-alert)
+ - [solaris-avatar](../solaris-avatar)
  - [solaris-blockquote](../solaris-blockquote)
  - [solaris-list-tile](../solaris-list-tile)
  - [solaris-stepper](../solaris-stepper)
@@ -31,6 +32,7 @@
 ```mermaid
 graph TD;
   solaris-alert --> solaris-typography
+  solaris-avatar --> solaris-typography
   solaris-blockquote --> solaris-typography
   solaris-list-tile --> solaris-typography
   solaris-stepper --> solaris-typography
