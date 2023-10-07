@@ -1,7 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { defineCustomElements, SolarisButton } from "@solaris/react";
-
-defineCustomElements();
+import { SolarisButton } from "@solaris/react";
 
 const meta = {
   title: "Buttons/Button",
@@ -38,7 +36,7 @@ export const Cobalt: Story = {
 export const Comet: Story = {
   args: {
     children: "Button",
-    colorScheme: "comet",
+    colorScheme: "cobalt",
   },
 };
 

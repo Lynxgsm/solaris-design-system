@@ -11,7 +11,7 @@ import {
 defineCustomElements();
 
 const meta = {
-  title: "Containers/SolarisCard",
+  title: "Containers/Card",
   component: SolarisCard,
   parameters: {},
   tags: ["autodocs"],
