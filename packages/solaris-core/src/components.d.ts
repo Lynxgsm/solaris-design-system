@@ -76,6 +76,7 @@ export namespace Components {
         "radius": Size1;
     }
     interface SolarisColumn {
+        "col": Size1;
         "gap": UnitString1;
     }
     interface SolarisDropdown {
@@ -304,6 +305,7 @@ declare namespace LocalJSX {
         "radius"?: Size1;
     }
     interface SolarisColumn {
+        "col"?: Size1;
         "gap"?: UnitString1;
     }
     interface SolarisDropdown {

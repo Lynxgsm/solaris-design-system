@@ -9,6 +9,7 @@
 
 | Property | Attribute | Description | Type                                                                                                                                                       | Default     |
 | -------- | --------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| `col`    | `col`     |             | `"default" \| "lg" \| "md" \| "sm" \| "xl" \| "xs" \| "xxl"`                                                                                               | `'md'`      |
 | `gap`    | `gap`     |             | `"auto" \| "fit-content" \| "max-content" \| `${number}%` \| `${number}em` \| `${number}px` \| `${number}rem` \| `${number}vh` \| `${number}vw` \| number` | `undefined` |
 
 

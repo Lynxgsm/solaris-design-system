@@ -15,14 +15,14 @@ export class SolarisTypography {
   @Prop() colorScheme?: Color = 'black';
   @Prop() fontFamily?: FontFamily = 'roboto';
   @Prop() variant?: 'p' | TitleType | 'link' | 'caption' | 'subtitle' | 'small' = 'p';
-  @Prop() underline?: boolean;
-  @Prop() width?: UnitString;
-  @Prop() truncated?: boolean;
+  @Prop() underline?: boolean = false;
+  @Prop() width?: UnitString = 'auto';
+  @Prop() truncated?: boolean = false;
   @Prop() weight?: FontWeight = 'regular';
 
   render() {
     return (
-      <this.variant class={classes(this.colorScheme, this.fontFamily, this.underline ? 'underline' : '')}>
+      <this.variant class={classes(this.colorScheme, this.fontFamily, this.underline ? 'underline' : '', this.weight, this.truncated ? 'truncated' : '')}>
         <slot />
       </this.variant>
     );
