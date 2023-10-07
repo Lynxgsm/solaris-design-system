@@ -12,6 +12,7 @@ export const config: Config = {
     },
     reactOutputTarget({
       componentCorePackage: 'solaris-core',
+      includeDefineCustomElements: true,
       proxiesFile: '../solaris-react/lib/components/stencil-generated/index.ts',
     }),
   ],

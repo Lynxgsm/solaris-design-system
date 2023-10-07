@@ -2,6 +2,8 @@
 /* tslint:disable */
 /* auto-generated react proxies */
 import { createReactComponent } from './react-component-lib';
+import { defineCustomElements } from 'solaris-core/loader';
+defineCustomElements();
 export const SolarisAlert = /*@__PURE__*/ createReactComponent('solaris-alert');
 export const SolarisAvatar = /*@__PURE__*/ createReactComponent('solaris-avatar');
 export const SolarisBadge = /*@__PURE__*/ createReactComponent('solaris-badge');

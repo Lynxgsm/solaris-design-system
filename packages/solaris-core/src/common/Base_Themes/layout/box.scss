@@ -1,155 +1,244 @@
 @import '../../Base_Breakpoints/breakpoints.scss';
 @import '../spacing.scss';
 
-.d-grid{ display: grid; }
-.d-flex{ display: flex; }
-.d-block{ display: block; }
-.d-inline-block{ display: inline-block; }
-.d-none{ display: none; }
+.d-grid {
+  display: grid;
+}
+.d-flex {
+  display: flex;
+}
+.d-block {
+  display: block;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.d-none {
+  display: none;
+}
 
-.direction-column{ flex-direction: column; }
-.direction-column-reverse{ flex-direction: column; }
-.direction-row-reverse{ flex-direction: column; }
-.direction-row{ flex-direction: row; }
+.direction-column {
+  flex-direction: column;
+}
+.direction-column-reverse {
+  flex-direction: column;
+}
+.direction-row-reverse {
+  flex-direction: column;
+}
+.direction-row {
+  flex-direction: row;
+}
 
-.border-none{ border-radius: $space-0; }
-.border-xxl{ border-radius: $space-14; }
-.border-xl{ border-radius: $space-12; }
-.border-l{ border-radius: $space-10; }
-.border-m{ border-radius: $space-8;}
-.border-s{ border-radius: $space-6; }
-.border-xs{ border-radius: $space-4; }
+.border-none {
+  border-radius: $space-0;
+}
+.border-xxl {
+  border-radius: $space-14;
+}
+.border-xl {
+  border-radius: $space-12;
+}
+.border-l {
+  border-radius: $space-10;
+}
+.border-m {
+  border-radius: $space-8;
+}
+.border-s {
+  border-radius: $space-6;
+}
+.border-xs {
+  border-radius: $space-4;
+}
 
 .row > * {
-    box-sizing: border-box;
-    flex-shrink: 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
-.col { flex: 1 0 0%; }
+.col {
+  flex: 1 0 0%;
+}
 
 .col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    flex: 0 0 auto;
+    width: calc(100% / (12 / $i));
+  }
+}
+
+@media (max-width: $bp-xl) {
+  .d-grid-xl {
+    display: grid;
+  }
+  .d-flex-xl {
+    display: flex;
+  }
+  .d-block-xl {
+    display: block;
+  }
+  .d-inline-block-xl {
+    display: inline-block;
+  }
+  .d-none-xl {
+    display: none;
+  }
+
+  .col-xl {
+    flex: 1 0 0%;
+  }
+
+  .col-xl-auto {
     flex: 0 0 auto;
     width: auto;
+  }
+
+  @for $i from 1 through 12 {
+    .col-xl-#{$i} {
+      flex: 0 0 auto;
+      width: calc(100% / (12 / $i));
+    }
+  }
 }
 
-@for $i from 1 through 12{
-    .col-#{$i} {
-        flex: 0 0 auto;
-        width: calc(100% / (12 / $i));
+@media (max-width: $bp-l) {
+  .d-grid-l {
+    display: grid;
+  }
+  .d-flex-l {
+    display: flex;
+  }
+  .d-block-l {
+    display: block;
+  }
+  .d-inline-block-xl {
+    display: inline-block;
+  }
+  .d-none-l {
+    display: none;
+  }
+
+  .col-l {
+    flex: 1 0 0%;
+  }
+
+  .col-l-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  @for $i from 1 through 12 {
+    .col-l-#{$i} {
+      flex: 0 0 auto;
+      width: calc(100% / (12 / $i));
     }
-}
-
-@media (max-width: $bp-xl) { 
-
-    .d-grid-xl{ display: grid; }
-    .d-flex-xl{ display: flex; }
-    .d-block-xl{ display: block; }
-    .d-inline-block-xl{ display: inline-block; }
-    .d-none-xl{ display: none; }
-
-    .col-xl { flex: 1 0 0%; }
-
-    .col-xl-auto {
-        flex: 0 0 auto;
-        width: auto;
-    }
-      
-    @for $i from 1 through 12{
-        .col-xl-#{$i} {
-            flex: 0 0 auto;
-            width: calc(100% / (12 / $i));
-        }
-    }
-}
-
-@media (max-width: $bp-l) { 
-
-    .d-grid-l{ display: grid; }
-    .d-flex-l{ display: flex; }
-    .d-block-l{ display: block; }
-    .d-inline-block-xl{ display: inline-block; }
-    .d-none-l{ display: none; }
-
-    .col-l { flex: 1 0 0%; } 
-
-    .col-l-auto {
-        flex: 0 0 auto;
-        width: auto;
-    }
-      
-    @for $i from 1 through 12{
-        .col-l-#{$i} {
-            flex: 0 0 auto;
-            width: calc(100% / (12 / $i));
-        }
-    }
+  }
 }
 
 @media (max-width: $bp-m) {
+  .d-grid-m {
+    display: grid;
+  }
+  .d-flex-m {
+    display: flex;
+  }
+  .d-block-m {
+    display: block;
+  }
+  .d-inline-block-m {
+    display: inline-block;
+  }
+  .d-none-m {
+    display: none;
+  }
 
-    .d-grid-m{ display: grid; }
-    .d-flex-m{ display: flex; }
-    .d-block-m{ display: block; }
-    .d-inline-block-m{ display: inline-block; }
-    .d-none-m{ display: none; }
+  .col-m {
+    flex: 1 0 0%;
+  }
 
-    .col-m { flex: 1 0 0%; }
+  .col-m-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
 
-    .col-m-auto {
-        flex: 0 0 auto;
-        width: auto;
+  @for $i from 1 through 12 {
+    .col-m-#{$i} {
+      flex: 0 0 auto;
+      width: calc(100% / (12 / $i));
     }
-      
-    @for $i from 1 through 12{
-        .col-m-#{$i} {
-            flex: 0 0 auto;
-            width: calc(100% / (12 / $i));
-        }
-    }
+  }
 }
 
 @media (max-width: $bp-s) {
+  .d-grid-s {
+    display: grid;
+  }
+  .d-flex-s {
+    display: flex;
+  }
+  .d-block-s {
+    display: block;
+  }
+  .d-inline-block-s {
+    display: inline-block;
+  }
+  .d-none-s {
+    display: none;
+  }
 
-    .d-grid-s{ display: grid; }
-    .d-flex-s{ display: flex; }
-    .d-block-s{ display: block; }
-    .d-inline-block-s{ display: inline-block; }
-    .d-none-s{ display: none; }
+  .col-s {
+    flex: 1 0 0%;
+  }
 
-    .col-s { flex: 1 0 0%; }
+  .col-s-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
 
-    .col-s-auto {
-        flex: 0 0 auto;
-        width: auto;
+  @for $i from 1 through 12 {
+    .col-s-#{$i} {
+      flex: 0 0 auto;
+      width: calc(100% / (12 / $i));
     }
-      
-    @for $i from 1 through 12{
-        .col-s-#{$i} {
-            flex: 0 0 auto;
-            width: calc(100% / (12 / $i));
-        }
-    }
+  }
 }
 
 @media (max-width: $bp-xs) {
+  .d-grid-xs {
+    display: grid;
+  }
+  .d-flex-xs {
+    display: flex;
+  }
+  .d-block-xs {
+    display: block;
+  }
+  .d-inline-block-xs {
+    display: inline-block;
+  }
+  .d-none-xs {
+    display: none;
+  }
 
-    .d-grid-xs{ display: grid; }
-    .d-flex-xs{ display: flex; }
-    .d-block-xs{ display: block; }
-    .d-inline-block-xs{ display: inline-block; }
-    .d-none-xs{ display: none; }
-    
-    .col-xs { flex: 1 0 0%; }
+  .col-xs {
+    flex: 1 0 0%;
+  }
 
-    .col-xs-auto {
-        flex: 0 0 auto;
-        width: auto;
+  .col-xs-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  @for $i from 1 through 12 {
+    .col-xs-#{$i} {
+      flex: 0 0 auto;
+      width: calc(100% / (12 / $i));
     }
-      
-    @for $i from 1 through 12{
-        .col-xs-#{$i} {
-            flex: 0 0 auto;
-            width: calc(100% / (12 / $i));
-        }
-    }
+  }
 }

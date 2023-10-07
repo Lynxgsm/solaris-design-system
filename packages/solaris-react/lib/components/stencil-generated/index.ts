@@ -5,8 +5,9 @@ import { createReactComponent } from './react-component-lib';
 
 import type { JSX } from 'solaris-core';
 
+import { defineCustomElements } from 'solaris-core/loader';
 
-
+defineCustomElements();
 export const SolarisAlert = /*@__PURE__*/createReactComponent<JSX.SolarisAlert, HTMLSolarisAlertElement>('solaris-alert');
 export const SolarisAvatar = /*@__PURE__*/createReactComponent<JSX.SolarisAvatar, HTMLSolarisAvatarElement>('solaris-avatar');
 export const SolarisBadge = /*@__PURE__*/createReactComponent<JSX.SolarisBadge, HTMLSolarisBadgeElement>('solaris-badge');
