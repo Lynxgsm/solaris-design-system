@@ -1,0 +1,28 @@
+{
+  "entries": [
+    "components/solaris-alert/solaris-alert.js",
+    "components/solaris-avatar/solaris-avatar.js",
+    "components/solaris-badge/solaris-badge.js",
+    "components/solaris-block/solaris-block.js",
+    "components/solaris-blockquote/solaris-blockquote.js",
+    "components/solaris-button/solaris-button.js",
+    "components/solaris-card/solaris-card.js",
+    "components/solaris-column/solaris-column.js",
+    "components/solaris-dropdown/solaris-dropdown.js",
+    "components/solaris-flex/solaris-flex.js",
+    "components/solaris-icon/solaris-icon.js",
+    "components/solaris-list-tile/solaris-list-tile.js",
+    "components/solaris-navbar/solaris-navbar.js",
+    "components/solaris-row/solaris-row.js",
+    "components/solaris-skeleton/solaris-skeleton.js",
+    "components/solaris-stepper/solaris-stepper.js",
+    "components/solaris-typography/solaris-typography.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "4.4.0",
+    "typescriptVersion": "5.2.2"
+  },
+  "collections": [],
+  "bundles": []
+}
