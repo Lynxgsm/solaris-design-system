@@ -25,7 +25,7 @@ export class SolarisBlock {
         "mutable": false,
         "complexType": {
           "original": "Breakpoints",
-          "resolved": "\"hide-on-l\" | \"hide-on-m\" | \"hide-on-s\" | \"hide-on-xl\" | \"hide-on-xs\" | \"show-on-l\" | \"show-on-m\" | \"show-on-s\" | \"show-on-xl\" | \"show-on-xs\"",
+          "resolved": "\"hide-on-lg\" | \"hide-on-md\" | \"hide-on-sm\" | \"hide-on-xl\" | \"hide-on-xs\" | \"show-on-lg\" | \"show-on-md\" | \"show-on-sm\" | \"show-on-xl\" | \"show-on-xs\"",
           "references": {
             "Breakpoints": {
               "location": "import",

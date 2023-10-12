@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property      | Attribute     | Description | Type                                                                                                                                                     | Default     |
-| ------------- | ------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| `breakpoints` | `breakpoints` |             | `"hide-on-l" \| "hide-on-m" \| "hide-on-s" \| "hide-on-xl" \| "hide-on-xs" \| "show-on-l" \| "show-on-m" \| "show-on-s" \| "show-on-xl" \| "show-on-xs"` | `undefined` |
+| Property      | Attribute     | Description | Type                                                                                                                                                           | Default     |
+| ------------- | ------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| `breakpoints` | `breakpoints` |             | `"hide-on-lg" \| "hide-on-md" \| "hide-on-sm" \| "hide-on-xl" \| "hide-on-xs" \| "show-on-lg" \| "show-on-md" \| "show-on-sm" \| "show-on-xl" \| "show-on-xs"` | `undefined` |
 
 
 ## Dependencies

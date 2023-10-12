@@ -16,13 +16,14 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     children: "Button",
+    size: "lg",
   },
 };
 
 export const Supernova: Story = {
   args: {
     children: "Button",
-    colorScheme: "supernova",
+    colorScheme: "cobalt",
   },
 };
 

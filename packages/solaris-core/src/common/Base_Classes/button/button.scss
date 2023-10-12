@@ -23,14 +23,14 @@
   &.button-xs {
     @extend .text-xs;
   }
-  &.button-s {
-    @extend .text-s;
+  &.button-sm {
+    @extend .text-sm;
   }
-  &.button-m {
-    @extend .text-m;
+  &.button-md {
+    @extend .text-md;
   }
-  &.button-l {
-    @extend .text-l;
+  &.button-lg {
+    @extend .text-lg;
   }
   &.button-xl {
     @extend .text-xl;

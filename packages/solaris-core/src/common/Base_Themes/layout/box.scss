@@ -39,13 +39,13 @@
 .border-xl {
   border-radius: $space-12;
 }
-.border-l {
+.border-lg {
   border-radius: $space-10;
 }
-.border-m {
+.border-md {
   border-radius: $space-8;
 }
-.border-s {
+.border-sm {
   border-radius: $space-6;
 }
 .border-xs {
@@ -107,102 +107,102 @@
   }
 }
 
-@media (max-width: $bp-l) {
-  .d-grid-l {
+@media (max-width: $bp-lg) {
+  .d-grid-lg {
     display: grid;
   }
-  .d-flex-l {
+  .d-flex-lg {
     display: flex;
   }
-  .d-block-l {
+  .d-block-lg {
     display: block;
   }
   .d-inline-block-xl {
     display: inline-block;
   }
-  .d-none-l {
+  .d-none-lg {
     display: none;
   }
 
-  .col-l {
+  .col-lg {
     flex: 1 0 0%;
   }
 
-  .col-l-auto {
+  .col-lg-auto {
     flex: 0 0 auto;
     width: auto;
   }
 
   @for $i from 1 through 12 {
-    .col-l-#{$i} {
+    .col-lg-#{$i} {
       flex: 0 0 auto;
       width: calc(100% / (12 / $i));
     }
   }
 }
 
-@media (max-width: $bp-m) {
-  .d-grid-m {
+@media (max-width: $bp-md) {
+  .d-grid-md {
     display: grid;
   }
-  .d-flex-m {
+  .d-flex-md {
     display: flex;
   }
-  .d-block-m {
+  .d-block-md {
     display: block;
   }
-  .d-inline-block-m {
+  .d-inline-block-md {
     display: inline-block;
   }
-  .d-none-m {
+  .d-none-md {
     display: none;
   }
 
-  .col-m {
+  .col-md {
     flex: 1 0 0%;
   }
 
-  .col-m-auto {
+  .col-md-auto {
     flex: 0 0 auto;
     width: auto;
   }
 
   @for $i from 1 through 12 {
-    .col-m-#{$i} {
+    .col-md-#{$i} {
       flex: 0 0 auto;
       width: calc(100% / (12 / $i));
     }
   }
 }
 
-@media (max-width: $bp-s) {
-  .d-grid-s {
+@media (max-width: $bp-sm) {
+  .d-grid-sm {
     display: grid;
   }
-  .d-flex-s {
+  .d-flex-sm {
     display: flex;
   }
-  .d-block-s {
+  .d-block-sm {
     display: block;
   }
-  .d-inline-block-s {
+  .d-inline-block-sm {
     display: inline-block;
   }
-  .d-none-s {
+  .d-none-sm {
     display: none;
   }
 
-  .col-s {
+  .col-sm {
     flex: 1 0 0%;
   }
 
-  .col-s-auto {
+  .col-sm-auto {
     flex: 0 0 auto;
     width: auto;
   }
 
   @for $i from 1 through 12 {
-    .col-s-#{$i} {
+    .col-sm-#{$i} {
       flex: 0 0 auto;
       width: calc(100% / (12 / $i));
     }

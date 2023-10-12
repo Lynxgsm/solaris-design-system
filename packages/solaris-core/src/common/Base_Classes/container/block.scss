@@ -7,16 +7,16 @@
     @extend .d-none-xl, .d-block;
   }
 
-  &.hide-on-l {
-    @extend .d-none-l, .d-block;
+  &.hide-on-lg {
+    @extend .d-none-lg, .d-block;
   }
 
-  &.hide-on-m {
-    @extend .d-none-m, .d-block;
+  &.hide-on-md {
+    @extend .d-none-md, .d-block;
   }
 
-  &.hide-on-s {
-    @extend .d-none-s, .d-block;
+  &.hide-on-sm {
+    @extend .d-none-sm, .d-block;
   }
 
   &.hide-on-xs {
@@ -27,16 +27,16 @@
     @extend .d-block-xl, .d-none;
   }
 
-  &.show-on-l {
-    @extend .d-block-l, .d-none;
+  &.show-on-lg {
+    @extend .d-block-lg, .d-none;
   }
 
-  &.show-on-m {
-    @extend .d-block-m, .d-none;
+  &.show-on-md {
+    @extend .d-block-md, .d-none;
   }
 
-  &.show-on-s {
-    @extend .d-block-s, .d-none;
+  &.show-on-sm {
+    @extend .d-block-sm, .d-none;
   }
 
   &.show-on-xs {
