@@ -1,0 +1,1 @@
+{"version":3,"file":"variants.js","sourceRoot":"","sources":["../../src/constants/variants.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,aAAa,GAAG,CAAC,SAAS,EAAE,SAAS,EAAE,MAAM,CAAC,CAAC","sourcesContent":["export const VariantValues = ['default', 'outline', 'link'];\n"]}

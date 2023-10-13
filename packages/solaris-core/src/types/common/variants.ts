@@ -1,1 +1,1 @@
-export type Variant = 'default' | 'outline' | 'link'
+export type Variant = 'default' | 'outline' | 'link';

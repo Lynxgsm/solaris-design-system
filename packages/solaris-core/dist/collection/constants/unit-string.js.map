@@ -1,0 +1,1 @@
+{"version":3,"file":"unit-string.js","sourceRoot":"","sources":["../../src/constants/unit-string.ts"],"names":[],"mappings":"","sourcesContent":["export type UnitString = `${number}px` | `${number}%` | `${number}rem` | `${number}em` | `${number}vw` | `${number}vh` | number | 'max-content' | 'fit-content' | 'auto'"]}

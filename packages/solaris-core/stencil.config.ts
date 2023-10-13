@@ -4,11 +4,18 @@ import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'solaris-core',
+  globalStyle: 'src/global.scss',
   plugins: [sass()],
   outputTargets: [
     {
       type: 'dist',
       esmLoaderPath: '../loader',
+      copy: [
+        {
+          src: 'fonts',
+          dest: 'assets/fonts',
+        },
+      ],
     },
     reactOutputTarget({
       componentCorePackage: 'solaris-core',

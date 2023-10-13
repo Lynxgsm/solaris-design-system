@@ -1,0 +1,1 @@
+{"version":3,"file":"position.js","sourceRoot":"","sources":["../../src/constants/position.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,cAAc,GAAG,CAAC,KAAK,EAAE,QAAQ,EAAE,MAAM,EAAE,OAAO,CAAC,CAAC","sourcesContent":["export const PositionValues = ['top', 'bottom', 'left', 'right'];\n"]}
