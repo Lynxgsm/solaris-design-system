@@ -7,6 +7,7 @@ export default function App() {
       <SolarisTypography variant="h3" fontFamily="montserrat">
         Hello World
       </SolarisTypography>
+      <SolarisButton colorScheme="cobalt">Cobalt</SolarisButton>
     </SolarisBlock>
   );
 }

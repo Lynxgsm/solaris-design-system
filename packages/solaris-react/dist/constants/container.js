@@ -1,1 +1,1 @@
-export const ContainerValues = ['div', 'header', 'footer', 'section', 'aside', 'article', 'table', 'th', 'thead', 'td', 'tr', 'tfoot', 'tbody', 'main'];
+export const ContainerTypeValues = ['div', 'header', 'footer', 'section', 'aside', 'article', 'table', 'th', 'thead', 'td', 'tr', 'tfoot', 'tbody', 'main'];

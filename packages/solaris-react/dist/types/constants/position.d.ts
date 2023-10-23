@@ -1,2 +1,2 @@
-export declare const PositionValues: string[];
+export declare const PositionValues: readonly ["top", "bottom", "left", "right"];
 //# sourceMappingURL=position.d.ts.map

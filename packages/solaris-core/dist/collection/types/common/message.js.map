@@ -1,1 +1,0 @@
-{"version":3,"file":"message.js","sourceRoot":"","sources":["../../../src/types/common/message.ts"],"names":[],"mappings":"","sourcesContent":["export type MessageType = 'info-nebula' | 'error' | 'warning' | 'success' | 'info'"]}

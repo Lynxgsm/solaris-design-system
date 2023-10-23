@@ -1,1 +1,0 @@
-{"version":3,"file":"position.js","sourceRoot":"","sources":["../../../src/types/common/position.ts"],"names":[],"mappings":"","sourcesContent":["export type Position = 'top' | 'bottom' | 'left' | 'right'"]}

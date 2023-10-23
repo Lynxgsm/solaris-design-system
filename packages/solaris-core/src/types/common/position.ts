@@ -1,1 +1,3 @@
-export type Position = 'top' | 'bottom' | 'left' | 'right'
+import { PositionValues } from '../../constants/position';
+
+export type Position = (typeof PositionValues)[number];

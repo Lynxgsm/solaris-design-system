@@ -1,1 +1,3 @@
-export type Variant = 'default' | 'outline' | 'link';
+import { VariantValues } from '../../constants/variants';
+
+export type Variant = (typeof VariantValues)[number];
