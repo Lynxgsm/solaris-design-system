@@ -1,1 +1,3 @@
-export type Size = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'default';
+import Values from '../../../../constants';
+const { SizeValues } = Values;
+export type Size = (typeof SizeValues)[number];

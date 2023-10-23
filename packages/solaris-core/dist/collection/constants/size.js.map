@@ -1,1 +1,0 @@
-{"version":3,"file":"size.js","sourceRoot":"","sources":["../../src/constants/size.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,UAAU,GAAG,CAAC,IAAI,EAAE,IAAI,EAAE,IAAI,EAAE,IAAI,EAAE,IAAI,EAAE,KAAK,EAAE,SAAS,CAAC,CAAC","sourcesContent":["export const SizeValues = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'default'];\n"]}

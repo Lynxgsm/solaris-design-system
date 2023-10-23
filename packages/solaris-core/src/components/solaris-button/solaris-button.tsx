@@ -14,7 +14,7 @@ import { unitFormatter } from '../../common/Base_Core/format/unit/unit';
 export class SolarisButton {
   @Prop() variant: Variant = 'default';
   @Prop() colorScheme: ColorScheme = 'supernova';
-  @Prop() href: string;
+  @Prop() href: string = '';
   @Prop() radius: UnitString;
   @Prop() size: Size = 'md';
   @Prop() fullWidth: boolean;

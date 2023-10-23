@@ -3,5 +3,18 @@
     {
       "mode": "auto"
     }
-  ]
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "pnpm-lock.yaml": false,
+    "package-lock.json": true,
+    "packages/eslint-config-custom": true,
+    "packages/tsconfig": true
+  }
 }

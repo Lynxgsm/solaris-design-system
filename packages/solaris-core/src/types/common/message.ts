@@ -1,1 +1,4 @@
-export type MessageType = 'info-nebula' | 'error' | 'warning' | 'success' | 'info'
+import Values from '../../../../constants';
+const { MessageTypeValues } = Values;
+
+export type MessageType = (typeof MessageTypeValues)[number];

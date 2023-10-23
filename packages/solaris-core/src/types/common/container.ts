@@ -1,1 +1,4 @@
-export type ContainerType = 'div' | 'header' | 'footer' | 'section' | 'aside' | 'article' | 'table' | 'th' | 'thead' | 'td' | 'tr' | 'tfoot' | 'tbody' | 'main'
+import Values from '../../../../constants';
+const { ContainerTypeValues } = Values;
+
+export type ContainerType = (typeof ContainerTypeValues)[number];

@@ -1,3 +1,3 @@
-export declare const ColorSchemeValues: string[];
-export declare const ColorValues: string[];
+export declare const ColorSchemeValues: readonly ["danger", "supernova", "nebula-blue", "cobalt", "comet", "black", "white"];
+export declare const ColorValues: readonly ["danger", "supernova", "nebula-blue", "cobalt", "comet", "black", "white", "supernova", "supernova-dark", "nebula-blue-shades", "nebula-blue", "nebula-blue-dark", "cobalt-dark", "cobalt", "comet", "comet-dark", "additional-link", "success-dark", "success-light", "error-light", "error", "error-dark", "alert-light", "alert-dark", "info-light", "info-dark", "darkest", "darker", "neutral", "disabled-light", "light", "lighter", "white", "grey-1", "grey-2", "grey-3", "grey-4"];
 //# sourceMappingURL=color-scheme.d.ts.map

@@ -1,1 +1,0 @@
-{"version":3,"file":"weight.js","sourceRoot":"","sources":["../../../src/types/text/weight.ts"],"names":[],"mappings":"","sourcesContent":["export type FontWeight = 'bold' | 'semi-bold' | 'medium' | 'regular'"]}
