@@ -8,8 +8,8 @@
 
 ## COMMENT L'UTILISER
 
-- Installer les packages en faisant `npm install` à la racine du projet
-- Lancer ensuite la commande: `npm build` pour générer les paquets nécessaires
+- Installer les packages en faisant `pnpm install` à la racine du projet
+- Lancer ensuite la commande: `pnpm build` pour générer les paquets nécessaires
 
 ## COMMANDES DISPONIBLES
 
