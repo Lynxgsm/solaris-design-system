@@ -5,7 +5,6 @@ import { ContainerTypeValues } from "./container";
 import { MessageTypeValues } from "./message";
 import { PositionValues } from "./position";
 import { SizeValues } from "./size";
-
 export default {
   BreakpointValues,
   ColorSchemeValues,
@@ -16,3 +15,4 @@ export default {
   ContainerTypeValues,
   VariantValues,
 };
+//# sourceMappingURL=index.js.map

@@ -5,6 +5,7 @@ declare const _default: {
     MessageTypeValues: readonly ["info-nebula", "error", "warning", "success", "info"];
     PositionValues: readonly ["top", "bottom", "left", "right"];
     SizeValues: readonly ["xs", "sm", "md", "lg", "xl", "xxl", "default"];
+    ContainerTypeValues: readonly ["div", "header", "footer", "section", "aside", "article", "table", "th", "thead", "td", "tr", "tfoot", "tbody", "main"];
     VariantValues: readonly ["default", "outline", "link"];
 };
 export default _default;

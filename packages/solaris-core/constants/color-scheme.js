@@ -1,5 +1,4 @@
-export const ColorSchemeValues = ['danger', 'supernova', 'nebula-blue', 'cobalt', 'comet', 'black', 'white'] as const;
-
+export const ColorSchemeValues = ['danger', 'supernova', 'nebula-blue', 'cobalt', 'comet', 'black', 'white'];
 export const ColorValues = [
   ...ColorSchemeValues,
   'supernova',
@@ -32,4 +31,5 @@ export const ColorValues = [
   'grey-2',
   'grey-3',
   'grey-4',
-] as const;
+];
+//# sourceMappingURL=color-scheme.js.map

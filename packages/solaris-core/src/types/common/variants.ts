@@ -1,3 +1,4 @@
-import { VariantValues } from '../../constants/variants';
+import Values from '../../../../constants';
+const { VariantValues } = Values;
 
 export type Variant = (typeof VariantValues)[number];
