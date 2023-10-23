@@ -1,0 +1,1 @@
+{"version":3,"file":"breakpoints.js","sourceRoot":"","sources":["../../../../../src/types/common/breakpoints.ts"],"names":[],"mappings":"AAAA,OAAO,MAAM,MAAM,uBAAuB,CAAC;AAC3C,MAAM,EAAE,gBAAgB,EAAE,GAAG,MAAM,CAAC","sourcesContent":["import Values from '../../../../constants';\nconst { BreakpointValues } = Values;\nexport type Breakpoints = (typeof BreakpointValues)[number];\n"]}

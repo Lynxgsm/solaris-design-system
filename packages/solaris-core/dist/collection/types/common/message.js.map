@@ -1,0 +1,1 @@
+{"version":3,"file":"message.js","sourceRoot":"","sources":["../../../../../src/types/common/message.ts"],"names":[],"mappings":"AAAA,OAAO,MAAM,MAAM,uBAAuB,CAAC;AAC3C,MAAM,EAAE,iBAAiB,EAAE,GAAG,MAAM,CAAC","sourcesContent":["import Values from '../../../../constants';\nconst { MessageTypeValues } = Values;\n\nexport type MessageType = (typeof MessageTypeValues)[number];\n"]}
