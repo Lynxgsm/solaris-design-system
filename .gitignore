@@ -35,8 +35,5 @@ yarn-error.log*
 # vercel
 .vercel
 
-# Lock
-pnpm-lock.yaml*
-
 # Dist
 dist
