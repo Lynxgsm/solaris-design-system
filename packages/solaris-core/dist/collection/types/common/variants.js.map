@@ -1,1 +1,0 @@
-{"version":3,"file":"variants.js","sourceRoot":"","sources":["../../../../../src/types/common/variants.ts"],"names":[],"mappings":"AAAA,OAAO,MAAM,MAAM,uBAAuB,CAAC;AAC3C,MAAM,EAAE,aAAa,EAAE,GAAG,MAAM,CAAC","sourcesContent":["import Values from '../../../../constants';\nconst { VariantValues } = Values;\n\nexport type Variant = (typeof VariantValues)[number];\n"]}

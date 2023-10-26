@@ -1,1 +1,0 @@
-{"version":3,"file":"font-family.js","sourceRoot":"","sources":["../../../../../src/types/text/font-family.ts"],"names":[],"mappings":"","sourcesContent":["export type FontFamily = 'roboto' | 'montserrat'"]}

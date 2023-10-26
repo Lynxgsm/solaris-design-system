@@ -116,6 +116,14 @@ export const SolarisNavbar = /*@__PURE__*/ defineContainer<JSX.SolarisNavbar>('s
 ]);
 
 
+export const SolarisPill = /*@__PURE__*/ defineContainer<JSX.SolarisPill>('solaris-pill', undefined, [
+  'label',
+  'count',
+  'position',
+  'active'
+]);
+
+
 export const SolarisRow = /*@__PURE__*/ defineContainer<JSX.SolarisRow>('solaris-row', undefined, [
   'gap'
 ]);

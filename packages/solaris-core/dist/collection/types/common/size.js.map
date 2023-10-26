@@ -1,1 +1,0 @@
-{"version":3,"file":"size.js","sourceRoot":"","sources":["../../../../../src/types/common/size.ts"],"names":[],"mappings":"AAAA,OAAO,MAAM,MAAM,uBAAuB,CAAC;AAC3C,MAAM,EAAE,UAAU,EAAE,GAAG,MAAM,CAAC","sourcesContent":["import Values from '../../../../constants';\nconst { SizeValues } = Values;\nexport type Size = (typeof SizeValues)[number];\n"]}

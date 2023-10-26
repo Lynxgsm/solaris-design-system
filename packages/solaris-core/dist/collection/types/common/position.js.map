@@ -1,1 +1,0 @@
-{"version":3,"file":"position.js","sourceRoot":"","sources":["../../../../../src/types/common/position.ts"],"names":[],"mappings":"AAAA,OAAO,MAAM,MAAM,uBAAuB,CAAC;AAC3C,MAAM,EAAE,cAAc,EAAE,GAAG,MAAM,CAAC","sourcesContent":["import Values from '../../../../constants';\nconst { PositionValues } = Values;\nexport type Position = (typeof PositionValues)[number];\n"]}

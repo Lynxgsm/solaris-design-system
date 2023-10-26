@@ -109,6 +109,12 @@ export namespace Components {
         "decoration": 'top' | 'left' | 'right' | 'bottom' | 'none';
         "position": 'fixed' | 'relative';
     }
+    interface SolarisPill {
+        "active": boolean;
+        "count": number;
+        "label": string;
+        "position": 'left' | 'right';
+    }
     interface SolarisRow {
         "gap": UnitString1;
     }
@@ -212,6 +218,12 @@ declare global {
         prototype: HTMLSolarisNavbarElement;
         new (): HTMLSolarisNavbarElement;
     };
+    interface HTMLSolarisPillElement extends Components.SolarisPill, HTMLStencilElement {
+    }
+    var HTMLSolarisPillElement: {
+        prototype: HTMLSolarisPillElement;
+        new (): HTMLSolarisPillElement;
+    };
     interface HTMLSolarisRowElement extends Components.SolarisRow, HTMLStencilElement {
     }
     var HTMLSolarisRowElement: {
@@ -250,6 +262,7 @@ declare global {
         "solaris-icon": HTMLSolarisIconElement;
         "solaris-list-tile": HTMLSolarisListTileElement;
         "solaris-navbar": HTMLSolarisNavbarElement;
+        "solaris-pill": HTMLSolarisPillElement;
         "solaris-row": HTMLSolarisRowElement;
         "solaris-skeleton": HTMLSolarisSkeletonElement;
         "solaris-stepper": HTMLSolarisStepperElement;
@@ -338,6 +351,12 @@ declare namespace LocalJSX {
         "decoration"?: 'top' | 'left' | 'right' | 'bottom' | 'none';
         "position"?: 'fixed' | 'relative';
     }
+    interface SolarisPill {
+        "active"?: boolean;
+        "count"?: number;
+        "label"?: string;
+        "position"?: 'left' | 'right';
+    }
     interface SolarisRow {
         "gap"?: UnitString1;
     }
@@ -375,6 +394,7 @@ declare namespace LocalJSX {
         "solaris-icon": SolarisIcon;
         "solaris-list-tile": SolarisListTile;
         "solaris-navbar": SolarisNavbar;
+        "solaris-pill": SolarisPill;
         "solaris-row": SolarisRow;
         "solaris-skeleton": SolarisSkeleton;
         "solaris-stepper": SolarisStepper;
@@ -398,6 +418,7 @@ declare module "@stencil/core" {
             "solaris-icon": LocalJSX.SolarisIcon & JSXBase.HTMLAttributes<HTMLSolarisIconElement>;
             "solaris-list-tile": LocalJSX.SolarisListTile & JSXBase.HTMLAttributes<HTMLSolarisListTileElement>;
             "solaris-navbar": LocalJSX.SolarisNavbar & JSXBase.HTMLAttributes<HTMLSolarisNavbarElement>;
+            "solaris-pill": LocalJSX.SolarisPill & JSXBase.HTMLAttributes<HTMLSolarisPillElement>;
             "solaris-row": LocalJSX.SolarisRow & JSXBase.HTMLAttributes<HTMLSolarisRowElement>;
             "solaris-skeleton": LocalJSX.SolarisSkeleton & JSXBase.HTMLAttributes<HTMLSolarisSkeletonElement>;
             "solaris-stepper": LocalJSX.SolarisStepper & JSXBase.HTMLAttributes<HTMLSolarisStepperElement>;
