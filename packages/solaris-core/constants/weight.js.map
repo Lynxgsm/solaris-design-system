@@ -1,1 +1,0 @@
-{"version":3,"file":"weight.js","sourceRoot":"","sources":["../../../constants/weight.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,gBAAgB,GAAG,CAAC,MAAM,EAAE,WAAW,EAAE,QAAQ,EAAE,SAAS,CAAC,CAAC","sourcesContent":["export const FontWeightValues = [\"bold\", \"semi-bold\", \"medium\", \"regular\"];\n"]}

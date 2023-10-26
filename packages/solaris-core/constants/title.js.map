@@ -1,1 +1,0 @@
-{"version":3,"file":"title.js","sourceRoot":"","sources":["../../../constants/title.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,eAAe,GAAG,CAAC,IAAI,EAAE,IAAI,EAAE,IAAI,EAAE,IAAI,EAAE,IAAI,EAAE,IAAI,EAAE,IAAI,CAAC,CAAC","sourcesContent":["export const TitleTypeValues = [\"h1\", \"h2\", \"h3\", \"h4\", \"h5\", \"h6\", \"h7\"];\n"]}

@@ -1,15 +1,15 @@
 import { VariantValues } from "./variants";
 import { BreakpointValues } from "./breakpoints";
-import { ColorSchemeValues, ColorValues } from "./color-scheme";
-import { ContainerTypeValues } from "./container";
-import { MessageTypeValues } from "./message";
-import { PositionValues } from "./position";
-import { SizeValues } from "./size";
-import { TitleTypeValues } from "./title";
-import { FontFamilyValues } from "./font-family";
-import { FontWeightValues } from "./weight";
-import { IconNameValues } from "./icon";
-import { IconVariantValues } from "./icon-variant";
+import { ColorSchemeValues, ColorValues } from "./color-schemes";
+import { ContainerTypeValues } from "./containers";
+import { MessageTypeValues } from "./messages";
+import { PositionValues } from "./positions";
+import { SizeValues } from "./sizes";
+import { TitleTypeValues } from "./titles";
+import { FontFamilyValues } from "./font-families";
+import { FontWeightValues } from "./weights";
+import { IconNameValues } from "./icons";
+import { IconVariantValues } from "./icon-variants";
 
 export default {
   BreakpointValues,
