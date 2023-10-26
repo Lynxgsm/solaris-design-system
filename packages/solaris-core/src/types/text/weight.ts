@@ -1,1 +1,3 @@
-export type FontWeight = 'bold' | 'semi-bold' | 'medium' | 'regular'
+import Values from '../../../../constants';
+const { FontWeightValues } = Values;
+export type FontWeight = (typeof FontWeightValues)[number];
