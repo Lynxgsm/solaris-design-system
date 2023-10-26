@@ -18,7 +18,8 @@
   "scripts": {
     "test": "node ./__tests__/react-library.test.js",
     "build": "tsup lib/index.ts --format cjs,esm --dts",
-    "tsc": "tsc -p . --outDir ./dist"
+    "tsc": "tsc -p . --outDir ./dist",
+    "publish": ""
   },
   "devDependencies": {
     "@types/node": "^16.18.11",
