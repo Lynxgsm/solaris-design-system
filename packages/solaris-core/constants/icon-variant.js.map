@@ -1,0 +1,1 @@
+{"version":3,"file":"icon-variant.js","sourceRoot":"","sources":["../../../constants/icon-variant.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,iBAAiB,GAAG,CAAC,MAAM,EAAE,SAAS,EAAE,OAAO,CAAC,CAAC","sourcesContent":["export const IconVariantValues = [\"bold\", \"regular\", \"light\"];\n"]}

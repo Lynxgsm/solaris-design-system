@@ -1,1 +1,3 @@
-export type TitleType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'h7'
+import Values from '../../../../constants';
+const { TitleTypeValues } = Values;
+export type TitleType = (typeof TitleTypeValues)[number];
