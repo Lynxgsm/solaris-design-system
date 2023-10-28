@@ -21,6 +21,6 @@
     "access": "public"
   },
   "dependencies": {
-    "solaris-core": "*"
+    "solaris-core": "workspace:*"
   }
 }

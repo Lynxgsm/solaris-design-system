@@ -33,7 +33,7 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
       solaris-react:
-        specifier: '*'
+        specifier: workspace:*
         version: link:../../packages/solaris-react
     devDependencies:
       '@storybook/addon-essentials':
@@ -100,7 +100,7 @@ importers:
   apps/vue-storybook:
     dependencies:
       solaris-vue:
-        specifier: '*'
+        specifier: workspace:*
         version: link:../../packages/solaris-vue
       vue:
         specifier: ^3.3.4
@@ -207,7 +207,7 @@ importers:
   packages/solaris-react:
     dependencies:
       solaris-core:
-        specifier: '*'
+        specifier: workspace:*
         version: link:../solaris-core
     devDependencies:
       '@types/node':
@@ -235,7 +235,7 @@ importers:
   packages/solaris-vue:
     dependencies:
       solaris-core:
-        specifier: '*'
+        specifier: workspace:*
         version: link:../solaris-core
     devDependencies:
       '@types/node':
