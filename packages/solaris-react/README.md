@@ -1,4 +1,4 @@
-# `react-library`
+# `Solaris-react`
 
 > TODO: description
 
