@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { SolarisButton, Values } from "@solaris/react";
+import { SolarisButton, Values } from "solaris-react";
 
 const { ColorSchemeValues, VariantValues, SizeValues } = Values.default;
 

@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from "@storybook/vue3";
-import { SolarisButton, Values } from "@solaris/vue";
+import { SolarisButton, Values } from "solaris-vue";
 
 const { ColorSchemeValues, VariantValues, SizeValues } = Values;
 
