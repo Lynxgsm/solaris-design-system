@@ -5,17 +5,18 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1",
     "build": "npm run tsc",
-    "tsc": "tsc -p . --outDir ./dist"
+    "tsc": "tsc -p . --outDir ./dist",
+    "build": "tsup lib/index.ts --format cjs,esm --dts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vue": "3",
     "@types/node": "^16.18.11",
-    "typescript": "^5.2.2"
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vue": "3"
   },
   "publishConfig": {
     "access": "public"

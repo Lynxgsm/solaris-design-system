@@ -26,15 +26,15 @@ importers:
 
   apps/react-storybook:
     dependencies:
-      '@solaris/react':
-        specifier: '*'
-        version: link:../../packages/solaris-react
       react:
         specifier: ^18.2.0
         version: 18.2.0
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
+      solaris-react:
+        specifier: '*'
+        version: link:../../packages/solaris-react
     devDependencies:
       '@storybook/addon-essentials':
         specifier: ^7.4.6
@@ -99,7 +99,7 @@ importers:
 
   apps/vue-storybook:
     dependencies:
-      '@solaris/vue':
+      solaris-vue:
         specifier: '*'
         version: link:../../packages/solaris-vue
       vue:
@@ -241,6 +241,9 @@ importers:
       '@types/node':
         specifier: ^16.18.11
         version: 16.18.57
+      tsup:
+        specifier: ^7.2.0
+        version: 7.2.0(typescript@5.2.2)
       typescript:
         specifier: ^5.2.2
         version: 5.2.2
@@ -5234,7 +5237,7 @@ packages:
       ts-dedent: 2.2.0
       type-fest: 2.19.0
       vue: 3.3.4
-      vue-component-type-helpers: 1.8.21
+      vue-component-type-helpers: 1.8.22
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -13479,8 +13482,8 @@ packages:
     resolution: {integrity: sha512-1OANGSZK4pzHF4uc86usWi+o5Y0zgoDtqWkPg6Am6ot+jHSAmpOah59V/4N82So5xRgivgCxGgK09lBy1XNUfQ==}
     dev: true
 
-  /vue-component-type-helpers@1.8.21:
-    resolution: {integrity: sha512-XL37QbmiqqbKrAFHPxqryMXpNgO0KMKd5bIo7LO9QABPMNEysd8xmYRIjwZhh0t2abveXjAJ//ZcAzwdxp/S3Q==}
+  /vue-component-type-helpers@1.8.22:
+    resolution: {integrity: sha512-LK3wJHs3vJxHG292C8cnsRusgyC5SEZDCzDCD01mdE/AoREFMl2tzLRuzwyuEsOIz13tqgBcnvysN3Lxsa14Fw==}
     dev: true
 
   /vue-docgen-api@4.74.2(vue@3.3.4):
