@@ -1,7 +1,6 @@
 {
   "name": "solaris-core",
-  "version": "0.0.1",
-  "private":true,
+  "version": "0.0.2",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -41,6 +40,9 @@
     "puppeteer": "21.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "MIT"
 }
