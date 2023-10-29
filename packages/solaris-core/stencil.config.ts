@@ -6,6 +6,9 @@ import { sass } from '@stencil/sass';
 export const config: Config = {
   namespace: 'solaris-core',
   globalStyle: 'src/global.scss',
+  extras: {
+    enableImportInjection: true,
+  },
   plugins: [sass()],
   outputTargets: [
     {
@@ -21,6 +24,7 @@ export const config: Config = {
     reactOutputTarget({
       componentCorePackage: 'solaris-core',
       includeDefineCustomElements: true,
+      loaderDir: './loader',
       proxiesFile: '../solaris-react/lib/components/stencil-generated/index.ts',
     }),
     vueOutputTarget({
