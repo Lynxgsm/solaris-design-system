@@ -37,3 +37,6 @@ yarn-error.log*
 
 # Dist
 dist
+
+#vscode
+.vscode

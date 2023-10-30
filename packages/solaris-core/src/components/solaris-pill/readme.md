@@ -12,7 +12,7 @@
 | `active`   | `active`   |             | `boolean`           | `undefined` |
 | `count`    | `count`    |             | `number`            | `undefined` |
 | `label`    | `label`    |             | `string`            | `undefined` |
-| `position` | `position` |             | `"left" \| "right"` | `undefined` |
+| `position` | `position` |             | `"left" \| "right"` | `'right'`   |
 
 
 ----------------------------------------------

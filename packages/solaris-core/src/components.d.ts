@@ -75,6 +75,10 @@ export namespace Components {
         "elevation": number;
         "radius": Size1;
     }
+    interface SolarisCards {
+        "elevation": number;
+        "radius": Size;
+    }
     interface SolarisColumn {
         "col": Size1;
         "gap": UnitString1;
@@ -102,6 +106,7 @@ export namespace Components {
     }
     interface SolarisListTile {
         "__title": string;
+        "onClick": Function;
         "width"?: UnitString;
     }
     interface SolarisNavbar {
@@ -182,6 +187,12 @@ declare global {
         prototype: HTMLSolarisCardElement;
         new (): HTMLSolarisCardElement;
     };
+    interface HTMLSolarisCardsElement extends Components.SolarisCards, HTMLStencilElement {
+    }
+    var HTMLSolarisCardsElement: {
+        prototype: HTMLSolarisCardsElement;
+        new (): HTMLSolarisCardsElement;
+    };
     interface HTMLSolarisColumnElement extends Components.SolarisColumn, HTMLStencilElement {
     }
     var HTMLSolarisColumnElement: {
@@ -256,6 +267,7 @@ declare global {
         "solaris-blockquote": HTMLSolarisBlockquoteElement;
         "solaris-button": HTMLSolarisButtonElement;
         "solaris-card": HTMLSolarisCardElement;
+        "solaris-cards": HTMLSolarisCardsElement;
         "solaris-column": HTMLSolarisColumnElement;
         "solaris-dropdown": HTMLSolarisDropdownElement;
         "solaris-flex": HTMLSolarisFlexElement;
@@ -317,6 +329,10 @@ declare namespace LocalJSX {
         "elevation"?: number;
         "radius"?: Size1;
     }
+    interface SolarisCards {
+        "elevation"?: number;
+        "radius"?: Size;
+    }
     interface SolarisColumn {
         "col"?: Size1;
         "gap"?: UnitString1;
@@ -344,6 +360,7 @@ declare namespace LocalJSX {
     }
     interface SolarisListTile {
         "__title"?: string;
+        "onClick"?: Function;
         "width"?: UnitString;
     }
     interface SolarisNavbar {
@@ -388,6 +405,7 @@ declare namespace LocalJSX {
         "solaris-blockquote": SolarisBlockquote;
         "solaris-button": SolarisButton;
         "solaris-card": SolarisCard;
+        "solaris-cards": SolarisCards;
         "solaris-column": SolarisColumn;
         "solaris-dropdown": SolarisDropdown;
         "solaris-flex": SolarisFlex;
@@ -412,6 +430,7 @@ declare module "@stencil/core" {
             "solaris-blockquote": LocalJSX.SolarisBlockquote & JSXBase.HTMLAttributes<HTMLSolarisBlockquoteElement>;
             "solaris-button": LocalJSX.SolarisButton & JSXBase.HTMLAttributes<HTMLSolarisButtonElement>;
             "solaris-card": LocalJSX.SolarisCard & JSXBase.HTMLAttributes<HTMLSolarisCardElement>;
+            "solaris-cards": LocalJSX.SolarisCards & JSXBase.HTMLAttributes<HTMLSolarisCardsElement>;
             "solaris-column": LocalJSX.SolarisColumn & JSXBase.HTMLAttributes<HTMLSolarisColumnElement>;
             "solaris-dropdown": LocalJSX.SolarisDropdown & JSXBase.HTMLAttributes<HTMLSolarisDropdownElement>;
             "solaris-flex": LocalJSX.SolarisFlex & JSXBase.HTMLAttributes<HTMLSolarisFlexElement>;

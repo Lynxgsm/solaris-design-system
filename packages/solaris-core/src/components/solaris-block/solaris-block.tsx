@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Host, Prop, h } from '@stencil/core';
 import { Breakpoints } from '../../types/common/breakpoints';
 
 @Component({
@@ -11,9 +11,9 @@ export class SolarisBlock {
 
   render() {
     return (
-      <div class={`block ${this.breakpoints || ''}`}>
+      <Host class={`block ${this.breakpoints || ''}`}>
         <slot />
-      </div>
+      </Host>
     );
   }
 }

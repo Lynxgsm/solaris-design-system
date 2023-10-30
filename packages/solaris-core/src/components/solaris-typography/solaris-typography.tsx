@@ -10,6 +10,7 @@ import { classes } from '../../common/Base_Core/format/classes/classes';
   tag: 'solaris-typography',
   styleUrl: 'solaris-typography.scss',
   shadow: true,
+  assetsDirs: ['../../fonts'],
 })
 export class SolarisTypography {
   @Prop() colorScheme?: Color = 'black';
@@ -22,7 +23,12 @@ export class SolarisTypography {
 
   render() {
     return (
-      <this.variant class={classes(this.colorScheme, this.fontFamily, this.underline ? 'underline' : '', this.weight, this.truncated ? 'truncated' : '')}>
+      <this.variant
+        style={{
+          display: 'inline-block',
+        }}
+        class={classes(this.variant, this.colorScheme, this.fontFamily, this.underline ? 'underline' : '', this.weight, this.truncated ? 'truncated' : '')}
+      >
         <slot />
       </this.variant>
     );

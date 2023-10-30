@@ -1,0 +1,36 @@
+@import '../../Base_Themes/index.scss';
+
+$shadow-color: #676e9066;
+
+.cards {
+  border-radius: 8px;
+  overflow: hidden;
+  & > div {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+
+  & > div {
+    border-bottom: 1px solid #{$neutral-darker}33;
+  }
+
+  &.cards-0 {
+    box-shadow: $shadow-color 0px 0px 0px 0px;
+  }
+  &.cards-1 {
+    box-shadow: $shadow-color 0px 0px 4px 0px;
+  }
+  &.cards-2 {
+    box-shadow: $shadow-color 0px 0px 6px 0px;
+  }
+  &.cards-3 {
+    box-shadow: $shadow-color 0px 0px 8px 0px;
+  }
+  &.cards-4 {
+    box-shadow: $shadow-color 0px 0px 10px 0px;
+  }
+
+  & > div:last-child {
+    border-bottom: none;
+  }
+}

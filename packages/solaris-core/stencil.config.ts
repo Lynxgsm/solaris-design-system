@@ -12,14 +12,24 @@ export const config: Config = {
   plugins: [sass()],
   outputTargets: [
     {
+      type: 'dist-custom-elements',
+    },
+    {
+      type: 'docs-readme',
+    },
+    {
+      type: 'www',
+      serviceWorker: null, // disable service workers
+    },
+    {
       type: 'dist',
       esmLoaderPath: '../loader',
-      copy: [
-        {
-          src: 'fonts',
-          dest: 'assets/fonts',
-        },
-      ],
+      // copy: [
+      //   {
+      //     src: 'fonts',
+      //     dest: 'dist/assets/fonts',
+      //   },
+      // ],
     },
     reactOutputTarget({
       componentCorePackage: 'solaris-core',
