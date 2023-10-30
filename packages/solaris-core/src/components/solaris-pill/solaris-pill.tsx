@@ -13,7 +13,7 @@ export class SolarisPill {
 
   render() {
     return (
-      <button class={`button button-${this.position}`}>
+      <button class={`button ${this.active ? 'active' : ''} button-${this.position}`}>
         <p class="count">{this.count}</p>
         <p class="label">{this.label}</p>
       </button>

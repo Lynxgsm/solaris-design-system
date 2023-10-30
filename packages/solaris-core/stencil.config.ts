@@ -24,12 +24,12 @@ export const config: Config = {
     {
       type: 'dist',
       esmLoaderPath: '../loader',
-      copy: [
-        {
-          src: 'fonts',
-          dest: 'assets/fonts',
-        },
-      ],
+      // copy: [
+      //   {
+      //     src: 'fonts',
+      //     dest: 'dist/assets/fonts',
+      //   },
+      // ],
     },
     reactOutputTarget({
       componentCorePackage: 'solaris-core',

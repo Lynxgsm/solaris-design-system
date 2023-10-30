@@ -70,6 +70,12 @@ export const SolarisCard = /*@__PURE__*/ defineContainer<JSX.SolarisCard>('solar
 ]);
 
 
+export const SolarisCards = /*@__PURE__*/ defineContainer<JSX.SolarisCards>('solaris-cards', undefined, [
+  'elevation',
+  'radius'
+]);
+
+
 export const SolarisColumn = /*@__PURE__*/ defineContainer<JSX.SolarisColumn>('solaris-column', undefined, [
   'gap',
   'col'
@@ -105,7 +111,8 @@ export const SolarisIcon = /*@__PURE__*/ defineContainer<JSX.SolarisIcon>('solar
 
 export const SolarisListTile = /*@__PURE__*/ defineContainer<JSX.SolarisListTile>('solaris-list-tile', undefined, [
   '__title',
-  'width'
+  'width',
+  'onClick'
 ]);
 
 

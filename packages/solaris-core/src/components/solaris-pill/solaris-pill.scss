@@ -9,7 +9,11 @@
   padding: $space-8 $space-16;
   border-radius: $space-8;
   border: solid 1px $brand-nebula-blue;
-  background-color: $brand-nebula-blue-shades;
+  background-color: white;
+
+  .active {
+    background-color: $brand-nebula-blue-shades;
+  }
 
   .count {
     width: 24px;
