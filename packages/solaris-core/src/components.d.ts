@@ -8,9 +8,10 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { IconName, IconParams, IconVariant } from "./types/icons/icon";
 import { Size } from "./types/common/size";
 import { MessageType } from "./types/common/message";
-import { UnitString } from "./types/common/unit-string";
 import { Color, ColorScheme } from "./types/common/color-scheme";
 import { Breakpoints } from "./types/common/breakpoints";
+import { ContainerType } from "./types/common/container";
+import { UnitString } from "./types/common/unit-string";
 import { Variant } from "./types/common/variants";
 import { ColorScheme as ColorScheme1, Size as Size1, UnitString as UnitString1 } from "./components";
 import { TypographyVariant } from "./types/common/typography-variants";
@@ -20,9 +21,10 @@ import { FontWeight } from "./types/text/weight";
 export { IconName, IconParams, IconVariant } from "./types/icons/icon";
 export { Size } from "./types/common/size";
 export { MessageType } from "./types/common/message";
-export { UnitString } from "./types/common/unit-string";
 export { Color, ColorScheme } from "./types/common/color-scheme";
 export { Breakpoints } from "./types/common/breakpoints";
+export { ContainerType } from "./types/common/container";
+export { UnitString } from "./types/common/unit-string";
 export { Variant } from "./types/common/variants";
 export { ColorScheme as ColorScheme1, Size as Size1, UnitString as UnitString1 } from "./components";
 export { TypographyVariant } from "./types/common/typography-variants";
@@ -31,11 +33,10 @@ export { TitleType } from "./types/text/title";
 export { FontWeight } from "./types/text/weight";
 export namespace Components {
     interface SolarisAlert {
-        "__title"?: String;
         "bordered"?: boolean;
         "icon"?: IconParams;
         "iconPosition"?: 'left' | 'right';
-        "maxWidth"?: UnitString;
+        "maxWidth"?: number;
         "radius"?: Size;
         "type"?: MessageType;
     }
@@ -54,6 +55,7 @@ export namespace Components {
     }
     interface SolarisBlock {
         "breakpoints": Breakpoints;
+        "element": ContainerType;
     }
     interface SolarisBlockquote {
         "__title"?: string;
@@ -119,7 +121,10 @@ export namespace Components {
         "active": boolean;
         "count": number;
         "label": string;
+        "loading": boolean;
         "position": 'left' | 'right';
+        "size": Size;
+        "type": MessageType;
     }
     interface SolarisRow {
         "gap": number;
@@ -143,6 +148,7 @@ export namespace Components {
     interface SolarisTypography {
         "colorScheme": Color;
         "fontFamily"?: FontFamily;
+        "innerStyle": { [key: string]: string };
         "truncated"?: boolean;
         "underline"?: boolean;
         "variant"?: 'p' | TitleType | 'link' | 'caption' | 'subtitle' | 'small';
@@ -296,11 +302,10 @@ declare global {
 }
 declare namespace LocalJSX {
     interface SolarisAlert {
-        "__title"?: String;
         "bordered"?: boolean;
         "icon"?: IconParams;
         "iconPosition"?: 'left' | 'right';
-        "maxWidth"?: UnitString;
+        "maxWidth"?: number;
         "radius"?: Size;
         "type"?: MessageType;
     }
@@ -319,6 +324,7 @@ declare namespace LocalJSX {
     }
     interface SolarisBlock {
         "breakpoints"?: Breakpoints;
+        "element"?: ContainerType;
     }
     interface SolarisBlockquote {
         "__title"?: string;
@@ -384,7 +390,10 @@ declare namespace LocalJSX {
         "active"?: boolean;
         "count"?: number;
         "label"?: string;
+        "loading"?: boolean;
         "position"?: 'left' | 'right';
+        "size"?: Size;
+        "type"?: MessageType;
     }
     interface SolarisRow {
         "gap"?: number;
@@ -408,6 +417,7 @@ declare namespace LocalJSX {
     interface SolarisTypography {
         "colorScheme"?: Color;
         "fontFamily"?: FontFamily;
+        "innerStyle"?: { [key: string]: string };
         "truncated"?: boolean;
         "underline"?: boolean;
         "variant"?: 'p' | TitleType | 'link' | 'caption' | 'subtitle' | 'small';

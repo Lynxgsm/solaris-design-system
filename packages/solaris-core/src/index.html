@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="/build/solaris-core.css" />
   </head>
   <body>
-    <solaris-status-text type="warning">Hello World</solaris-status-text>
+    <solaris-flex gap="8">
+      <solaris-pill active onclick="alert('hello')" count="4" label="En attente"></solaris-pill>
+      <solaris-pill onclick="alert('hello')" count="2" label="Suspendu"></solaris-pill>
+      <solaris-pill onclick="alert('hello')" count="2" label="En cours"></solaris-pill>
+      <solaris-pill onclick="alert('hello')" count="2" label="Terminé" ></solaris-pill>
+    </solaris-flex>
   </body>
 </html>

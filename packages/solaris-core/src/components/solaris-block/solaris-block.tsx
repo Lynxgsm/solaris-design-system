@@ -1,5 +1,6 @@
 import { Component, Host, Prop, h } from '@stencil/core';
 import { Breakpoints } from '../../types/common/breakpoints';
+import { ContainerType } from '../../types/common/container';
 
 @Component({
   tag: 'solaris-block',
@@ -8,12 +9,13 @@ import { Breakpoints } from '../../types/common/breakpoints';
 })
 export class SolarisBlock {
   @Prop() breakpoints: Breakpoints;
+  @Prop() element: ContainerType = 'div';
 
   render() {
     return (
-      <Host class={`block ${this.breakpoints || ''}`}>
+      <this.element class={`block ${this.breakpoints || ''}`}>
         <slot />
-      </Host>
+      </this.element>
     );
   }
 }

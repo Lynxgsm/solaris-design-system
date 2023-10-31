@@ -1,0 +1,74 @@
+@import '../../Base_Themes/colors.scss';
+@import '../../Base_Themes/spacing.scss';
+
+$shadow-color: #676e9066;
+
+.button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $space-8;
+  padding: $space-8 $space-16;
+  border-radius: $space-8;
+  background-color: white;
+  border: none;
+  box-shadow:
+    0 0 2px 0 rgba(103, 110, 144, 0.1),
+    0 1px 2px 0 rgba(103, 110, 144, 0.05),
+    0 2px 4px 0 rgba(103, 110, 144, 0.08),
+    0 3px 4px 0 rgba(103, 110, 144, 0.05);
+
+  .label {
+    color: $neutral-darkest;
+  }
+
+  &.active {
+    background-color: $brand-nebula-blue-shades;
+    outline: solid 1px $brand-nebula-blue;
+    box-shadow: none;
+    .label {
+      color: $brand-nebula-blue;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .count {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    border-radius: 4px;
+    background-color: rgba(241, 241, 241, 0.95);
+    color: $neutral-darkest;
+    font-size: 12px;
+
+    &.active {
+      color: $neutral-white;
+      background-color: $brand-nebula-blue;
+    }
+  }
+}
+
+.button:hover .label {
+  color: $brand-nebula-blue;
+}
+
+.button:hover .count .active {
+  background-color: $brand-nebula-blue;
+  color: $neutral-white;
+}
+
+.button:hover .count {
+  background-color: $brand-nebula-blue-shades;
+  color: $brand-nebula-blue;
+}
+
+.button-right {
+  flex-direction: row-reverse;
+}
+
+.button-left {
+  flex-direction: row;
+}
