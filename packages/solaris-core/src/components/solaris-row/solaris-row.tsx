@@ -1,5 +1,4 @@
 import { Component, Prop, h } from '@stencil/core';
-import { UnitString } from '../../components';
 
 @Component({
   tag: 'solaris-row',
@@ -7,7 +6,7 @@ import { UnitString } from '../../components';
   shadow: true,
 })
 export class SolarisRow {
-  @Prop() gap: UnitString;
+  @Prop() gap: number;
   render() {
     return (
       <solaris-flex gap={this.gap}>

@@ -26,6 +26,7 @@
  - [solaris-avatar](../solaris-avatar)
  - [solaris-blockquote](../solaris-blockquote)
  - [solaris-list-tile](../solaris-list-tile)
+ - [solaris-status-text](../solaris-status-text)
  - [solaris-stepper](../solaris-stepper)
 
 ### Graph
@@ -35,6 +36,7 @@ graph TD;
   solaris-avatar --> solaris-typography
   solaris-blockquote --> solaris-typography
   solaris-list-tile --> solaris-typography
+  solaris-status-text --> solaris-typography
   solaris-stepper --> solaris-typography
   style solaris-typography fill:#f9f,stroke:#333,stroke-width:4px
 ```

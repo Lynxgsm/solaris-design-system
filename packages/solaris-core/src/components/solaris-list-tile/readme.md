@@ -10,7 +10,6 @@
 | Property  | Attribute | Description | Type                                                                                                                                                       | Default     |
 | --------- | --------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | `__title` | `__title` |             | `string`                                                                                                                                                   | `undefined` |
-| `onClick` | --        |             | `Function`                                                                                                                                                 | `undefined` |
 | `width`   | `width`   |             | `"auto" \| "fit-content" \| "max-content" \| `${number}%` \| `${number}em` \| `${number}px` \| `${number}rem` \| `${number}vh` \| `${number}vw` \| number` | `undefined` |
 
 

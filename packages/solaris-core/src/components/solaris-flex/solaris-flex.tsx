@@ -1,7 +1,5 @@
 import { Component, Prop, h } from '@stencil/core';
 import { classes } from '../../common/Base_Core/format/classes/classes';
-import { UnitString } from '../../components';
-import { unitFormatter } from '../../common/Base_Core/format/unit/unit';
 
 @Component({
   tag: 'solaris-flex',
@@ -9,11 +7,11 @@ import { unitFormatter } from '../../common/Base_Core/format/unit/unit';
   shadow: true,
 })
 export class SolarisFlex {
-  @Prop() gap: UnitString;
-  @Prop() justifyContent?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
-  @Prop() alignItems?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
-  @Prop() direction?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
-  @Prop() wrap?: 'nowrap' | 'wrap' | 'wrap-reverse';
+  @Prop() gap: number;
+  @Prop() justifyContent: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly' = 'flex-start';
+  @Prop() alignItems: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly' = 'flex-start';
+  @Prop() direction: 'row' | 'row-reverse' | 'column' | 'column-reverse' = 'row';
+  @Prop() wrap: 'nowrap' | 'wrap' | 'wrap-reverse' = 'wrap';
 
   render() {
     return (
@@ -22,7 +20,7 @@ export class SolarisFlex {
         style={{
           justifyContent: this.justifyContent,
           alignItems: this.alignItems,
-          gap: this.gap && unitFormatter(this.gap),
+          gap: `${this.gap}px`,
           flexWrap: this.wrap,
           flexDirection: this.direction,
         }}

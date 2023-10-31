@@ -7,13 +7,13 @@
 
 ## Properties
 
-| Property         | Attribute         | Description | Type                                                                                                                                                       | Default     |
-| ---------------- | ----------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| `alignItems`     | `align-items`     |             | `"center" \| "flex-end" \| "flex-start" \| "space-around" \| "space-between" \| "space-evenly"`                                                            | `undefined` |
-| `direction`      | `direction`       |             | `"column" \| "column-reverse" \| "row" \| "row-reverse"`                                                                                                   | `undefined` |
-| `gap`            | `gap`             |             | `"auto" \| "fit-content" \| "max-content" \| `${number}%` \| `${number}em` \| `${number}px` \| `${number}rem` \| `${number}vh` \| `${number}vw` \| number` | `undefined` |
-| `justifyContent` | `justify-content` |             | `"center" \| "flex-end" \| "flex-start" \| "space-around" \| "space-between" \| "space-evenly"`                                                            | `undefined` |
-| `wrap`           | `wrap`            |             | `"nowrap" \| "wrap" \| "wrap-reverse"`                                                                                                                     | `undefined` |
+| Property         | Attribute         | Description | Type                                                                                            | Default        |
+| ---------------- | ----------------- | ----------- | ----------------------------------------------------------------------------------------------- | -------------- |
+| `alignItems`     | `align-items`     |             | `"center" \| "flex-end" \| "flex-start" \| "space-around" \| "space-between" \| "space-evenly"` | `'flex-start'` |
+| `direction`      | `direction`       |             | `"column" \| "column-reverse" \| "row" \| "row-reverse"`                                        | `'row'`        |
+| `gap`            | `gap`             |             | `number`                                                                                        | `undefined`    |
+| `justifyContent` | `justify-content` |             | `"center" \| "flex-end" \| "flex-start" \| "space-around" \| "space-between" \| "space-evenly"` | `'flex-start'` |
+| `wrap`           | `wrap`            |             | `"nowrap" \| "wrap" \| "wrap-reverse"`                                                          | `'wrap'`       |
 
 
 ## Dependencies
@@ -29,6 +29,7 @@
  - [solaris-dropdown](../solaris-dropdown)
  - [solaris-list-tile](../solaris-list-tile)
  - [solaris-row](../solaris-row)
+ - [solaris-status-text](../solaris-status-text)
  - [solaris-stepper](../solaris-stepper)
 
 ### Graph
@@ -43,6 +44,7 @@ graph TD;
   solaris-dropdown --> solaris-flex
   solaris-list-tile --> solaris-flex
   solaris-row --> solaris-flex
+  solaris-status-text --> solaris-flex
   solaris-stepper --> solaris-flex
   style solaris-flex fill:#f9f,stroke:#333,stroke-width:4px
 ```

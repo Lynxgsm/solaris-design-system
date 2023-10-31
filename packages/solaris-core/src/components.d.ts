@@ -13,6 +13,7 @@ import { Color, ColorScheme } from "./types/common/color-scheme";
 import { Breakpoints } from "./types/common/breakpoints";
 import { Variant } from "./types/common/variants";
 import { ColorScheme as ColorScheme1, Size as Size1, UnitString as UnitString1 } from "./components";
+import { TypographyVariant } from "./types/common/typography-variants";
 import { FontFamily } from "./types/text/font-family";
 import { TitleType } from "./types/text/title";
 import { FontWeight } from "./types/text/weight";
@@ -24,6 +25,7 @@ export { Color, ColorScheme } from "./types/common/color-scheme";
 export { Breakpoints } from "./types/common/breakpoints";
 export { Variant } from "./types/common/variants";
 export { ColorScheme as ColorScheme1, Size as Size1, UnitString as UnitString1 } from "./components";
+export { TypographyVariant } from "./types/common/typography-variants";
 export { FontFamily } from "./types/text/font-family";
 export { TitleType } from "./types/text/title";
 export { FontWeight } from "./types/text/weight";
@@ -81,7 +83,7 @@ export namespace Components {
     }
     interface SolarisColumn {
         "col": Size1;
-        "gap": UnitString1;
+        "gap": number;
     }
     interface SolarisDropdown {
         "arrowPosition"?: 'left' | 'right';
@@ -93,11 +95,11 @@ export namespace Components {
         "top"?: UnitString1;
     }
     interface SolarisFlex {
-        "alignItems"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
-        "direction"?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
-        "gap": UnitString1;
-        "justifyContent"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
-        "wrap"?: 'nowrap' | 'wrap' | 'wrap-reverse';
+        "alignItems": 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
+        "direction": 'row' | 'row-reverse' | 'column' | 'column-reverse';
+        "gap": number;
+        "justifyContent": 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
+        "wrap": 'nowrap' | 'wrap' | 'wrap-reverse';
     }
     interface SolarisIcon {
         "name"?: IconName;
@@ -106,7 +108,6 @@ export namespace Components {
     }
     interface SolarisListTile {
         "__title": string;
-        "onClick": Function;
         "width"?: UnitString;
     }
     interface SolarisNavbar {
@@ -121,7 +122,7 @@ export namespace Components {
         "position": 'left' | 'right';
     }
     interface SolarisRow {
-        "gap": UnitString1;
+        "gap": number;
     }
     interface SolarisSkeleton {
         "animated": boolean;
@@ -129,13 +130,18 @@ export namespace Components {
         "radius"?: Size;
         "width"?: UnitString;
     }
+    interface SolarisStatusText {
+        "dot": 'left' | 'right' | 'none';
+        "type": MessageType | 'disabled';
+        "variant": TypographyVariant;
+    }
     interface SolarisStepper {
         "colorScheme"?: ColorScheme;
         "currentIndex"?: number;
         "steps": string[];
     }
     interface SolarisTypography {
-        "colorScheme"?: Color;
+        "colorScheme": Color;
         "fontFamily"?: FontFamily;
         "truncated"?: boolean;
         "underline"?: boolean;
@@ -247,6 +253,12 @@ declare global {
         prototype: HTMLSolarisSkeletonElement;
         new (): HTMLSolarisSkeletonElement;
     };
+    interface HTMLSolarisStatusTextElement extends Components.SolarisStatusText, HTMLStencilElement {
+    }
+    var HTMLSolarisStatusTextElement: {
+        prototype: HTMLSolarisStatusTextElement;
+        new (): HTMLSolarisStatusTextElement;
+    };
     interface HTMLSolarisStepperElement extends Components.SolarisStepper, HTMLStencilElement {
     }
     var HTMLSolarisStepperElement: {
@@ -277,6 +289,7 @@ declare global {
         "solaris-pill": HTMLSolarisPillElement;
         "solaris-row": HTMLSolarisRowElement;
         "solaris-skeleton": HTMLSolarisSkeletonElement;
+        "solaris-status-text": HTMLSolarisStatusTextElement;
         "solaris-stepper": HTMLSolarisStepperElement;
         "solaris-typography": HTMLSolarisTypographyElement;
     }
@@ -335,7 +348,7 @@ declare namespace LocalJSX {
     }
     interface SolarisColumn {
         "col"?: Size1;
-        "gap"?: UnitString1;
+        "gap"?: number;
     }
     interface SolarisDropdown {
         "arrowPosition"?: 'left' | 'right';
@@ -349,7 +362,7 @@ declare namespace LocalJSX {
     interface SolarisFlex {
         "alignItems"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
         "direction"?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
-        "gap"?: UnitString1;
+        "gap"?: number;
         "justifyContent"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
         "wrap"?: 'nowrap' | 'wrap' | 'wrap-reverse';
     }
@@ -360,7 +373,6 @@ declare namespace LocalJSX {
     }
     interface SolarisListTile {
         "__title"?: string;
-        "onClick"?: Function;
         "width"?: UnitString;
     }
     interface SolarisNavbar {
@@ -375,13 +387,18 @@ declare namespace LocalJSX {
         "position"?: 'left' | 'right';
     }
     interface SolarisRow {
-        "gap"?: UnitString1;
+        "gap"?: number;
     }
     interface SolarisSkeleton {
         "animated"?: boolean;
         "height"?: UnitString;
         "radius"?: Size;
         "width"?: UnitString;
+    }
+    interface SolarisStatusText {
+        "dot"?: 'left' | 'right' | 'none';
+        "type"?: MessageType | 'disabled';
+        "variant"?: TypographyVariant;
     }
     interface SolarisStepper {
         "colorScheme"?: ColorScheme;
@@ -415,6 +432,7 @@ declare namespace LocalJSX {
         "solaris-pill": SolarisPill;
         "solaris-row": SolarisRow;
         "solaris-skeleton": SolarisSkeleton;
+        "solaris-status-text": SolarisStatusText;
         "solaris-stepper": SolarisStepper;
         "solaris-typography": SolarisTypography;
     }
@@ -440,6 +458,7 @@ declare module "@stencil/core" {
             "solaris-pill": LocalJSX.SolarisPill & JSXBase.HTMLAttributes<HTMLSolarisPillElement>;
             "solaris-row": LocalJSX.SolarisRow & JSXBase.HTMLAttributes<HTMLSolarisRowElement>;
             "solaris-skeleton": LocalJSX.SolarisSkeleton & JSXBase.HTMLAttributes<HTMLSolarisSkeletonElement>;
+            "solaris-status-text": LocalJSX.SolarisStatusText & JSXBase.HTMLAttributes<HTMLSolarisStatusTextElement>;
             "solaris-stepper": LocalJSX.SolarisStepper & JSXBase.HTMLAttributes<HTMLSolarisStepperElement>;
             "solaris-typography": LocalJSX.SolarisTypography & JSXBase.HTMLAttributes<HTMLSolarisTypographyElement>;
         }

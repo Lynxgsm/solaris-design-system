@@ -10,7 +10,6 @@ import { unitFormatter } from '../../common/Base_Core/format/unit/unit';
 export class SolarisListTile {
   @Prop() __title: string;
   @Prop() width?: UnitString;
-  @Prop() onClick: Function;
 
   render() {
     return (

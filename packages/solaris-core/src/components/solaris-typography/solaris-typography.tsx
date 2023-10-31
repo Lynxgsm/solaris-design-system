@@ -4,7 +4,6 @@ import { FontFamily } from '../../types/text/font-family';
 import { TitleType } from '../../types/text/title';
 import { FontWeight } from '../../types/text/weight';
 import { UnitString } from '../../types/common/unit-string';
-import { classes } from '../../common/Base_Core/format/classes/classes';
 
 @Component({
   tag: 'solaris-typography',
@@ -13,7 +12,7 @@ import { classes } from '../../common/Base_Core/format/classes/classes';
   assetsDirs: ['../../fonts'],
 })
 export class SolarisTypography {
-  @Prop() colorScheme?: Color = 'black';
+  @Prop() colorScheme: Color = 'black';
   @Prop() fontFamily?: FontFamily = 'roboto';
   @Prop() variant?: 'p' | TitleType | 'link' | 'caption' | 'subtitle' | 'small' = 'p';
   @Prop() underline?: boolean = false;
@@ -23,12 +22,7 @@ export class SolarisTypography {
 
   render() {
     return (
-      <this.variant
-        style={{
-          display: 'inline-block',
-        }}
-        class={classes(this.variant, this.colorScheme, this.fontFamily, this.underline ? 'underline' : '', this.weight, this.truncated ? 'truncated' : '')}
-      >
+      <this.variant class={`${this.variant} text-${this.colorScheme} ${this.fontFamily} ${this.underline ? 'underline' : ''} ${this.truncated ? 'truncated' : ''} ${this.weight}`}>
         <slot />
       </this.variant>
     );

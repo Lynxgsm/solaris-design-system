@@ -111,8 +111,7 @@ export const SolarisIcon = /*@__PURE__*/ defineContainer<JSX.SolarisIcon>('solar
 
 export const SolarisListTile = /*@__PURE__*/ defineContainer<JSX.SolarisListTile>('solaris-list-tile', undefined, [
   '__title',
-  'width',
-  'onClick'
+  'width'
 ]);
 
 
@@ -141,6 +140,13 @@ export const SolarisSkeleton = /*@__PURE__*/ defineContainer<JSX.SolarisSkeleton
   'radius',
   'height',
   'width'
+]);
+
+
+export const SolarisStatusText = /*@__PURE__*/ defineContainer<JSX.SolarisStatusText>('solaris-status-text', undefined, [
+  'type',
+  'variant',
+  'dot'
 ]);
 
 

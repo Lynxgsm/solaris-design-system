@@ -1,5 +1,5 @@
 import { Component, Prop, h } from '@stencil/core';
-import { Size, UnitString } from '../../components';
+import { Size } from '../../components';
 import { classes } from '../../common/Base_Core/format/classes/classes';
 
 @Component({
@@ -8,7 +8,7 @@ import { classes } from '../../common/Base_Core/format/classes/classes';
   shadow: true,
 })
 export class SolarisColumn {
-  @Prop() gap: UnitString;
+  @Prop() gap: number;
   @Prop() col: Size = 'md';
 
   render() {
