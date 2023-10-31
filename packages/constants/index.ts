@@ -10,6 +10,7 @@ import { FontFamilyValues } from "./font-families";
 import { FontWeightValues } from "./weights";
 import { IconNameValues } from "./icons";
 import { IconVariantValues } from "./icon-variants";
+import { TypographyVariantValues } from "./typography-variants";
 
 export default {
   BreakpointValues,
@@ -25,4 +26,5 @@ export default {
   FontWeightValues,
   IconNameValues,
   IconVariantValues,
+  TypographyVariantValues,
 };

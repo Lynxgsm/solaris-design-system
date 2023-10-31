@@ -1,0 +1,35 @@
+@import '../../Base_Themes/index.scss';
+
+.status-dot {
+  width: $space-8;
+  height: $space-8;
+  border-radius: $space-8;
+
+  &.status-dot-nebula {
+    background-color: $brand-nebula-blue;
+  }
+
+  &.status-dot-error {
+    background-color: $system-error;
+  }
+
+  &.status-dot-info {
+    background-color: $info-light;
+  }
+
+  &.status-dot-warning {
+    background-color: $brand-supernova-dark;
+  }
+
+  &.status-dot-success {
+    background-color: $system-success-dark;
+  }
+
+  &.status-dot-info-nebula {
+    background-color: $brand-nebula-blue;
+  }
+
+  &.status-dot-none {
+    display: none;
+  }
+}
