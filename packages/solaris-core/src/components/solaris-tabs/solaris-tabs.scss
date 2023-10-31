@@ -1,0 +1,22 @@
+.tab {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.tab-panel {
+  padding: 10px;
+  background: #ffffff;
+}
+
+.tabs-container {
+  font-family: Arial, sans-serif;
+}
+
+.tabs {
+  display: flex;
+  gap: 16px;
+}
+
+.tab-panels {
+  padding-top: 10px;
+}

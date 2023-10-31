@@ -10,11 +10,20 @@
     <link rel="stylesheet" href="/build/solaris-core.css" />
   </head>
   <body>
-    <solaris-flex gap="8">
-      <solaris-pill active onclick="alert('hello')" count="4" label="En attente"></solaris-pill>
-      <solaris-pill onclick="alert('hello')" count="2" label="Suspendu"></solaris-pill>
-      <solaris-pill onclick="alert('hello')" count="2" label="En cours"></solaris-pill>
-      <solaris-pill onclick="alert('hello')" count="2" label="Terminé" ></solaris-pill>
-    </solaris-flex>
+    <solaris-tabs>
+      <solaris-tab slot="tab" tab="tab1">
+        <solaris-pill label="Envoyé" count="4" active />
+      </solaris-tab>
+      <solaris-tab slot="tab" tab="tab2">
+        <solaris-pill label="Envoyé" count="4" />
+      </solaris-tab>
+      <solaris-tab slot="tab" tab="tab3">
+        <solaris-pill label="Envoyé" count="4" />
+      </solaris-tab>
+
+      <solaris-tab-panel slot="tab-panel" tab="tab1" active> Content for tab 1 </solaris-tab-panel>
+      <solaris-tab-panel slot="tab-panel" tab="tab2"> Content for tab 2 </solaris-tab-panel>
+      <solaris-tab-panel slot="tab-panel" tab="tab3"> Content for tab 3 </solaris-tab-panel>
+    </solaris-tabs>
   </body>
 </html>

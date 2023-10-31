@@ -145,6 +145,15 @@ export namespace Components {
         "currentIndex"?: number;
         "steps": string[];
     }
+    interface SolarisTab {
+        "tab": string;
+    }
+    interface SolarisTabPanel {
+        "active": boolean;
+        "tab": string;
+    }
+    interface SolarisTabs {
+    }
     interface SolarisTypography {
         "colorScheme": Color;
         "fontFamily"?: FontFamily;
@@ -155,6 +164,10 @@ export namespace Components {
         "weight"?: FontWeight;
         "width"?: UnitString;
     }
+}
+export interface SolarisTabCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLSolarisTabElement;
 }
 declare global {
     interface HTMLSolarisAlertElement extends Components.SolarisAlert, HTMLStencilElement {
@@ -271,6 +284,24 @@ declare global {
         prototype: HTMLSolarisStepperElement;
         new (): HTMLSolarisStepperElement;
     };
+    interface HTMLSolarisTabElement extends Components.SolarisTab, HTMLStencilElement {
+    }
+    var HTMLSolarisTabElement: {
+        prototype: HTMLSolarisTabElement;
+        new (): HTMLSolarisTabElement;
+    };
+    interface HTMLSolarisTabPanelElement extends Components.SolarisTabPanel, HTMLStencilElement {
+    }
+    var HTMLSolarisTabPanelElement: {
+        prototype: HTMLSolarisTabPanelElement;
+        new (): HTMLSolarisTabPanelElement;
+    };
+    interface HTMLSolarisTabsElement extends Components.SolarisTabs, HTMLStencilElement {
+    }
+    var HTMLSolarisTabsElement: {
+        prototype: HTMLSolarisTabsElement;
+        new (): HTMLSolarisTabsElement;
+    };
     interface HTMLSolarisTypographyElement extends Components.SolarisTypography, HTMLStencilElement {
     }
     var HTMLSolarisTypographyElement: {
@@ -297,6 +328,9 @@ declare global {
         "solaris-skeleton": HTMLSolarisSkeletonElement;
         "solaris-status-text": HTMLSolarisStatusTextElement;
         "solaris-stepper": HTMLSolarisStepperElement;
+        "solaris-tab": HTMLSolarisTabElement;
+        "solaris-tab-panel": HTMLSolarisTabPanelElement;
+        "solaris-tabs": HTMLSolarisTabsElement;
         "solaris-typography": HTMLSolarisTypographyElement;
     }
 }
@@ -414,6 +448,16 @@ declare namespace LocalJSX {
         "currentIndex"?: number;
         "steps"?: string[];
     }
+    interface SolarisTab {
+        "onTabSelected"?: (event: SolarisTabCustomEvent<string>) => void;
+        "tab"?: string;
+    }
+    interface SolarisTabPanel {
+        "active"?: boolean;
+        "tab"?: string;
+    }
+    interface SolarisTabs {
+    }
     interface SolarisTypography {
         "colorScheme"?: Color;
         "fontFamily"?: FontFamily;
@@ -444,6 +488,9 @@ declare namespace LocalJSX {
         "solaris-skeleton": SolarisSkeleton;
         "solaris-status-text": SolarisStatusText;
         "solaris-stepper": SolarisStepper;
+        "solaris-tab": SolarisTab;
+        "solaris-tab-panel": SolarisTabPanel;
+        "solaris-tabs": SolarisTabs;
         "solaris-typography": SolarisTypography;
     }
 }
@@ -470,6 +517,9 @@ declare module "@stencil/core" {
             "solaris-skeleton": LocalJSX.SolarisSkeleton & JSXBase.HTMLAttributes<HTMLSolarisSkeletonElement>;
             "solaris-status-text": LocalJSX.SolarisStatusText & JSXBase.HTMLAttributes<HTMLSolarisStatusTextElement>;
             "solaris-stepper": LocalJSX.SolarisStepper & JSXBase.HTMLAttributes<HTMLSolarisStepperElement>;
+            "solaris-tab": LocalJSX.SolarisTab & JSXBase.HTMLAttributes<HTMLSolarisTabElement>;
+            "solaris-tab-panel": LocalJSX.SolarisTabPanel & JSXBase.HTMLAttributes<HTMLSolarisTabPanelElement>;
+            "solaris-tabs": LocalJSX.SolarisTabs & JSXBase.HTMLAttributes<HTMLSolarisTabsElement>;
             "solaris-typography": LocalJSX.SolarisTypography & JSXBase.HTMLAttributes<HTMLSolarisTypographyElement>;
         }
     }

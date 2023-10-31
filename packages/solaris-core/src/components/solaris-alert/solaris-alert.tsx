@@ -2,7 +2,6 @@ import { Component, Prop, h } from '@stencil/core';
 import { IconParams } from '../../types/icons/icon';
 import { Size } from '../../types/common/size';
 import { MessageType } from '../../types/common/message';
-import { parseIcon } from '../../common/Base_Core/format/parse-icon/parser-icon';
 import { classes } from '../../common/Base_Core/format/classes/classes';
 
 @Component({

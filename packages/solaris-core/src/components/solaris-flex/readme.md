@@ -28,6 +28,7 @@
  - [solaris-column](../solaris-column)
  - [solaris-dropdown](../solaris-dropdown)
  - [solaris-list-tile](../solaris-list-tile)
+ - [solaris-pill](../solaris-pill)
  - [solaris-row](../solaris-row)
  - [solaris-status-text](../solaris-status-text)
  - [solaris-stepper](../solaris-stepper)
@@ -43,6 +44,7 @@ graph TD;
   solaris-column --> solaris-flex
   solaris-dropdown --> solaris-flex
   solaris-list-tile --> solaris-flex
+  solaris-pill --> solaris-flex
   solaris-row --> solaris-flex
   solaris-status-text --> solaris-flex
   solaris-stepper --> solaris-flex

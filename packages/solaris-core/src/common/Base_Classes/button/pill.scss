@@ -55,7 +55,7 @@ $shadow-color: #676e9066;
   color: $brand-nebula-blue;
 }
 
-.button:hover .count .active {
+.button:hover .count.active {
   background-color: $brand-nebula-blue;
   color: $neutral-white;
 }
