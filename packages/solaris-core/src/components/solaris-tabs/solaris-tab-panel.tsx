@@ -11,7 +11,7 @@ export class SolarisTabPanel {
 
   render() {
     return (
-      <div class="tab-panel" style={{ display: this.active ? 'block' : 'none' }}>
+      <div style={{ display: this.active ? 'block' : 'none' }}>
         <slot></slot>
       </div>
     );
