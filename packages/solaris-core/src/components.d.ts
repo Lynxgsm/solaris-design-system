@@ -13,7 +13,7 @@ import { Breakpoints } from "./types/common/breakpoints";
 import { ContainerType } from "./types/common/container";
 import { UnitString } from "./types/common/unit-string";
 import { Variant } from "./types/common/variants";
-import { ColorScheme as ColorScheme1, Size as Size1, UnitString as UnitString1 } from "./components";
+import { ColumnSize } from "./types/common/column-size";
 import { TypographyVariant } from "./types/common/typography-variants";
 import { FontFamily } from "./types/text/font-family";
 import { TitleType } from "./types/text/title";
@@ -26,7 +26,7 @@ export { Breakpoints } from "./types/common/breakpoints";
 export { ContainerType } from "./types/common/container";
 export { UnitString } from "./types/common/unit-string";
 export { Variant } from "./types/common/variants";
-export { ColorScheme as ColorScheme1, Size as Size1, UnitString as UnitString1 } from "./components";
+export { ColumnSize } from "./types/common/column-size";
 export { TypographyVariant } from "./types/common/typography-variants";
 export { FontFamily } from "./types/text/font-family";
 export { TitleType } from "./types/text/title";
@@ -77,24 +77,29 @@ export namespace Components {
     }
     interface SolarisCard {
         "elevation": number;
-        "radius": Size1;
+        "radius": Size;
     }
     interface SolarisCards {
         "elevation": number;
         "radius": Size;
     }
     interface SolarisColumn {
-        "col": Size1;
-        "gap": number;
+        "col": ColumnSize;
+        "element": ContainerType;
+        "lg": ColumnSize;
+        "md": ColumnSize;
+        "sm": ColumnSize;
+        "xl": ColumnSize;
+        "xs": ColumnSize;
     }
     interface SolarisDropdown {
         "arrowPosition"?: 'left' | 'right';
         "backdrop"?: boolean;
         "button": Element;
-        "colorScheme"?: ColorScheme1;
+        "colorScheme"?: ColorScheme;
         "decorated"?: boolean;
-        "left"?: UnitString1;
-        "top"?: UnitString1;
+        "left"?: number;
+        "top"?: number;
     }
     interface SolarisFlex {
         "alignItems": 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
@@ -108,12 +113,17 @@ export namespace Components {
         "size"?: Size;
         "variant"?: IconVariant;
     }
+    interface SolarisLabel {
+        "element": TypographyVariant;
+        "icon": IconName;
+        "variant": MessageType | 'default';
+    }
     interface SolarisListTile {
         "__title": string;
         "width"?: UnitString;
     }
     interface SolarisNavbar {
-        "colorScheme": ColorScheme1;
+        "colorScheme": ColorScheme;
         "decoration": 'top' | 'left' | 'right' | 'bottom' | 'none';
         "position": 'fixed' | 'relative';
     }
@@ -242,6 +252,12 @@ declare global {
         prototype: HTMLSolarisIconElement;
         new (): HTMLSolarisIconElement;
     };
+    interface HTMLSolarisLabelElement extends Components.SolarisLabel, HTMLStencilElement {
+    }
+    var HTMLSolarisLabelElement: {
+        prototype: HTMLSolarisLabelElement;
+        new (): HTMLSolarisLabelElement;
+    };
     interface HTMLSolarisListTileElement extends Components.SolarisListTile, HTMLStencilElement {
     }
     var HTMLSolarisListTileElement: {
@@ -321,6 +337,7 @@ declare global {
         "solaris-dropdown": HTMLSolarisDropdownElement;
         "solaris-flex": HTMLSolarisFlexElement;
         "solaris-icon": HTMLSolarisIconElement;
+        "solaris-label": HTMLSolarisLabelElement;
         "solaris-list-tile": HTMLSolarisListTileElement;
         "solaris-navbar": HTMLSolarisNavbarElement;
         "solaris-pill": HTMLSolarisPillElement;
@@ -380,24 +397,29 @@ declare namespace LocalJSX {
     }
     interface SolarisCard {
         "elevation"?: number;
-        "radius"?: Size1;
+        "radius"?: Size;
     }
     interface SolarisCards {
         "elevation"?: number;
         "radius"?: Size;
     }
     interface SolarisColumn {
-        "col"?: Size1;
-        "gap"?: number;
+        "col"?: ColumnSize;
+        "element"?: ContainerType;
+        "lg"?: ColumnSize;
+        "md"?: ColumnSize;
+        "sm"?: ColumnSize;
+        "xl"?: ColumnSize;
+        "xs"?: ColumnSize;
     }
     interface SolarisDropdown {
         "arrowPosition"?: 'left' | 'right';
         "backdrop"?: boolean;
         "button"?: Element;
-        "colorScheme"?: ColorScheme1;
+        "colorScheme"?: ColorScheme;
         "decorated"?: boolean;
-        "left"?: UnitString1;
-        "top"?: UnitString1;
+        "left"?: number;
+        "top"?: number;
     }
     interface SolarisFlex {
         "alignItems"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
@@ -411,12 +433,17 @@ declare namespace LocalJSX {
         "size"?: Size;
         "variant"?: IconVariant;
     }
+    interface SolarisLabel {
+        "element"?: TypographyVariant;
+        "icon"?: IconName;
+        "variant"?: MessageType | 'default';
+    }
     interface SolarisListTile {
         "__title"?: string;
         "width"?: UnitString;
     }
     interface SolarisNavbar {
-        "colorScheme"?: ColorScheme1;
+        "colorScheme"?: ColorScheme;
         "decoration"?: 'top' | 'left' | 'right' | 'bottom' | 'none';
         "position"?: 'fixed' | 'relative';
     }
@@ -481,6 +508,7 @@ declare namespace LocalJSX {
         "solaris-dropdown": SolarisDropdown;
         "solaris-flex": SolarisFlex;
         "solaris-icon": SolarisIcon;
+        "solaris-label": SolarisLabel;
         "solaris-list-tile": SolarisListTile;
         "solaris-navbar": SolarisNavbar;
         "solaris-pill": SolarisPill;
@@ -510,6 +538,7 @@ declare module "@stencil/core" {
             "solaris-dropdown": LocalJSX.SolarisDropdown & JSXBase.HTMLAttributes<HTMLSolarisDropdownElement>;
             "solaris-flex": LocalJSX.SolarisFlex & JSXBase.HTMLAttributes<HTMLSolarisFlexElement>;
             "solaris-icon": LocalJSX.SolarisIcon & JSXBase.HTMLAttributes<HTMLSolarisIconElement>;
+            "solaris-label": LocalJSX.SolarisLabel & JSXBase.HTMLAttributes<HTMLSolarisLabelElement>;
             "solaris-list-tile": LocalJSX.SolarisListTile & JSXBase.HTMLAttributes<HTMLSolarisListTileElement>;
             "solaris-navbar": LocalJSX.SolarisNavbar & JSXBase.HTMLAttributes<HTMLSolarisNavbarElement>;
             "solaris-pill": LocalJSX.SolarisPill & JSXBase.HTMLAttributes<HTMLSolarisPillElement>;

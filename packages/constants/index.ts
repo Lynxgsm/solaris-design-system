@@ -11,11 +11,13 @@ import { FontWeightValues } from "./weights";
 import { IconNameValues } from "./icons";
 import { IconVariantValues } from "./icon-variants";
 import { TypographyVariantValues } from "./typography-variants";
+import { ColumnSizeValues } from "./column-size";
 
 export default {
   BreakpointValues,
   ColorSchemeValues,
   ColorValues,
+  ColumnSizeValues,
   MessageTypeValues,
   PositionValues,
   SizeValues,

@@ -7,24 +7,16 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type                                                         | Default     |
-| -------- | --------- | ----------- | ------------------------------------------------------------ | ----------- |
-| `col`    | `col`     |             | `"default" \| "lg" \| "md" \| "sm" \| "xl" \| "xs" \| "xxl"` | `'md'`      |
-| `gap`    | `gap`     |             | `number`                                                     | `undefined` |
+| Property  | Attribute | Description | Type                                                                                                                                               | Default  |
+| --------- | --------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| `col`     | `col`     |             | `"auto" \| 1 \| 10 \| 11 \| 12 \| 2 \| 3 \| 4 \| 5 \| 6 \| 7 \| 8 \| 9`                                                                            | `'auto'` |
+| `element` | `element` |             | `"article" \| "aside" \| "div" \| "footer" \| "header" \| "main" \| "section" \| "table" \| "tbody" \| "td" \| "tfoot" \| "th" \| "thead" \| "tr"` | `'div'`  |
+| `lg`      | `lg`      |             | `"auto" \| 1 \| 10 \| 11 \| 12 \| 2 \| 3 \| 4 \| 5 \| 6 \| 7 \| 8 \| 9`                                                                            | `'auto'` |
+| `md`      | `md`      |             | `"auto" \| 1 \| 10 \| 11 \| 12 \| 2 \| 3 \| 4 \| 5 \| 6 \| 7 \| 8 \| 9`                                                                            | `'auto'` |
+| `sm`      | `sm`      |             | `"auto" \| 1 \| 10 \| 11 \| 12 \| 2 \| 3 \| 4 \| 5 \| 6 \| 7 \| 8 \| 9`                                                                            | `'auto'` |
+| `xl`      | `xl`      |             | `"auto" \| 1 \| 10 \| 11 \| 12 \| 2 \| 3 \| 4 \| 5 \| 6 \| 7 \| 8 \| 9`                                                                            | `'auto'` |
+| `xs`      | `xs`      |             | `"auto" \| 1 \| 10 \| 11 \| 12 \| 2 \| 3 \| 4 \| 5 \| 6 \| 7 \| 8 \| 9`                                                                            | `'auto'` |
 
-
-## Dependencies
-
-### Depends on
-
-- [solaris-flex](../solaris-flex)
-
-### Graph
-```mermaid
-graph TD;
-  solaris-column --> solaris-flex
-  style solaris-column fill:#f9f,stroke:#333,stroke-width:4px
-```
 
 ----------------------------------------------
 

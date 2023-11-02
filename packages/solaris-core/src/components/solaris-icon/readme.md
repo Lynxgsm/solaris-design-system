@@ -21,6 +21,7 @@
  - [solaris-alert](../solaris-alert)
  - [solaris-badge](../solaris-badge)
  - [solaris-blockquote](../solaris-blockquote)
+ - [solaris-label](../solaris-label)
 
 ### Graph
 ```mermaid
@@ -28,6 +29,7 @@ graph TD;
   solaris-alert --> solaris-icon
   solaris-badge --> solaris-icon
   solaris-blockquote --> solaris-icon
+  solaris-label --> solaris-icon
   style solaris-icon fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
