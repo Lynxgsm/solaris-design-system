@@ -7,12 +7,12 @@ import {
 } from "solaris-react";
 
 const meta = {
-  title: "Containers/Grid System",
-  component: SolarisRow,
+  title: "Containers/Column",
+  component: SolarisColumn,
   parameters: {},
   tags: ["autodocs"],
   argTypes: {},
-} satisfies Meta<typeof SolarisRow>;
+} satisfies Meta<typeof SolarisColumn>;
 
 export default meta;
 
@@ -27,7 +27,7 @@ const style = {
   border: "1px solid #3c3c3c",
 };
 
-export const Rows: Story = {
+export const Columns: Story = {
   args: {
     children: (
       <>

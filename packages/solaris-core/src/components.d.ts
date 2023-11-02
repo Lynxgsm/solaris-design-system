@@ -86,6 +86,7 @@ export namespace Components {
     interface SolarisColumn {
         "col": ColumnSize;
         "element": ContainerType;
+        "gap": number;
         "lg": ColumnSize;
         "md": ColumnSize;
         "sm": ColumnSize;
@@ -406,6 +407,7 @@ declare namespace LocalJSX {
     interface SolarisColumn {
         "col"?: ColumnSize;
         "element"?: ContainerType;
+        "gap"?: number;
         "lg"?: ColumnSize;
         "md"?: ColumnSize;
         "sm"?: ColumnSize;

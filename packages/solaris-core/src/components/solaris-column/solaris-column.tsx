@@ -16,6 +16,7 @@ export class SolarisColumn {
   @Prop() md: ColumnSize = 'auto';
   @Prop() sm: ColumnSize = 'auto';
   @Prop() xs: ColumnSize = 'auto';
+  @Prop() gap: number;
 
   render() {
     return (

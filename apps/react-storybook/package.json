@@ -14,7 +14,8 @@
   "dependencies": {
     "solaris-react": "workspace:*",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "constants": "workspace:*"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.4.6",

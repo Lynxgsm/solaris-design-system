@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { SolarisTypography } from "solaris-react";
+import { SolarisTypography, Values } from "solaris-react";
+const { TypographyVariantValues } = Values.default;
 
 const meta = {
   title: "Typography",
@@ -18,6 +19,12 @@ export const Default: Story = {
   args: {
     variant: "p",
     children: "I am a Title",
+  },
+  argTypes: {
+    variant: {
+      options: TypographyVariantValues,
+      control: "select",
+    },
   },
 };
 

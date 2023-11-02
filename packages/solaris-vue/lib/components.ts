@@ -83,7 +83,8 @@ export const SolarisColumn = /*@__PURE__*/ defineContainer<JSX.SolarisColumn>('s
   'lg',
   'md',
   'sm',
-  'xs'
+  'xs',
+  'gap'
 ]);
 
 
