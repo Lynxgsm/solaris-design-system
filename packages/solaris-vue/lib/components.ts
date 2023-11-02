@@ -10,7 +10,6 @@ import { defineCustomElements } from 'solaris-core/loader';
 defineCustomElements();
 
 export const SolarisAlert = /*@__PURE__*/ defineContainer<JSX.SolarisAlert>('solaris-alert', undefined, [
-  '__title',
   'icon',
   'radius',
   'type',
@@ -38,7 +37,8 @@ export const SolarisBadge = /*@__PURE__*/ defineContainer<JSX.SolarisBadge>('sol
 
 
 export const SolarisBlock = /*@__PURE__*/ defineContainer<JSX.SolarisBlock>('solaris-block', undefined, [
-  'breakpoints'
+  'breakpoints',
+  'element'
 ]);
 
 
@@ -126,7 +126,10 @@ export const SolarisPill = /*@__PURE__*/ defineContainer<JSX.SolarisPill>('solar
   'label',
   'count',
   'position',
-  'active'
+  'active',
+  'type',
+  'size',
+  'loading'
 ]);
 
 
@@ -157,6 +160,21 @@ export const SolarisStepper = /*@__PURE__*/ defineContainer<JSX.SolarisStepper>(
 ]);
 
 
+export const SolarisTab = /*@__PURE__*/ defineContainer<JSX.SolarisTab>('solaris-tab', undefined, [
+  'tab',
+  'tabSelected'
+]);
+
+
+export const SolarisTabPanel = /*@__PURE__*/ defineContainer<JSX.SolarisTabPanel>('solaris-tab-panel', undefined, [
+  'tab',
+  'active'
+]);
+
+
+export const SolarisTabs = /*@__PURE__*/ defineContainer<JSX.SolarisTabs>('solaris-tabs', undefined);
+
+
 export const SolarisTypography = /*@__PURE__*/ defineContainer<JSX.SolarisTypography>('solaris-typography', undefined, [
   'colorScheme',
   'fontFamily',
@@ -164,6 +182,7 @@ export const SolarisTypography = /*@__PURE__*/ defineContainer<JSX.SolarisTypogr
   'underline',
   'width',
   'truncated',
-  'weight'
+  'weight',
+  'innerStyle'
 ]);
 

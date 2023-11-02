@@ -10,6 +10,7 @@
 | Property      | Attribute     | Description | Type                                                                                                                                                           | Default     |
 | ------------- | ------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | `breakpoints` | `breakpoints` |             | `"hide-on-lg" \| "hide-on-md" \| "hide-on-sm" \| "hide-on-xl" \| "hide-on-xs" \| "show-on-lg" \| "show-on-md" \| "show-on-sm" \| "show-on-xl" \| "show-on-xs"` | `undefined` |
+| `element`     | `element`     |             | `"article" \| "aside" \| "div" \| "footer" \| "header" \| "main" \| "section" \| "table" \| "tbody" \| "td" \| "tfoot" \| "th" \| "thead" \| "tr"`             | `'div'`     |
 
 
 ## Dependencies

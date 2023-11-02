@@ -27,4 +27,7 @@ export const SolarisRow = /*@__PURE__*/createReactComponent<JSX.SolarisRow, HTML
 export const SolarisSkeleton = /*@__PURE__*/createReactComponent<JSX.SolarisSkeleton, HTMLSolarisSkeletonElement>('solaris-skeleton');
 export const SolarisStatusText = /*@__PURE__*/createReactComponent<JSX.SolarisStatusText, HTMLSolarisStatusTextElement>('solaris-status-text');
 export const SolarisStepper = /*@__PURE__*/createReactComponent<JSX.SolarisStepper, HTMLSolarisStepperElement>('solaris-stepper');
+export const SolarisTab = /*@__PURE__*/createReactComponent<JSX.SolarisTab, HTMLSolarisTabElement>('solaris-tab');
+export const SolarisTabPanel = /*@__PURE__*/createReactComponent<JSX.SolarisTabPanel, HTMLSolarisTabPanelElement>('solaris-tab-panel');
+export const SolarisTabs = /*@__PURE__*/createReactComponent<JSX.SolarisTabs, HTMLSolarisTabsElement>('solaris-tabs');
 export const SolarisTypography = /*@__PURE__*/createReactComponent<JSX.SolarisTypography, HTMLSolarisTypographyElement>('solaris-typography');
