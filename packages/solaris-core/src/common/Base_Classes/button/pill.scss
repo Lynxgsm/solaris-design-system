@@ -4,10 +4,9 @@
 $shadow-color: #676e9066;
 
 .button {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  display: inline-block;
   gap: $space-8;
+  min-width: max-content;
   padding: $space-8 $space-16;
   border-radius: $space-8;
   background-color: white;

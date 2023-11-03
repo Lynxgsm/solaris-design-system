@@ -1,17 +1,25 @@
+@import '../../Base_Breakpoints/breakpoints.scss';
+
 .tab {
   cursor: pointer;
-  display: inline-block;
+  display: flex;
 }
 
 .tabs-container {
-  font-family: Arial, sans-serif;
+  height: 100%;
 }
 
 .tabs {
   display: flex;
   gap: 16px;
+  padding: 1px;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.tab-panels {
-  padding-top: 10px;
+.tabs::-webkit-scrollbar {
+  display: none;
 }
