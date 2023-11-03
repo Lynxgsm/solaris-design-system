@@ -5,6 +5,10 @@
   height: $space-8;
   border-radius: $space-8;
 
+  &.status-dot-disabled {
+    background-color: $neutral-darker;
+  }
+
   &.status-dot-nebula {
     background-color: $brand-nebula-blue;
   }
