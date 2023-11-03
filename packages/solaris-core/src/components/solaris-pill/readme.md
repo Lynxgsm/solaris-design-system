@@ -23,12 +23,14 @@
 ### Depends on
 
 - [solaris-flex](../solaris-flex)
+- [solaris-skeleton](../solaris-skeleton)
 - [solaris-typography](../solaris-typography)
 
 ### Graph
 ```mermaid
 graph TD;
   solaris-pill --> solaris-flex
+  solaris-pill --> solaris-skeleton
   solaris-pill --> solaris-typography
   style solaris-pill fill:#f9f,stroke:#333,stroke-width:4px
 ```

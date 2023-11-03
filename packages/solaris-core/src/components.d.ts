@@ -142,9 +142,9 @@ export namespace Components {
     }
     interface SolarisSkeleton {
         "animated": boolean;
-        "height"?: UnitString;
+        "height"?: number;
         "radius"?: Size;
-        "width"?: UnitString;
+        "width"?: number;
     }
     interface SolarisStatusText {
         "dot": 'left' | 'right' | 'none';
@@ -463,9 +463,9 @@ declare namespace LocalJSX {
     }
     interface SolarisSkeleton {
         "animated"?: boolean;
-        "height"?: UnitString;
+        "height"?: number;
         "radius"?: Size;
-        "width"?: UnitString;
+        "width"?: number;
     }
     interface SolarisStatusText {
         "dot"?: 'left' | 'right' | 'none';

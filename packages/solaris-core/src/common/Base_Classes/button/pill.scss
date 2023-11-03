@@ -22,6 +22,10 @@ $shadow-color: #676e9066;
     color: $neutral-darkest;
   }
 
+  &.loading {
+    height: 40px;
+  }
+
   &.active {
     background-color: $brand-nebula-blue-shades;
     outline: solid 1px $brand-nebula-blue;

@@ -1,6 +1,5 @@
 import { Component, Prop, h } from '@stencil/core';
 import { Size } from '../../types/common/size';
-import { UnitString } from '../../types/common/unit-string';
 import { classes } from '../../common/Base_Core/format/classes/classes';
 
 @Component({
@@ -11,9 +10,9 @@ import { classes } from '../../common/Base_Core/format/classes/classes';
 export class SolarisSkeleton {
   @Prop() animated: boolean = true;
   @Prop() radius?: Size = 'default';
-  @Prop() height?: UnitString = '30px';
-  @Prop() width?: UnitString = 'auto';
+  @Prop() height?: number = 32;
+  @Prop() width?: number;
   render() {
-    return <div class={classes('skeleton', `border-${this.radius}`, this.animated ? 'animated' : '')} style={{ height: `${this.height}`, width: `${this.width}` }} />;
+    return <div class={classes('skeleton', `border-${this.radius}`, this.animated ? 'animated' : '')} style={{ height: `${this.height}px`, width: `${this.width}px` }} />;
   }
 }

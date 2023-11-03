@@ -17,7 +17,14 @@ export class SolarisPill {
   @Prop() loading: boolean = false;
 
   render() {
-    return (
+    return this.loading ? (
+      <button class="button loading">
+        <solaris-flex gap={8}>
+          <solaris-skeleton height={14} width={42} radius="md"></solaris-skeleton>
+          <solaris-skeleton height={14} width={14} radius="xxl"></solaris-skeleton>
+        </solaris-flex>
+      </button>
+    ) : (
       <button class={`button ${this.active ? 'active' : ''}`}>
         <solaris-flex gap={8} alignItems="center" direction={this.position === 'right' ? 'row' : 'row-reverse'}>
           <solaris-typography class={`label`} variant="h7" weight={this.active ? 'bold' : 'regular'} innerStyle={{ padding: '0', lineHeight: '.1px' }}>
