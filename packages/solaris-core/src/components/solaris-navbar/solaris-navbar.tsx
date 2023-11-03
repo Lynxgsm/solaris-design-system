@@ -1,6 +1,6 @@
 import { Component, Prop, h } from '@stencil/core';
 import { classes } from '../../common/Base_Core/format/classes/classes';
-import { ColorScheme } from '../../components';
+import { ColorScheme } from '../../types/common/color-scheme';
 
 @Component({
   tag: 'solaris-navbar',

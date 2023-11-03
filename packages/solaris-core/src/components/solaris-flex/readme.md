@@ -25,7 +25,6 @@
  - [solaris-badge](../solaris-badge)
  - [solaris-blockquote](../solaris-blockquote)
  - [solaris-cards](../solaris-cards)
- - [solaris-column](../solaris-column)
  - [solaris-dropdown](../solaris-dropdown)
  - [solaris-list-tile](../solaris-list-tile)
  - [solaris-pill](../solaris-pill)
@@ -41,7 +40,6 @@ graph TD;
   solaris-badge --> solaris-flex
   solaris-blockquote --> solaris-flex
   solaris-cards --> solaris-flex
-  solaris-column --> solaris-flex
   solaris-dropdown --> solaris-flex
   solaris-list-tile --> solaris-flex
   solaris-pill --> solaris-flex

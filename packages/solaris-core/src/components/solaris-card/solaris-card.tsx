@@ -1,5 +1,5 @@
 import { Component, Prop, h } from '@stencil/core';
-import { Size } from '../../components';
+import { Size } from '../../types/common/size';
 
 @Component({
   tag: 'solaris-card',

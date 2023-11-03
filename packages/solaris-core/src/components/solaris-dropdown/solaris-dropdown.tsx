@@ -1,7 +1,7 @@
 import { Component, Listen, Prop, State, h } from '@stencil/core';
 import { classes } from '../../common/Base_Core/format/classes/classes';
 import { unitFormatter } from '../../common/Base_Core/format/unit/unit';
-import { ColorScheme, UnitString } from '../../components';
+import { ColorScheme } from '../../types/common/color-scheme';
 
 @Component({
   tag: 'solaris-dropdown',
@@ -10,8 +10,8 @@ import { ColorScheme, UnitString } from '../../components';
 })
 export class SolarisDropdown {
   @Prop() button: Element;
-  @Prop() top?: UnitString;
-  @Prop() left?: UnitString;
+  @Prop() top?: number;
+  @Prop() left?: number;
   @Prop() decorated?: boolean;
   @Prop() colorScheme?: ColorScheme = 'supernova';
   @Prop() arrowPosition?: 'left' | 'right' = 'left';
