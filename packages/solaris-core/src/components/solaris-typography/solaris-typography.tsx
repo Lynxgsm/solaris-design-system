@@ -19,8 +19,8 @@ export class SolarisTypography {
   @Prop() truncated?: boolean = false;
   @Prop() weight: FontWeight = 'regular';
   @Prop() lineHeight: number = 1.25;
-  @Prop() innerStyle: { [key: string]: string } = {};
   @Prop() margin: number = 0;
+  @Prop() innerStyle: { [key: string]: string } = {};
 
   render() {
     return (

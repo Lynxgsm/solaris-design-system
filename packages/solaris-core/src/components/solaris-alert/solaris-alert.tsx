@@ -1,5 +1,5 @@
 import { Component, Event, EventEmitter, Listen, Prop, h } from '@stencil/core';
-import { IconParams } from '../../types/icons/icon';
+import { IconName } from '../../types/icons/icon';
 import { Size } from '../../types/common/size';
 import { MessageType } from '../../types/common/message';
 import { classes } from '../../common/Base_Core/format/classes/classes';
@@ -10,7 +10,7 @@ import { classes } from '../../common/Base_Core/format/classes/classes';
   shadow: true,
 })
 export class SolarisAlert {
-  @Prop() icon?: IconParams;
+  @Prop() icon?: IconName;
   @Prop() radius?: Size = 'default';
   @Prop() type?: MessageType = 'info';
   @Prop() iconPosition?: 'left' | 'right' = 'left';
@@ -34,7 +34,7 @@ export class SolarisAlert {
   render() {
     return (
       <solaris-flex role="banner" gap={16} class={this.generateClass()} style={{ maxWidth: `${this.maxWidth}px` }}>
-        {this.icon && <solaris-icon name="alignment-bottom"></solaris-icon>}
+        {this.icon && <solaris-icon name={this.icon}></solaris-icon>}
         <solaris-flex direction="column" gap={8} wide>
           <slot name="title" />
           <slot />

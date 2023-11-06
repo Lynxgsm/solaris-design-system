@@ -5,6 +5,7 @@ $decoration-size: 6px;
 .alert {
   padding: 16px;
   display: flex;
+  position: relative;
 
   &.alert-close {
     display: none;

@@ -35,7 +35,7 @@ export namespace Components {
     interface SolarisAlert {
         "bordered"?: boolean;
         "closable": boolean;
-        "icon"?: IconParams;
+        "icon"?: IconName;
         "iconPosition"?: 'left' | 'right';
         "maxWidth"?: number;
         "radius"?: Size;
@@ -365,7 +365,7 @@ declare namespace LocalJSX {
     interface SolarisAlert {
         "bordered"?: boolean;
         "closable"?: boolean;
-        "icon"?: IconParams;
+        "icon"?: IconName;
         "iconPosition"?: 'left' | 'right';
         "maxWidth"?: number;
         "onOnCloseClick"?: (event: SolarisAlertCustomEvent<void>) => void;
