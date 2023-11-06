@@ -68,6 +68,7 @@ export const IconNameValues = [
   "close",
   "cloud",
   "contract",
+  "copy",
   "cost",
   "credit-card",
   "delivery",
@@ -207,5 +208,4 @@ export const IconNameValues = [
   "wheel",
   "youtube",
   "zoom-plus",
-  "copy",
 ] as const;

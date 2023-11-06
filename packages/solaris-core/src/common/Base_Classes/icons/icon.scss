@@ -4,12 +4,12 @@ $icon-path: '/icons';
 
 @font-face {
   font-family: 'nec-icons';
-  src: url('#{$icon-path}/nec-icons.eot?58970762');
+  src: url('#{$icon-path}/nec-icons.eot');
   src:
-    url('#{$icon-path}/nec-icons.eot?58970762#iefix') format('embedded-opentype'),
-    url('#{$icon-path}/nec-icons.woff2?58970762') format('woff2'),
-    url('#{$icon-path}/nec-icons.woff?58970762') format('woff'),
-    url('#{$icon-path}/nec-icons.ttf?58970762') format('truetype');
+    url('#{$icon-path}/nec-icons.eot') format('embedded-opentype'),
+    url('#{$icon-path}/nec-icons.woff2') format('woff2'),
+    url('#{$icon-path}/nec-icons.woff') format('woff'),
+    url('#{$icon-path}/nec-icons.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
