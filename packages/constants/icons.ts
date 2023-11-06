@@ -207,4 +207,5 @@ export const IconNameValues = [
   "wheel",
   "youtube",
   "zoom-plus",
+  "copy",
 ] as const;
