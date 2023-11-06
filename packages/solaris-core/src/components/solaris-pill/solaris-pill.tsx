@@ -31,7 +31,7 @@ export class SolarisPill {
             {this.label}
           </solaris-typography>
           <div class={`count ${this.active ? 'active' : ''}`}>
-            <solaris-typography weight="bold" innerStyle={{ padding: '0', lineHeight: '.1px', fontSize: '12px' }}>
+            <solaris-typography weight="bold" fontFamily="montserrat" innerStyle={{ padding: '0', lineHeight: '.1px', fontSize: '12px' }}>
               {this.count}
             </solaris-typography>
           </div>
