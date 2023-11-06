@@ -9,7 +9,6 @@ import { UnitString } from '../../types/common/unit-string';
   tag: 'solaris-typography',
   styleUrl: 'solaris-typography.scss',
   shadow: true,
-  assetsDirs: ['../../fonts'],
 })
 export class SolarisTypography {
   @Prop() colorScheme: Color = 'inherit';
@@ -18,13 +17,15 @@ export class SolarisTypography {
   @Prop() underline?: boolean = false;
   @Prop() width?: UnitString = 'auto';
   @Prop() truncated?: boolean = false;
-  @Prop() weight?: FontWeight = 'regular';
+  @Prop() weight: FontWeight = 'regular';
+  @Prop() lineHeight: number = 1.25;
   @Prop() innerStyle: { [key: string]: string } = {};
+  @Prop() margin: number = 0;
 
   render() {
     return (
       <this.variant
-        style={this.innerStyle}
+        style={{ lineHeight: this.lineHeight, margin: this.margin, ...this.innerStyle }}
         class={`${this.variant} text-${this.colorScheme} ${this.fontFamily} ${this.underline ? 'underline' : ''} ${this.truncated ? 'truncated' : ''} ${this.weight}`}
       >
         <slot />

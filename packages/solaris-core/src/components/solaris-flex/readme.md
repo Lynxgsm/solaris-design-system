@@ -7,13 +7,15 @@
 
 ## Properties
 
-| Property         | Attribute         | Description | Type                                                                                            | Default        |
-| ---------------- | ----------------- | ----------- | ----------------------------------------------------------------------------------------------- | -------------- |
-| `alignItems`     | `align-items`     |             | `"center" \| "flex-end" \| "flex-start" \| "space-around" \| "space-between" \| "space-evenly"` | `'flex-start'` |
-| `direction`      | `direction`       |             | `"column" \| "column-reverse" \| "row" \| "row-reverse"`                                        | `'row'`        |
-| `gap`            | `gap`             |             | `number`                                                                                        | `undefined`    |
-| `justifyContent` | `justify-content` |             | `"center" \| "flex-end" \| "flex-start" \| "space-around" \| "space-between" \| "space-evenly"` | `'flex-start'` |
-| `wrap`           | `wrap`            |             | `"nowrap" \| "wrap" \| "wrap-reverse"`                                                          | `'wrap'`       |
+| Property         | Attribute         | Description | Type                                                                                                                                               | Default        |
+| ---------------- | ----------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| `alignItems`     | `align-items`     |             | `"center" \| "flex-end" \| "flex-start" \| "space-around" \| "space-between" \| "space-evenly"`                                                    | `'flex-start'` |
+| `direction`      | `direction`       |             | `"column" \| "column-reverse" \| "row" \| "row-reverse"`                                                                                           | `'row'`        |
+| `gap`            | `gap`             |             | `number`                                                                                                                                           | `undefined`    |
+| `justifyContent` | `justify-content` |             | `"center" \| "flex-end" \| "flex-start" \| "space-around" \| "space-between" \| "space-evenly"`                                                    | `'flex-start'` |
+| `variant`        | `variant`         |             | `"article" \| "aside" \| "div" \| "footer" \| "header" \| "main" \| "section" \| "table" \| "tbody" \| "td" \| "tfoot" \| "th" \| "thead" \| "tr"` | `'div'`        |
+| `wide`           | `wide`            |             | `boolean`                                                                                                                                          | `true`         |
+| `wrap`           | `wrap`            |             | `"nowrap" \| "wrap" \| "wrap-reverse"`                                                                                                             | `'nowrap'`     |
 
 
 ## Dependencies

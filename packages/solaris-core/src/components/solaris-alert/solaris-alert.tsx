@@ -23,14 +23,10 @@ export class SolarisAlert {
     return (
       <solaris-flex role="banner" gap={16} class={this.generateClass()} style={{ maxWidth: `${this.maxWidth}px` }}>
         {this.icon && <solaris-icon name="alignment-bottom"></solaris-icon>}
-        <solaris-block>
-          <solaris-typography variant="h6">
-            <slot name="title" />
-          </solaris-typography>
-          <solaris-block>
-            <slot />
-          </solaris-block>
-        </solaris-block>
+        <solaris-flex direction="column" gap={8} wide>
+          <slot name="title" />
+          <slot />
+        </solaris-flex>
       </solaris-flex>
     );
   }

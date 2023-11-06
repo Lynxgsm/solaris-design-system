@@ -23,16 +23,12 @@
 
 - [solaris-flex](../solaris-flex)
 - [solaris-icon](../solaris-icon)
-- [solaris-block](../solaris-block)
-- [solaris-typography](../solaris-typography)
 
 ### Graph
 ```mermaid
 graph TD;
   solaris-alert --> solaris-flex
   solaris-alert --> solaris-icon
-  solaris-alert --> solaris-block
-  solaris-alert --> solaris-typography
   style solaris-alert fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

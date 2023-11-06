@@ -17,7 +17,6 @@
 
 ### Used by
 
- - [solaris-alert](../solaris-alert)
  - [solaris-blockquote](../solaris-blockquote)
  - [solaris-card](../solaris-card)
  - [solaris-dropdown](../solaris-dropdown)
@@ -26,7 +25,6 @@
 ### Graph
 ```mermaid
 graph TD;
-  solaris-alert --> solaris-block
   solaris-blockquote --> solaris-block
   solaris-card --> solaris-block
   solaris-dropdown --> solaris-block

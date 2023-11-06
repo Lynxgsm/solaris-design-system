@@ -7,35 +7,13 @@
 
     <script type="module" src="/build/solaris-core.esm.js"></script>
     <script nomodule src="/build/solaris-core.js"></script>
-    <link rel="stylesheet" href="/build/solaris-core.css" />
+    <!-- <link rel="stylesheet" href="/build/solaris-core.css" /> -->
   </head>
   <body>
-    <solaris-tabs>
-      <solaris-tab slot="tab" tab="tab1">
-        <solaris-pill label="Envoyé" count="3" active></solaris-pill>
-      </solaris-tab>
-      <solaris-tab slot="tab" tab="tab2">
-        <solaris-pill label="Envoyé" count="3" loading></solaris-pill>
-      </solaris-tab>
-      <solaris-tab slot="tab" tab="tab2">
-        <solaris-pill label="Envoyé" count="3"></solaris-pill>
-      </solaris-tab>
-      <solaris-tab slot="tab" tab="tab2">
-        <solaris-pill label="Envoyé" count="3"></solaris-pill>
-      </solaris-tab>
-      <solaris-tab slot="tab" tab="tab2">
-        <solaris-pill label="Envoyé" count="3"></solaris-pill>
-      </solaris-tab>
-
-      <solaris-tab-panel active slot="tab-panel" tab="tab1">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit magnam itaque id minus magni ea quis tempore, quaerat eveniet, inventore suscipit? Earum, vitae.
-          Necessitatibus quos perspiciatis cum voluptates obcaecati itaque.
-        </p>
-      </solaris-tab-panel>
-      <solaris-tab-panel slot="tab-panel" tab="tab2">
-        <p>Hello Tab Panel</p>
-      </solaris-tab-panel>
-    </solaris-tabs>
+    <solaris-alert icon="arrow-up" bordered radius="md">
+      <solaris-typography slot="title">This is title</solaris-typography>
+      <solaris-typography color-scheme="darker">Lorem ipsum dolor sit amet consectetur adipisicing elit. </solaris-typography>
+      <solaris-icon name="arrow-down" slot="trailing" />
+    </solaris-alert>
   </body>
 </html>

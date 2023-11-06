@@ -107,6 +107,8 @@ export namespace Components {
         "direction": 'row' | 'row-reverse' | 'column' | 'column-reverse';
         "gap": number;
         "justifyContent": 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
+        "variant": ContainerType;
+        "wide": boolean;
         "wrap": 'nowrap' | 'wrap' | 'wrap-reverse';
     }
     interface SolarisIcon {
@@ -169,10 +171,12 @@ export namespace Components {
         "colorScheme": Color;
         "fontFamily"?: FontFamily;
         "innerStyle": { [key: string]: string };
+        "lineHeight": number;
+        "margin": number;
         "truncated"?: boolean;
         "underline"?: boolean;
         "variant"?: 'p' | TitleType | 'link' | 'caption' | 'subtitle' | 'small';
-        "weight"?: FontWeight;
+        "weight": FontWeight;
         "width"?: UnitString;
     }
 }
@@ -428,6 +432,8 @@ declare namespace LocalJSX {
         "direction"?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
         "gap"?: number;
         "justifyContent"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
+        "variant"?: ContainerType;
+        "wide"?: boolean;
         "wrap"?: 'nowrap' | 'wrap' | 'wrap-reverse';
     }
     interface SolarisIcon {
@@ -491,6 +497,8 @@ declare namespace LocalJSX {
         "colorScheme"?: Color;
         "fontFamily"?: FontFamily;
         "innerStyle"?: { [key: string]: string };
+        "lineHeight"?: number;
+        "margin"?: number;
         "truncated"?: boolean;
         "underline"?: boolean;
         "variant"?: 'p' | TitleType | 'link' | 'caption' | 'subtitle' | 'small';
