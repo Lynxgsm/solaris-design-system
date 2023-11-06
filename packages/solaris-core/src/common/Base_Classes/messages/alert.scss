@@ -6,6 +6,20 @@ $decoration-size: 6px;
   padding: 16px;
   display: flex;
 
+  &.alert-close {
+    display: none;
+  }
+
+  .close {
+    position: absolute;
+    right: 11px;
+    top: 11px;
+  }
+
+  .close:hover {
+    cursor: pointer;
+  }
+
   &.alert-center {
     align-items: center;
   }

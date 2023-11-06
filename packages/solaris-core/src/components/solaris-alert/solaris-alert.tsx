@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Event, EventEmitter, Listen, Prop, h } from '@stencil/core';
 import { IconParams } from '../../types/icons/icon';
 import { Size } from '../../types/common/size';
 import { MessageType } from '../../types/common/message';
@@ -16,9 +16,21 @@ export class SolarisAlert {
   @Prop() iconPosition?: 'left' | 'right' = 'left';
   @Prop() maxWidth?: number;
   @Prop() bordered?: boolean = false;
+  @Prop() closable: boolean = false; // Affiche la croix
+
   generateClass() {
     return classes('alert', `alert-${this.iconPosition}`, `alert-${this.type}`, this.bordered && 'alert-bordered', `border-${this.radius}`);
   }
+
+  @Listen('onCloseClick')
+  onCloseClickHandler() {}
+
+  @Event() onCloseClick: EventEmitter<void>;
+
+  private handleCloseClick = () => {
+    this.onCloseClick.emit();
+  };
+
   render() {
     return (
       <solaris-flex role="banner" gap={16} class={this.generateClass()} style={{ maxWidth: `${this.maxWidth}px` }}>
@@ -27,6 +39,7 @@ export class SolarisAlert {
           <slot name="title" />
           <slot />
         </solaris-flex>
+        {this.closable && <solaris-icon onClick={this.handleCloseClick} class="close" name="close"></solaris-icon>}
       </solaris-flex>
     );
   }

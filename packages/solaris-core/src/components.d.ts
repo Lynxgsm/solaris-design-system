@@ -34,6 +34,7 @@ export { FontWeight } from "./types/text/weight";
 export namespace Components {
     interface SolarisAlert {
         "bordered"?: boolean;
+        "closable": boolean;
         "icon"?: IconParams;
         "iconPosition"?: 'left' | 'right';
         "maxWidth"?: number;
@@ -179,6 +180,10 @@ export namespace Components {
         "weight": FontWeight;
         "width"?: UnitString;
     }
+}
+export interface SolarisAlertCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLSolarisAlertElement;
 }
 export interface SolarisTabCustomEvent<T> extends CustomEvent<T> {
     detail: T;
@@ -359,9 +364,11 @@ declare global {
 declare namespace LocalJSX {
     interface SolarisAlert {
         "bordered"?: boolean;
+        "closable"?: boolean;
         "icon"?: IconParams;
         "iconPosition"?: 'left' | 'right';
         "maxWidth"?: number;
+        "onOnCloseClick"?: (event: SolarisAlertCustomEvent<void>) => void;
         "radius"?: Size;
         "type"?: MessageType;
     }
