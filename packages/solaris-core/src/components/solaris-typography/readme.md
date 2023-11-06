@@ -12,6 +12,8 @@
 | `colorScheme` | `color-scheme` |             | `"error" \| "inherit" \| "danger" \| "supernova" \| "nebula-blue" \| "cobalt" \| "comet" \| "black" \| "white" \| "supernova-dark" \| "nebula-blue-shades" \| "nebula-blue-dark" \| "cobalt-dark" \| "comet-dark" \| "additional-link" \| "success-dark" \| "success-light" \| "error-light" \| "error-dark" \| "alert-light" \| "alert-dark" \| "info-light" \| "info-dark" \| "darkest" \| "darker" \| "neutral" \| "disabled-light" \| "light" \| "lighter" \| "grey-1" \| "grey-2" \| "grey-3" \| "grey-4"` | `'inherit'` |
 | `fontFamily`  | `font-family`  |             | `"montserrat" \| "roboto"`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | `'roboto'`  |
 | `innerStyle`  | --             |             | `{ [key: string]: string; }`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | `{}`        |
+| `lineHeight`  | `line-height`  |             | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | `1.25`      |
+| `margin`      | `margin`       |             | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | `0`         |
 | `truncated`   | `truncated`    |             | `boolean`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | `false`     |
 | `underline`   | `underline`    |             | `boolean`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | `false`     |
 | `variant`     | `variant`      |             | `"caption" \| "h1" \| "h2" \| "h3" \| "h4" \| "h5" \| "h6" \| "h7" \| "link" \| "p" \| "small" \| "subtitle"`                                                                                                                                                                                                                                                                                                                                                                                                   | `'p'`       |
@@ -23,7 +25,6 @@
 
 ### Used by
 
- - [solaris-alert](../solaris-alert)
  - [solaris-avatar](../solaris-avatar)
  - [solaris-blockquote](../solaris-blockquote)
  - [solaris-list-tile](../solaris-list-tile)
@@ -34,7 +35,6 @@
 ### Graph
 ```mermaid
 graph TD;
-  solaris-alert --> solaris-typography
   solaris-avatar --> solaris-typography
   solaris-blockquote --> solaris-typography
   solaris-list-tile --> solaris-typography

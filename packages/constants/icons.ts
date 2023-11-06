@@ -68,6 +68,7 @@ export const IconNameValues = [
   "close",
   "cloud",
   "contract",
+  "copy",
   "cost",
   "credit-card",
   "delivery",

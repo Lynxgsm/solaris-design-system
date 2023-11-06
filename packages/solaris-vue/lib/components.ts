@@ -15,7 +15,9 @@ export const SolarisAlert = /*@__PURE__*/ defineContainer<JSX.SolarisAlert>('sol
   'type',
   'iconPosition',
   'maxWidth',
-  'bordered'
+  'bordered',
+  'closable',
+  'onCloseClick'
 ]);
 
 
@@ -100,11 +102,13 @@ export const SolarisDropdown = /*@__PURE__*/ defineContainer<JSX.SolarisDropdown
 
 
 export const SolarisFlex = /*@__PURE__*/ defineContainer<JSX.SolarisFlex>('solaris-flex', undefined, [
+  'variant',
   'gap',
   'justifyContent',
   'alignItems',
   'direction',
-  'wrap'
+  'wrap',
+  'wide'
 ]);
 
 
@@ -196,6 +200,8 @@ export const SolarisTypography = /*@__PURE__*/ defineContainer<JSX.SolarisTypogr
   'width',
   'truncated',
   'weight',
+  'lineHeight',
+  'margin',
   'innerStyle'
 ]);
 

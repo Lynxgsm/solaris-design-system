@@ -34,7 +34,8 @@ export { FontWeight } from "./types/text/weight";
 export namespace Components {
     interface SolarisAlert {
         "bordered"?: boolean;
-        "icon"?: IconParams;
+        "closable": boolean;
+        "icon"?: IconName;
         "iconPosition"?: 'left' | 'right';
         "maxWidth"?: number;
         "radius"?: Size;
@@ -107,6 +108,8 @@ export namespace Components {
         "direction": 'row' | 'row-reverse' | 'column' | 'column-reverse';
         "gap": number;
         "justifyContent": 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
+        "variant": ContainerType;
+        "wide": boolean;
         "wrap": 'nowrap' | 'wrap' | 'wrap-reverse';
     }
     interface SolarisIcon {
@@ -142,9 +145,9 @@ export namespace Components {
     }
     interface SolarisSkeleton {
         "animated": boolean;
-        "height"?: UnitString;
+        "height"?: number;
         "radius"?: Size;
-        "width"?: UnitString;
+        "width"?: number;
     }
     interface SolarisStatusText {
         "dot": 'left' | 'right' | 'none';
@@ -169,12 +172,18 @@ export namespace Components {
         "colorScheme": Color;
         "fontFamily"?: FontFamily;
         "innerStyle": { [key: string]: string };
+        "lineHeight": number;
+        "margin": number;
         "truncated"?: boolean;
         "underline"?: boolean;
         "variant"?: 'p' | TitleType | 'link' | 'caption' | 'subtitle' | 'small';
-        "weight"?: FontWeight;
+        "weight": FontWeight;
         "width"?: UnitString;
     }
+}
+export interface SolarisAlertCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLSolarisAlertElement;
 }
 export interface SolarisTabCustomEvent<T> extends CustomEvent<T> {
     detail: T;
@@ -355,9 +364,11 @@ declare global {
 declare namespace LocalJSX {
     interface SolarisAlert {
         "bordered"?: boolean;
-        "icon"?: IconParams;
+        "closable"?: boolean;
+        "icon"?: IconName;
         "iconPosition"?: 'left' | 'right';
         "maxWidth"?: number;
+        "onOnCloseClick"?: (event: SolarisAlertCustomEvent<void>) => void;
         "radius"?: Size;
         "type"?: MessageType;
     }
@@ -428,6 +439,8 @@ declare namespace LocalJSX {
         "direction"?: 'row' | 'row-reverse' | 'column' | 'column-reverse';
         "gap"?: number;
         "justifyContent"?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
+        "variant"?: ContainerType;
+        "wide"?: boolean;
         "wrap"?: 'nowrap' | 'wrap' | 'wrap-reverse';
     }
     interface SolarisIcon {
@@ -463,9 +476,9 @@ declare namespace LocalJSX {
     }
     interface SolarisSkeleton {
         "animated"?: boolean;
-        "height"?: UnitString;
+        "height"?: number;
         "radius"?: Size;
-        "width"?: UnitString;
+        "width"?: number;
     }
     interface SolarisStatusText {
         "dot"?: 'left' | 'right' | 'none';
@@ -491,6 +504,8 @@ declare namespace LocalJSX {
         "colorScheme"?: Color;
         "fontFamily"?: FontFamily;
         "innerStyle"?: { [key: string]: string };
+        "lineHeight"?: number;
+        "margin"?: number;
         "truncated"?: boolean;
         "underline"?: boolean;
         "variant"?: 'p' | TitleType | 'link' | 'caption' | 'subtitle' | 'small';

@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { SolarisPill, Values } from "solaris-react";
-const { SizeValues, MessageTypeValues } = Values.default;
+import { SolarisPill } from "solaris-react";
 
 const meta = {
   title: "Pill",
@@ -23,25 +22,18 @@ export const Default: Story = {
   },
   argTypes: {
     label: {
-      control: "input",
+      control: "text",
     },
     count: {
-      control: "input",
+      control: "number",
     },
     position: {
       options: ["left", "right"],
       control: "select",
+      defaultValue: "right",
     },
     active: {
       control: "boolean",
-    },
-    type: {
-      options: MessageTypeValues,
-      control: "select",
-    },
-    size: {
-      options: SizeValues,
-      control: "select",
     },
     loading: {
       control: "boolean",

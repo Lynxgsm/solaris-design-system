@@ -4,10 +4,9 @@
 $shadow-color: #676e9066;
 
 .button {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  display: inline-block;
   gap: $space-8;
+  min-width: max-content;
   padding: $space-8 $space-16;
   border-radius: $space-8;
   background-color: white;
@@ -20,6 +19,10 @@ $shadow-color: #676e9066;
 
   .label {
     color: $neutral-darkest;
+  }
+
+  &.loading {
+    height: 40px;
   }
 
   &.active {
@@ -36,6 +39,9 @@ $shadow-color: #676e9066;
   }
 
   .count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 24px;
     height: 24px;
     margin: 0;

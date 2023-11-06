@@ -1,0 +1,28 @@
+@import '../../Base_Breakpoints/breakpoints.scss';
+
+.tab {
+  cursor: pointer;
+  display: flex;
+}
+
+.tabs-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tabs {
+  display: flex;
+  gap: 16px;
+  padding: 1px;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}

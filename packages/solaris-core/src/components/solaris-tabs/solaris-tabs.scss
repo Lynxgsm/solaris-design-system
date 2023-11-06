@@ -1,17 +1,1 @@
-.tab {
-  cursor: pointer;
-  display: inline-block;
-}
-
-.tabs-container {
-  font-family: Arial, sans-serif;
-}
-
-.tabs {
-  display: flex;
-  gap: 16px;
-}
-
-.tab-panels {
-  padding-top: 10px;
-}
+@import '../../common/Base_Classes/tabs/tabs.scss';

@@ -5,6 +5,21 @@ $decoration-size: 6px;
 .alert {
   padding: 16px;
   display: flex;
+  position: relative;
+
+  &.alert-close {
+    display: none;
+  }
+
+  .close {
+    position: absolute;
+    right: 11px;
+    top: 11px;
+  }
+
+  .close:hover {
+    cursor: pointer;
+  }
 
   &.alert-center {
     align-items: center;

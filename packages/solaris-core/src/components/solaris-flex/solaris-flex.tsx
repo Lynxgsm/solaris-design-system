@@ -1,5 +1,6 @@
 import { Component, Prop, h } from '@stencil/core';
 import { classes } from '../../common/Base_Core/format/classes/classes';
+import { ContainerType } from '../../types/common/container';
 
 @Component({
   tag: 'solaris-flex',
@@ -7,15 +8,17 @@ import { classes } from '../../common/Base_Core/format/classes/classes';
   shadow: true,
 })
 export class SolarisFlex {
+  @Prop() variant: ContainerType = 'div';
   @Prop() gap: number;
   @Prop() justifyContent: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly' = 'flex-start';
   @Prop() alignItems: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly' = 'flex-start';
   @Prop() direction: 'row' | 'row-reverse' | 'column' | 'column-reverse' = 'row';
-  @Prop() wrap: 'nowrap' | 'wrap' | 'wrap-reverse' = 'wrap';
+  @Prop() wrap: 'nowrap' | 'wrap' | 'wrap-reverse' = 'nowrap';
+  @Prop() wide: boolean = true;
 
   render() {
     return (
-      <div
+      <this.variant
         class={classes('flex')}
         style={{
           justifyContent: this.justifyContent,
@@ -23,10 +26,11 @@ export class SolarisFlex {
           gap: `${this.gap}px`,
           flexWrap: this.wrap,
           flexDirection: this.direction,
+          flex: this.wide ? '1' : 'auto',
         }}
       >
         <slot />
-      </div>
+      </this.variant>
     );
   }
 }
