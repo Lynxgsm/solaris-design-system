@@ -17,7 +17,11 @@ export class SolarisTabs {
     return (
       <div class="tabs-container">
         <div class="tabs">
+          <div class="left-rectangle"></div>
           <slot name="tab"></slot>
+          <div class="right-rectangle">
+            <solaris-skeleton></solaris-skeleton>
+          </div>
         </div>
         <div class="tab-panels">
           <slot name="tab-panel"></slot>

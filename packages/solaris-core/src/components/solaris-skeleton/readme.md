@@ -20,11 +20,13 @@
 ### Used by
 
  - [solaris-pill](../solaris-pill)
+ - [solaris-tabs](../solaris-tabs)
 
 ### Graph
 ```mermaid
 graph TD;
   solaris-pill --> solaris-skeleton
+  solaris-tabs --> solaris-skeleton
   style solaris-skeleton fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

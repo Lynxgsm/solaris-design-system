@@ -5,9 +5,8 @@ import { defineContainer } from './vue-component-lib/utils';
 
 import type { JSX } from 'solaris-core';
 
-import { defineCustomElements } from 'solaris-core/loader';
 
-defineCustomElements();
+
 
 export const SolarisAlert = /*@__PURE__*/ defineContainer<JSX.SolarisAlert>('solaris-alert', undefined, [
   'icon',
