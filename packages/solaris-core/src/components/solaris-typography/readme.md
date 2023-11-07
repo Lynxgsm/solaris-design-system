@@ -27,6 +27,7 @@
 
  - [solaris-avatar](../solaris-avatar)
  - [solaris-blockquote](../solaris-blockquote)
+ - [solaris-bubble](../solaris-bubble)
  - [solaris-list-tile](../solaris-list-tile)
  - [solaris-pill](../solaris-pill)
  - [solaris-status-text](../solaris-status-text)
@@ -37,6 +38,7 @@
 graph TD;
   solaris-avatar --> solaris-typography
   solaris-blockquote --> solaris-typography
+  solaris-bubble --> solaris-typography
   solaris-list-tile --> solaris-typography
   solaris-pill --> solaris-typography
   solaris-status-text --> solaris-typography

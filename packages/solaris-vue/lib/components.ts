@@ -5,8 +5,9 @@ import { defineContainer } from './vue-component-lib/utils';
 
 import type { JSX } from 'solaris-core';
 
+import { defineCustomElements } from 'solaris-core/loader';
 
-
+defineCustomElements();
 
 export const SolarisAlert = /*@__PURE__*/ defineContainer<JSX.SolarisAlert>('solaris-alert', undefined, [
   'icon',
@@ -52,6 +53,13 @@ export const SolarisBlockquote = /*@__PURE__*/ defineContainer<JSX.SolarisBlockq
   'maxWidth',
   'bordered',
   'decorationPosition'
+]);
+
+
+export const SolarisBubble = /*@__PURE__*/ defineContainer<JSX.SolarisBubble>('solaris-bubble', undefined, [
+  'type',
+  'text',
+  'innerStyle'
 ]);
 
 

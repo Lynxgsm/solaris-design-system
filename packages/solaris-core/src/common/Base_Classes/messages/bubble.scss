@@ -1,0 +1,49 @@
+@import '../../Base_Themes/index.scss';
+
+$decoration-size: 6px;
+
+.bubble {
+  padding: 3px;
+  display: flex;
+  width: fit-content;
+  width: 22px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 50%;
+
+  &::after {
+    content: '';
+    width: 11.22px;
+    height: 11.22px;
+    @extend .bg-info-dark;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &.bubble-default {
+    @extend .bg-info-dark, .text-white;
+  }
+
+  &.bubble-info-nebula {
+    @extend .bg-nebula-blue-shades, .text-nebula-blue;
+  }
+
+  &.bubble-info {
+    @extend .bg-info-light, .text-info-dark;
+  }
+
+  &.bubble-error {
+    @extend .bg-error-light, .text-error-dark;
+  }
+
+  &.bubble-warning {
+    @extend .bg-alert-light, .text-alert-dark;
+  }
+
+  &.bubble-success {
+    @extend .bg-success-light, .text-success-dark;
+  }
+}

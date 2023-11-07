@@ -13,6 +13,7 @@ export const SolarisAvatar = /*@__PURE__*/createReactComponent<JSX.SolarisAvatar
 export const SolarisBadge = /*@__PURE__*/createReactComponent<JSX.SolarisBadge, HTMLSolarisBadgeElement>('solaris-badge');
 export const SolarisBlock = /*@__PURE__*/createReactComponent<JSX.SolarisBlock, HTMLSolarisBlockElement>('solaris-block');
 export const SolarisBlockquote = /*@__PURE__*/createReactComponent<JSX.SolarisBlockquote, HTMLSolarisBlockquoteElement>('solaris-blockquote');
+export const SolarisBubble = /*@__PURE__*/createReactComponent<JSX.SolarisBubble, HTMLSolarisBubbleElement>('solaris-bubble');
 export const SolarisButton = /*@__PURE__*/createReactComponent<JSX.SolarisButton, HTMLSolarisButtonElement>('solaris-button');
 export const SolarisCard = /*@__PURE__*/createReactComponent<JSX.SolarisCard, HTMLSolarisCardElement>('solaris-card');
 export const SolarisCards = /*@__PURE__*/createReactComponent<JSX.SolarisCards, HTMLSolarisCardsElement>('solaris-cards');

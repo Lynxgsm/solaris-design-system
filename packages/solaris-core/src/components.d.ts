@@ -68,6 +68,11 @@ export namespace Components {
         "radius"?: Size;
         "type"?: MessageType;
     }
+    interface SolarisBubble {
+        "innerStyle": { [key: string]: string };
+        "text": string;
+        "type"?: MessageType | 'default';
+    }
     interface SolarisButton {
         "colorScheme": ColorScheme;
         "fullWidth": boolean;
@@ -220,6 +225,12 @@ declare global {
         prototype: HTMLSolarisBlockquoteElement;
         new (): HTMLSolarisBlockquoteElement;
     };
+    interface HTMLSolarisBubbleElement extends Components.SolarisBubble, HTMLStencilElement {
+    }
+    var HTMLSolarisBubbleElement: {
+        prototype: HTMLSolarisBubbleElement;
+        new (): HTMLSolarisBubbleElement;
+    };
     interface HTMLSolarisButtonElement extends Components.SolarisButton, HTMLStencilElement {
     }
     var HTMLSolarisButtonElement: {
@@ -340,6 +351,7 @@ declare global {
         "solaris-badge": HTMLSolarisBadgeElement;
         "solaris-block": HTMLSolarisBlockElement;
         "solaris-blockquote": HTMLSolarisBlockquoteElement;
+        "solaris-bubble": HTMLSolarisBubbleElement;
         "solaris-button": HTMLSolarisButtonElement;
         "solaris-card": HTMLSolarisCardElement;
         "solaris-cards": HTMLSolarisCardsElement;
@@ -398,6 +410,11 @@ declare namespace LocalJSX {
         "maxWidth"?: UnitString;
         "radius"?: Size;
         "type"?: MessageType;
+    }
+    interface SolarisBubble {
+        "innerStyle"?: { [key: string]: string };
+        "text"?: string;
+        "type"?: MessageType | 'default';
     }
     interface SolarisButton {
         "colorScheme"?: ColorScheme;
@@ -518,6 +535,7 @@ declare namespace LocalJSX {
         "solaris-badge": SolarisBadge;
         "solaris-block": SolarisBlock;
         "solaris-blockquote": SolarisBlockquote;
+        "solaris-bubble": SolarisBubble;
         "solaris-button": SolarisButton;
         "solaris-card": SolarisCard;
         "solaris-cards": SolarisCards;
@@ -548,6 +566,7 @@ declare module "@stencil/core" {
             "solaris-badge": LocalJSX.SolarisBadge & JSXBase.HTMLAttributes<HTMLSolarisBadgeElement>;
             "solaris-block": LocalJSX.SolarisBlock & JSXBase.HTMLAttributes<HTMLSolarisBlockElement>;
             "solaris-blockquote": LocalJSX.SolarisBlockquote & JSXBase.HTMLAttributes<HTMLSolarisBlockquoteElement>;
+            "solaris-bubble": LocalJSX.SolarisBubble & JSXBase.HTMLAttributes<HTMLSolarisBubbleElement>;
             "solaris-button": LocalJSX.SolarisButton & JSXBase.HTMLAttributes<HTMLSolarisButtonElement>;
             "solaris-card": LocalJSX.SolarisCard & JSXBase.HTMLAttributes<HTMLSolarisCardElement>;
             "solaris-cards": LocalJSX.SolarisCards & JSXBase.HTMLAttributes<HTMLSolarisCardsElement>;

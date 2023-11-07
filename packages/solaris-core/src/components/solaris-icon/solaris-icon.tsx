@@ -9,7 +9,7 @@ import { classes } from '../../common/Base_Core/format/classes/classes';
   shadow: true,
 })
 export class SolarisIcon {
-  @Prop() size?: Size;
+  @Prop() size?: Size = 'md';
   @Prop() variant?: IconVariant = 'regular';
   @Prop() name?: IconName;
   render() {
