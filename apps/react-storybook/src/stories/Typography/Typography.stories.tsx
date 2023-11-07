@@ -1,13 +1,22 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { SolarisTypography, Values } from "solaris-react";
-const { TypographyVariantValues } = Values.default;
+const { TypographyVariantValues, FontWeightValues } = Values.default;
 
 const meta = {
   title: "Typography",
   component: SolarisTypography,
   parameters: { layout: "centered" },
   tags: ["autodocs"],
-  argTypes: {},
+  argTypes: {
+    variant: {
+      options: TypographyVariantValues,
+      control: "select",
+    },
+    weight: {
+      options: FontWeightValues,
+      control: "select",
+    },
+  },
 } satisfies Meta<typeof SolarisTypography>;
 
 export default meta;

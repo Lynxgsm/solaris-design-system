@@ -1,7 +1,7 @@
 import { Meta, StoryFn } from "@storybook/vue3";
 import { SolarisButton, Values } from "solaris-vue";
 
-const { ColorSchemeValues, VariantValues, SizeValues } = Values;
+const { ColorSchemeValues, VariantValues, SizeValues } = Values.default;
 
 const meta: Meta = {
   title: "Buttons/Button",

@@ -1,4 +1,7 @@
 import type { Preview } from "@storybook/vue3";
+import { ComponentLibrary } from "solaris-vue";
+
+ComponentLibrary.install();
 
 const preview: Preview = {
   parameters: {
