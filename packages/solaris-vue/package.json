@@ -2,15 +2,25 @@
   "name": "solaris-vue",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "author": "Lynxgsm <aili.fida.ac@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist/**"
+  ],
   "scripts": {
+    "build": "tsup lib/index.ts --format cjs,esm --dts",
     "tsc": "tsc -p . --outDir ./dist",
-    "build": "tsup lib/index.ts --format cjs,esm --dts"
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@types/node": "^16.18.11",
     "tsup": "^7.2.0",

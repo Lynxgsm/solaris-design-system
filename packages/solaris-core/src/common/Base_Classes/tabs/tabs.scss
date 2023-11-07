@@ -1,8 +1,21 @@
 @import '../../Base_Breakpoints/breakpoints.scss';
+@import '../../Base_Themes/colors.scss';
 
 .tab {
   cursor: pointer;
   display: flex;
+}
+
+.left-rectangle {
+  position: absolute;
+  left: 0;
+}
+
+.right-rectangle {
+  width: 34px;
+  height: 42px;
+  position: fixed;
+  right: 0;
 }
 
 .tabs-container {
@@ -21,6 +34,7 @@
   overflow-y: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  position: relative;
 }
 
 .tabs::-webkit-scrollbar {

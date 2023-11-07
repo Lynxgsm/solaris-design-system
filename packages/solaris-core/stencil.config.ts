@@ -40,6 +40,7 @@ export const config: Config = {
     vueOutputTarget({
       componentCorePackage: 'solaris-core',
       includeDefineCustomElements: true,
+      loaderDir: './loader',
       proxiesFile: '../solaris-vue/lib/components.ts',
     }),
   ],
