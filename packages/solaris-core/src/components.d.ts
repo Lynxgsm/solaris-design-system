@@ -69,6 +69,7 @@ export namespace Components {
         "type"?: MessageType;
     }
     interface SolarisBubble {
+        "innerStyle": { [key: string]: string };
         "text": string;
         "type"?: MessageType | 'default';
     }
@@ -411,6 +412,7 @@ declare namespace LocalJSX {
         "type"?: MessageType;
     }
     interface SolarisBubble {
+        "innerStyle"?: { [key: string]: string };
         "text"?: string;
         "type"?: MessageType | 'default';
     }
