@@ -19,13 +19,12 @@ export class SolarisTypography {
   @Prop() truncated?: boolean = false;
   @Prop() weight: FontWeight = 'regular';
   @Prop() lineHeight: number = 1.25;
-  @Prop() margin: number = 0;
   @Prop() innerStyle: { [key: string]: string } = {};
 
   render() {
     return (
       <this.variant
-        style={{ lineHeight: this.lineHeight, margin: this.margin, ...this.innerStyle }}
+        style={{ lineHeight: this.lineHeight, ...this.innerStyle }}
         class={`${this.variant} text-${this.colorScheme} ${this.fontFamily} ${this.underline ? 'underline' : ''} ${this.truncated ? 'truncated' : ''} ${this.weight}`}
       >
         <slot />

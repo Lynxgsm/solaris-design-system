@@ -7,12 +7,14 @@ import { Size } from '../../types/common/size';
   shadow: true,
 })
 export class SolarisCard {
-  @Prop() elevation: number;
-  @Prop() radius: Size;
+  @Prop() elevation: number = 0;
+  @Prop() radius: Size | 'none' = 'none';
   render() {
     return (
-      <solaris-block class={`card card-${this.elevation || 0} border-${this.radius || 'none'}`}>
-        <slot />
+      <solaris-block>
+        <div class={`card card-${this.elevation} border-${this.radius}`}>
+          <slot />
+        </div>
       </solaris-block>
     );
   }

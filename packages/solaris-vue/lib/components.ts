@@ -208,7 +208,6 @@ export const SolarisTypography = /*@__PURE__*/ defineContainer<JSX.SolarisTypogr
   'truncated',
   'weight',
   'lineHeight',
-  'margin',
   'innerStyle'
 ]);
 

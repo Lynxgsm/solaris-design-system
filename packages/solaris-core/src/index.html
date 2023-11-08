@@ -8,15 +8,45 @@
     <script type="module" src="/build/solaris-core.esm.js"></script>
     <script nomodule src="/build/solaris-core.js"></script>
     <link rel="stylesheet" href="/build/solaris-core.css" />
+    <style>
+      body,
+      html {
+        padding: 16px;
+        margin: 16px;
+      }
+    </style>
   </head>
   <body>
-    <solaris-bubble text="2"></solaris-bubble>
-    <solaris-bubble text="4"></solaris-bubble>
-    <solaris-bubble text="5"></solaris-bubble>
-    <solaris-bubble text="7"></solaris-bubble>
-    <solaris-bubble text="9"></solaris-bubble>
-    <solaris-label icon="arrow-up">
-      <solaris-typography>Text</solaris-typography>
-    </solaris-label>
+    <solaris-card elevation="2" radius="md">
+      <solaris-typography>Hello World</solaris-typography>
+    </solaris-card>
+
+    <solaris-tabs>
+      <solaris-tab slot="tab" tab="tab1">
+        <solaris-pill label="Envoyé" count="3" active></solaris-pill>
+      </solaris-tab>
+      <solaris-tab slot="tab" tab="tab2">
+        <solaris-pill label="Envoyé" count="3" loading></solaris-pill>
+      </solaris-tab>
+      <solaris-tab slot="tab" tab="tab2">
+        <solaris-pill label="Envoyé" count="3"></solaris-pill>
+      </solaris-tab>
+      <solaris-tab slot="tab" tab="tab2">
+        <solaris-pill label="Envoyé" count="3"></solaris-pill>
+      </solaris-tab>
+      <solaris-tab slot="tab" tab="tab2">
+        <solaris-pill label="Envoyé" count="3"></solaris-pill>
+      </solaris-tab>
+
+      <solaris-tab-panel active slot="tab-panel" tab="tab1">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit magnam itaque id minus magni ea quis tempore, quaerat eveniet, inventore suscipit? Earum, vitae.
+          Necessitatibus quos perspiciatis cum voluptates obcaecati itaque.
+        </p>
+      </solaris-tab-panel>
+      <solaris-tab-panel slot="tab-panel" tab="tab2">
+        <p>Hello Tab Panel</p>
+      </solaris-tab-panel>
+    </solaris-tabs>
   </body>
 </html>
